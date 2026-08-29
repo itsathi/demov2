@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+  <defs>
+    <linearGradient id="dirtyAirGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#94A3B8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#D97706" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="cleanAirGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="uvcGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="filterGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F766E"/>
+      <stop offset="100%" stop-color="#115E59"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ================= BACKGROUND AMBIENT CLEAN FLOW VECTORS ================= -->
+  <g opacity="0.65">
+    <path d="M 180,320 C 450,260 720,360 1000,300" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 14"/>
+    <path d="M 280,520 C 520,460 760,560 1050,500" fill="none" stroke="#2DD4BF" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 120,680 C 400,620 680,720 960,660" fill="none" stroke="#0284C7" stroke-width="6" stroke-linecap="round" opacity="0.4"/>
+  </g>
+
+  <!-- ================= ISOMETRIC DUCTWORK CHAMBER (CUTAWAY) ================= -->
+  <g transform="translate(740, 240)">
+    <!-- Duct Housing (Outer Frame Cutaway) -->
+    <!-- Top Plate -->
+    <polygon points="0,160 300,10 680,200 380,350" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2"/>
+    <!-- Bottom Plate -->
+    <polygon points="0,290 300,140 680,330 380,480" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="2"/>
+    <!-- Back Enclosure Panel -->
+    <polygon points="300,10 680,200 680,330 300,140" fill="#334155"/>
+
+    <!-- Internal Air Stream Path (Left to Right) -->
+    <!-- Dirty Air Intake Stream -->
+    <path d="M -160,280 C -80,260 -20,270 60,250" fill="none" stroke="url(#dirtyAirGrad)" stroke-width="45" stroke-linecap="round"/>
+    <!-- Particulate dots (Dust / Pollen) -->
+    <circle cx="-110" cy="270" r="4" fill="#D97706"/>
+    <circle cx="-60" cy="290" r="5" fill="#B45309"/>
+    <circle cx="-20" cy="245" r="3.5" fill="#78716C"/>
+    <circle cx="10" cy="265" r="4.5" fill="#D97706"/>
+
+    <!-- STAGE 1: COARSE PRE-FILTER CASSETTE -->
+    <g transform="translate(100, 110)">
+      <polygon points="0,75 50,50 50,200 0,225" fill="#475569" stroke="#64748B" stroke-width="2"/>
+      <!-- Filter mesh lines -->
+      <line x1="12" y1="90" x2="12" y2="215" stroke="#94A3B8" stroke-width="2"/>
+      <line x1="25" y1="83" x2="25" y2="210" stroke="#94A3B8" stroke-width="2"/>
+      <line x1="38" y1="77" x2="38" y2="202" stroke="#94A3B8" stroke-width="2"/>
+      <text x="25" y="40" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#64748B">STAGE 1: MESH</text>
+    </g>
+
+    <!-- STAGE 2: TRUE HEPA H13 PLEATED FILTER -->
+    <g transform="translate(240, 180)">
+      <polygon points="0,75 60,45 60,205 0,235" fill="url(#filterGrad)" stroke="#14B8A6" stroke-width="2"/>
+      <!-- Pleats -->
+      <path d="M 12,85 L 12,220 M 24,79 L 24,214 M 36,73 L 36,208 M 48,67 L 48,202" stroke="#2DD4BF" stroke-width="2.5"/>
+      <text x="30" y="30" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#0D9488">STAGE 2: HEPA H13</text>
+    </g>
+
+    <!-- STAGE 3: GERMICIDAL UV-C PHOTON CHAMBER -->
+    <g transform="translate(420, 270)">
+      <!-- UV Lamps (Vertical Radiant Bulbs) -->
+      <rect x="0" y="20" width="12" height="150" rx="6" fill="#C084FC"/>
+      <rect x="40" y="0" width="12" height="150" rx="6" fill="#C084FC"/>
+      <!-- UV Glow Field -->
+      <ellipse cx="26" cy="85" rx="70" ry="110" fill="url(#uvcGlow)"/>
+      <text x="26" y="-15" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#8B5CF6">STAGE 3: UV-C 254nm</text>
+    </g>
+
+    <!-- Pure Clean Purified Air Outflow -->
+    <path d="M 520,360 C 600,340 680,330 780,310" fill="none" stroke="url(#cleanAirGrad)" stroke-width="50" stroke-linecap="round"/>
+    <path d="M 540,330 C 630,310 710,295 810,270" fill="none" stroke="#00E5FF" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 560,390 C 650,370 730,355 830,330" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 10"/>
+    
+    <!-- Clean Air Ion / Oxygen Sparkles -->
+    <circle cx="680" cy="300" r="5" fill="#E0F2FE"/>
+    <circle cx="750" cy="340" r="4" fill="#00E5FF"/>
+    <circle cx="810" cy="290" r="6" fill="#38BDF8"/>
+  </g>
+
+  <!-- ================= IAQ PURITY METRIC CARD (BOTTOM RIGHT) ================= -->
+  <g transform="translate(1080, 570)">
+    <rect x="0" y="0" width="280" height="140" rx="16" fill="#0F172A" stroke="#14B8A6" stroke-width="2.5"/>
+    <circle cx="35" cy="40" r="18" fill="#134E4A"/>
+    <!-- Pure Shield Icon -->
+    <path d="M 35,28 L 47,33 L 47,44 C 47,51 35,56 35,56 C 35,56 23,51 23,44 L 23,33 Z" fill="#2DD4BF"/>
+    
+    <text x="65" y="34" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#94A3B8" letter-spacing="1">INDOOR AIR QUALITY</text>
+    <text x="65" y="55" font-family="system-ui, sans-serif" font-size="22" font-weight="900" fill="#FFFFFF">99.97% <tspan font-size="13" font-weight="700" fill="#2DD4BF">CLEAN</tspan></text>
+
+    <!-- Sub Metrics Row -->
+    <line x1="16" y1="78" x2="264" y2="78" stroke="#334155" stroke-width="1.5"/>
+    <text x="18" y="105" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#64748B">PM2.5 INDEX</text>
+    <text x="18" y="123" font-family="system-ui, sans-serif" font-size="15" font-weight="800" fill="#38BDF8">1.2 µg/m³</text>
+
+    <text x="145" y="105" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#64748B">GERMICIDAL RATE</text>
+    <text x="145" y="123" font-family="system-ui, sans-serif" font-size="15" font-weight="800" fill="#A855F7">99.9% STERILE</text>
+  </g>
+</svg>

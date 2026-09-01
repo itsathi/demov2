@@ -4,6 +4,7 @@ import {
   createContext,
   useCallback,
   useContext,
+  useEffect,
   useMemo,
   useRef,
   useState,
@@ -30,9 +31,13 @@ export function DemoProvider({
   const [chatOpen, setChatOpen] = useState(false);
   const [automationLabel, setAutomationLabel] = useState<string | undefined>();
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const manuallyClosed = useRef(false);
 
   const openChat = useCallback(() => setChatOpen(true), []);
-  const closeChat = useCallback(() => setChatOpen(false), []);
+  const closeChat = useCallback(() => {
+    manuallyClosed.current = true;
+    setChatOpen(false);
+  }, []);
 
   const runAutomation = useCallback(
     (label?: string) => {
@@ -45,6 +50,16 @@ export function DemoProvider({
     },
     []
   );
+
+  useEffect(() => {
+    const autoOpenTimer = setTimeout(() => {
+      if (!manuallyClosed.current) {
+        setChatOpen(true);
+      }
+    }, 5000);
+
+    return () => clearTimeout(autoOpenTimer);
+  }, []);
 
   const value = useMemo(
     () => ({

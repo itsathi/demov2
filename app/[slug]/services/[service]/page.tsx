@@ -69,14 +69,14 @@ export default async function ServiceSinglePage({
         className="mx-auto mt-20 flex max-w-7xl flex-wrap items-center justify-between gap-4 border-t border-line px-5 pt-8 sm:px-8"
       >
         <Link
-          href={`/demo/${prospect.slug}/services/${prev.slug}`}
+          href={`/${prospect.slug}/services/${prev.slug}`}
           className="group inline-flex items-center gap-2 text-sm font-bold text-ink transition-colors hover:text-brand-strong"
         >
           <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-0.5" />
           {prev.shortName}
         </Link>
         <Link
-          href={`/demo/${prospect.slug}/services/${next.slug}`}
+          href={`/${prospect.slug}/services/${next.slug}`}
           className="group inline-flex items-center gap-2 text-sm font-bold text-ink transition-colors hover:text-brand-strong"
         >
           {next.shortName}

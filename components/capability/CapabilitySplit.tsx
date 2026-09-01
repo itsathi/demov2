@@ -77,7 +77,7 @@ export function CapabilitySplit({ prospect }: { prospect: ProspectConfig }) {
     return () => ctx.revert();
   }, [reduced]);
 
-  const home = `/demo/${prospect.slug}`;
+  const home = `/${prospect.slug}`;
   const bandImage =
     t.capability.bandImageKey && prospect.images[t.capability.bandImageKey]
       ? prospect.images[t.capability.bandImageKey]

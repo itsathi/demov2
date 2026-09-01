@@ -5,7 +5,7 @@ import { getTemplates } from "@/lib/prospect";
 import type { ProspectConfig } from "@/lib/types";
 
 export function Footer({ prospect }: { prospect: ProspectConfig }) {
-  const home = `/demo/${prospect.slug}`;
+  const home = `/${prospect.slug}`;
   const year = new Date().getFullYear();
   const t = getTemplates(prospect);
 
@@ -106,8 +106,7 @@ export function Footer({ prospect }: { prospect: ProspectConfig }) {
             © {year} {prospect.companyName}. Concept demonstration only.
           </p>
           <p className="text-xs text-white/40">
-            Website concept by <span className="font-semibold text-white/70">Athinem Creatives</span> — a re-imagining of
-            the current {prospect.displayName} digital presence.
+            Digital presence concept and modern preview for {prospect.displayName}.
           </p>
           <a
             href="#top"

@@ -14,8 +14,8 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   title: {
-    default: "Concept Website Demos — Athinem Creatives",
-    template: "%s · Athinem Creatives",
+    default: "Concept Website Demos",
+    template: "%s",
   },
   description:
     "Re-imagined digital presences for manufacturing and engineering brands — real company data, engineered visuals and a working enquiry flow.",

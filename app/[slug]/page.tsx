@@ -52,7 +52,7 @@ export default async function ProspectHomePage({
       <RatingStrip prospect={prospect} />
       <MarqueeBand items={marqueeItems} dark speed={34} />
       <ServiceGrid
-        base={`/demo/${prospect.slug}`}
+        base={`/${prospect.slug}`}
         services={featuredCount ? featured : others.slice(0, 4)}
         kicker={t.servicesKicker}
         heading={t.servicesHomeHeading}

@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { usePrefersReducedMotion } from "@/components/hooks/usePrefersReducedMotion";
 
-export const PRELOAD_KEY = "athinem-demo-preloaded";
+export const PRELOAD_KEY = "demo-preloaded";
 
 export function Preloader({
   brandLine,

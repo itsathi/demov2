@@ -1,4 +1,4 @@
-# Automated Prospect Demo Generator — Athinem Creatives
+# Automated Prospect Demo Generator
 
 This engine automatically converts raw prospect audit JSON data (from lead generation / audit tools) into high-converting, Awwwards-grade interactive website demos.
 
@@ -43,7 +43,7 @@ You can simply paste your raw JSON (or batch of JSONs) in the chat. The generato
    - Live UAE time indicator, responsive navbar, and primary/secondary CTA magnets.
 
 3. **Complete Services & Solutions Range**:
-   - Individual subpages at `/demo/[slug]/services/[service-slug]`.
+   - Individual subpages at `/[slug]/services/[service-slug]`.
    - Technical capacity, series options, certified standards, applications grid, and features.
    - Dynamic icon matching based on service keywords (`duct-cleaning`, `maintenance`, `ac-installation`, `hvac-solutions`, `villa-maintenance`, etc.).
 
@@ -62,6 +62,6 @@ You can simply paste your raw JSON (or batch of JSONs) in the chat. The generato
 
 ## 🔗 Viewing Demos
 
-- **Hub Page**: [http://localhost:3000/demo](http://localhost:3000/demo) (Lists all available demos)
-- **Quality Living Demo**: [http://localhost:3000/demo/quality-living](http://localhost:3000/demo/quality-living)
-- **Quality Living Services**: [http://localhost:3000/demo/quality-living/services](http://localhost:3000/demo/quality-living/services)
+- **Hub Page**: [http://localhost:3000/](http://localhost:3000/) (Lists all available client concepts)
+- **Direct Prospect Demo**: [http://localhost:3000/geo-group-global](http://localhost:3000/geo-group-global)
+- **Services Index**: [http://localhost:3000/geo-group-global/services](http://localhost:3000/geo-group-global/services)

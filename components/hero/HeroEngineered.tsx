@@ -122,7 +122,7 @@ export function HeroEngineered({ prospect }: { prospect: ProspectConfig }) {
     };
   }, [reduced]);
 
-  const home = `/demo/${prospect.slug}`;
+  const home = `/${prospect.slug}`;
 
   return (
     <section

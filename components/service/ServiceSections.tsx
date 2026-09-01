@@ -17,7 +17,7 @@ import type { ProspectConfig, Service } from "@/lib/types";
 gsap.registerPlugin(ScrollTrigger);
 
 export function ServiceHero({ prospect, service }: { prospect: ProspectConfig; service: Service }) {
-  const home = `/demo/${prospect.slug}`;
+  const home = `/${prospect.slug}`;
   const t = getTemplates(prospect);
   const cover = prospect.designDirection.imageTreatment === "PhotoCover";
 

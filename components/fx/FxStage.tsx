@@ -6,7 +6,7 @@ import { Preloader } from "@/components/fx/Preloader";
 import { ScrollProgress } from "@/components/fx/ScrollProgress";
 import { SmoothScroll } from "@/components/motion/SmoothScroll";
 
-export const READY_EVENT = "athinem:ready";
+export const READY_EVENT = "stage:ready";
 
 export function FxStage({
   children,

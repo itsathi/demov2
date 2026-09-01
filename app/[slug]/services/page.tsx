@@ -38,7 +38,7 @@ export default async function ServicesIndexPage({
         <div className="relative mx-auto max-w-7xl px-5 pb-4 pt-16 md:px-8 lg:pt-20">
           <nav aria-label="Breadcrumb">
             <Link
-              href={`/demo/${prospect.slug}`}
+              href={`/${prospect.slug}`}
               className="text-xs font-bold uppercase tracking-[0.2em] text-brand hover:text-brand-strong"
             >
               {t.nav.homeBack}
@@ -57,7 +57,7 @@ export default async function ServicesIndexPage({
       </section>
 
       <ServiceGrid
-        base={`/demo/${prospect.slug}`}
+        base={`/${prospect.slug}`}
         services={prospect.services}
         variant="index"
       />

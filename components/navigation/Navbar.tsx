@@ -19,7 +19,7 @@ export function Navbar({ prospect }: { prospect: ProspectConfig }) {
   const pathname = usePathname();
   const t = getTemplates(prospect);
 
-  const home = `/demo/${prospect.slug}`;
+  const home = `/${prospect.slug}`;
   const services = `${home}/services`;
 
   const isHome = pathname === home;

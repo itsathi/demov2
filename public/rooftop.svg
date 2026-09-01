@@ -24,17 +24,17 @@
 
   <!-- ================= AMBIENT DATA & FLOW LINES (LEFT SPACE) ================= -->
   <g opacity="0.75">
-    <path d="M 220,280 C 480,240 750,340 1020,290" fill="none" stroke="#00E5FF" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 12"/>
-    <path d="M 140,460 C 420,400 680,500 960,440" fill="none" stroke="url(#skyGrad1)" stroke-width="8" stroke-linecap="round"/>
-    <path d="M 310,640 C 580,590 820,680 1100,620" fill="none" stroke="url(#amberGrad1)" stroke-width="6" stroke-linecap="round"/>
+    <path data-motion="flow" d="M 220,280 C 480,240 750,340 1020,290" fill="none" stroke="#00E5FF" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 12"/>
+    <path data-motion="flow" d="M 140,460 C 420,400 680,500 960,440" fill="none" stroke="url(#skyGrad1)" stroke-width="8" stroke-linecap="round"/>
+    <path data-motion="flow" d="M 310,640 C 580,590 820,680 1100,620" fill="none" stroke="url(#amberGrad1)" stroke-width="6" stroke-linecap="round"/>
     
     <!-- Floating Telemetry Node Badges -->
-    <g transform="translate(380, 360)">
+    <g data-motion="drift" transform="translate(380, 360)">
       <circle cx="0" cy="0" r="16" fill="#E0F2FE"/>
       <path d="M -6,0 L 6,0 M 0,-6 L 0,6" stroke="#0284C7" stroke-width="2.5" stroke-linecap="round"/>
       <text x="24" y="5" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#64748B">ZONE 04 • STATIC PRESSURE OK</text>
     </g>
-    <g transform="translate(240, 560)">
+    <g data-motion="drift" transform="translate(240, 560)">
       <circle cx="0" cy="0" r="16" fill="#FEF3C7"/>
       <circle cx="0" cy="0" r="6" fill="#F59E0B"/>
       <text x="24" y="5" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#64748B">BMS GATEWAY • 24.8 kW LOAD</text>
@@ -77,20 +77,20 @@
     <ellipse cx="140" cy="75" rx="55" ry="30" fill="#334155" stroke="#00B4D8" stroke-width="3"/>
     <ellipse cx="140" cy="72" rx="42" ry="22" fill="#0F172A"/>
     <!-- Fan Blades / Spinner -->
-    <circle cx="140" cy="72" r="10" fill="#00E5FF"/>
-    <path d="M 140,62 C 148,50 162,55 158,68 M 148,78 C 160,86 155,98 142,94 M 132,74 C 120,80 114,68 128,66" stroke="#00B4D8" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle data-motion="spin" cx="140" cy="72" r="10" fill="#00E5FF"/>
+    <path data-motion="spin" d="M 140,62 C 148,50 162,55 158,68 M 148,78 C 160,86 155,98 142,94 M 132,74 C 120,80 114,68 128,66" stroke="#00B4D8" stroke-width="3" fill="none" stroke-linecap="round"/>
 
     <!-- Air Discharge Vortex Gradient -->
-    <path d="M 140,50 C 140,-40 180,-70 240,-100" fill="none" stroke="#00E5FF" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
-    <path d="M 160,60 C 180,-10 230,-40 310,-60" fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 8" opacity="0.6"/>
+    <path data-motion="flow" d="M 140,50 C 140,-40 180,-70 240,-100" fill="none" stroke="#00E5FF" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
+    <path data-motion="flow" d="M 160,60 C 180,-10 230,-40 310,-60" fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 8" opacity="0.6"/>
 
     <!-- Insulated Supply Air Spiral Duct (Right Side Output) -->
     <g>
       <polygon points="340,115 450,60 450,140 340,195" fill="url(#metalGrad)" stroke="#64748B" stroke-width="2"/>
       <ellipse cx="450" cy="100" rx="20" ry="40" fill="#0284C7"/>
       <!-- Cool Supply Air Vector arrow -->
-      <path d="M 450,100 C 510,70 560,110 600,80" fill="none" stroke="#00E5FF" stroke-width="6" stroke-linecap="round"/>
-      <polygon points="605,75 600,92 588,80" fill="#00E5FF"/>
+      <path data-motion="flow" d="M 450,100 C 510,70 560,110 600,80" fill="none" stroke="#00E5FF" stroke-width="6" stroke-linecap="round"/>
+      <polygon data-motion="flow" points="605,75 600,92 588,80" fill="#00E5FF"/>
     </g>
 
     <!-- Warm Return Air Duct (Rear Intake) -->
@@ -101,7 +101,7 @@
   </g>
 
   <!-- ================= HOLOGRAPHIC BMS TELEMETRY DASHBOARD (LEFT/MID) ================= -->
-  <g transform="translate(680, 210)">
+  <g data-motion="rise" transform="translate(680, 210)">
     <!-- HUD Card Container -->
     <rect x="0" y="0" width="280" height="230" rx="18" fill="url(#hudGrad)" stroke="#38BDF8" stroke-width="2.5"/>
     <line x1="0" y1="48" x2="280" y2="48" stroke="#334155" stroke-width="1.5"/>
@@ -135,7 +135,7 @@
     </g>
 
     <!-- Connection Line from HUD to RTU Sensor -->
-    <path d="M 280,115 L 350,115 L 390,160" fill="none" stroke="#00E5FF" stroke-width="2.5" stroke-dasharray="4 6"/>
-    <circle cx="390" cy="160" r="5" fill="#00E5FF"/>
+    <path data-motion="flow" d="M 280,115 L 350,115 L 390,160" fill="none" stroke="#00E5FF" stroke-width="2.5" stroke-dasharray="4 6"/>
+    <circle data-motion="pulse" cx="390" cy="160" r="5" fill="#00E5FF"/>
   </g>
 </svg>

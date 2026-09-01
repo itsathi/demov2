@@ -46,30 +46,30 @@
   <!-- ================= BACKGROUND / AMBIENT WAVES (EXTENDING LEFT) ================= -->
   <g opacity="0.85">
     <!-- Cool airflow curves (Teal/Sky Blue) -->
-    <path d="M 450,220 C 700,180 950,260 1200,210" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 12" opacity="0.6"/>
-    <path d="M 320,380 C 600,320 850,440 1150,360" fill="none" stroke="#2DD4BF" stroke-width="6" stroke-linecap="round" opacity="0.4"/>
-    <path d="M 180,480 C 450,420 700,530 980,460" fill="none" stroke="url(#coolFlow)" stroke-width="8" stroke-linecap="round"/>
-    <path d="M 280,560 C 520,510 740,610 1020,540" fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" stroke-dasharray="12 16" opacity="0.5"/>
+    <path data-motion="flow" d="M 450,220 C 700,180 950,260 1200,210" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 12" opacity="0.6"/>
+    <path data-motion="flow" d="M 320,380 C 600,320 850,440 1150,360" fill="none" stroke="#2DD4BF" stroke-width="6" stroke-linecap="round" opacity="0.4"/>
+    <path data-motion="flow" d="M 180,480 C 450,420 700,530 980,460" fill="none" stroke="url(#coolFlow)" stroke-width="8" stroke-linecap="round"/>
+    <path data-motion="flow" d="M 280,560 C 520,510 740,610 1020,540" fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" stroke-dasharray="12 16" opacity="0.5"/>
 
     <!-- Warm airflow currents (Amber/Orange) -->
-    <path d="M 500,640 C 720,590 980,680 1240,600" fill="none" stroke="url(#warmFlow)" stroke-width="7" stroke-linecap="round"/>
-    <path d="M 380,720 C 600,680 820,760 1080,710" fill="none" stroke="#FB8500" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 10" opacity="0.5"/>
+    <path data-motion="flow" d="M 500,640 C 720,590 980,680 1240,600" fill="none" stroke="url(#warmFlow)" stroke-width="7" stroke-linecap="round"/>
+    <path data-motion="flow" d="M 380,720 C 600,680 820,760 1080,710" fill="none" stroke="#FB8500" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 10" opacity="0.5"/>
 
     <!-- Floating Ambient Micro-Icons (Left & Mid space) -->
     <!-- Cool Snowflake / Air particle -->
-    <g transform="translate(420, 290) scale(0.9)" opacity="0.75">
+    <g data-motion="drift" transform="translate(420, 290) scale(0.9)" opacity="0.75">
       <circle cx="0" cy="0" r="18" fill="#E0F2FE" />
       <path d="M 0,-10 L 0,10 M -10,0 L 10,0 M -7,-7 L 7,7 M -7,7 L 7,-7" stroke="#0284C7" stroke-width="2.5" stroke-linecap="round"/>
     </g>
     
     <!-- Warm Heat wave mini-badge -->
-    <g transform="translate(260, 620) scale(0.9)" opacity="0.8">
+    <g data-motion="drift" transform="translate(260, 620) scale(0.9)" opacity="0.8">
       <circle cx="0" cy="0" r="20" fill="#FEF3C7" />
       <path d="M -8,6 C -8,0 -4,2 -4,-4 M 0,6 C 0,0 4,2 4,-4 M 8,6 C 8,0 12,2 12,-4" fill="none" stroke="#D97706" stroke-width="2.5" stroke-linecap="round"/>
     </g>
 
     <!-- Floating IoT Wireless node -->
-    <g transform="translate(610, 480) scale(0.85)" opacity="0.7">
+    <g data-motion="drift" transform="translate(610, 480) scale(0.85)" opacity="0.7">
       <circle cx="0" cy="0" r="16" fill="#CCFBF1"/>
       <path d="M -7,4 A 10,10 0 0,1 7,4 M -4,7 A 5,5 0 0,1 4,7" fill="none" stroke="#0D9488" stroke-width="2.5" stroke-linecap="round"/>
       <circle cx="0" cy="9" r="1.5" fill="#0D9488"/>
@@ -97,7 +97,7 @@
     <!-- Bottom Vent Flap (Angled Down) -->
     <path d="M 15,72 L 345,72 L 335,86 L 25,86 Z" fill="#0F172A"/>
     <!-- Glow from air vent -->
-    <polygon points="25,86 335,86 390,210 -30,210" fill="url(#acGlow)"/>
+    <polygon data-motion="pulse" points="25,86 335,86 390,210 -30,210" fill="url(#acGlow)"/>
     
     <!-- Digital Indicator & Logo on AC Unit -->
     <circle cx="315" cy="35" r="4" fill="#10B981"/>
@@ -106,9 +106,9 @@
     <rect x="30" y="44" width="28" height="4" rx="2" fill="#CBD5E1"/>
 
     <!-- Air Discharge Streamlines -->
-    <path d="M 60,95 C 60,140 30,170 -40,190" fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
-    <path d="M 180,95 C 180,150 160,190 100,230" fill="none" stroke="#00B4D8" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
-    <path d="M 300,95 C 300,160 320,200 370,240" fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+    <path data-motion="flow" d="M 60,95 C 60,140 30,170 -40,190" fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+    <path data-motion="flow" d="M 180,95 C 180,150 160,190 100,230" fill="none" stroke="#00B4D8" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+    <path data-motion="flow" d="M 300,95 C 300,160 320,200 370,240" fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
   </g>
 
   <!-- ================= FLOATING SMART THERMOSTAT (WALL UI) ================= -->
@@ -121,8 +121,8 @@
     
     <!-- LED Arc / Progress Ring -->
     <circle cx="70" cy="70" r="50" fill="none" stroke="#334155" stroke-width="7"/>
-    <path d="M 35,95 A 50,50 0 1,1 105,95" fill="none" stroke="url(#tealGrad)" stroke-width="8" stroke-linecap="round"/>
-    <circle cx="105" cy="95" r="6" fill="#38BDF8"/>
+    <path data-motion="dash" d="M 35,95 A 50,50 0 1,1 105,95" fill="none" stroke="url(#tealGrad)" stroke-width="8" stroke-linecap="round"/>
+    <circle data-motion="pulse" cx="105" cy="95" r="6" fill="#38BDF8"/>
     
     <!-- Thermostat Screen Info -->
     <text x="70" y="65" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="800" fill="#FFFFFF">72°</text>
@@ -139,8 +139,8 @@
     </g>
 
     <!-- Wi-Fi / Sync Waves emitting to technician -->
-    <path d="M 160,50 A 25,25 0 0,1 160,90" fill="none" stroke="#00B4D8" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 6"/>
-    <path d="M 175,40 A 40,40 0 0,1 175,100" fill="none" stroke="#38BDF8" stroke-width="3.5" stroke-linecap="round"/>
+    <path data-motion="pulse" d="M 160,50 A 25,25 0 0,1 160,90" fill="none" stroke="#00B4D8" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 6"/>
+    <path data-motion="pulse" d="M 175,40 A 40,40 0 0,1 175,100" fill="none" stroke="#38BDF8" stroke-width="3.5" stroke-linecap="round"/>
   </g>
 
   <!-- ================= HVAC TECHNICIAN (ISOMETRIC / FLAT VECTOR) ================= -->
@@ -237,13 +237,13 @@
       <text x="88" y="148" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="700" fill="#94A3B8">HEAT</text>
 
       <!-- Interactive Tap Glow Point -->
-      <circle cx="50" cy="90" r="14" fill="#00E5FF" opacity="0.3" filter="url(#softGlow)"/>
+      <circle data-motion="pulse" cx="50" cy="90" r="14" fill="#00E5FF" opacity="0.3" filter="url(#softGlow)"/>
     </g>
   </g>
 
   <!-- ================= FLOATING METRIC CARDS & ACCENTS ================= -->
   <!-- Air Quality / Efficiency Badge (Floating between Tech & Negative Space) -->
-  <g transform="translate(730, 480)">
+  <g data-motion="rise" transform="translate(730, 480)">
     <rect x="0" y="0" width="170" height="64" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
     <circle cx="34" cy="32" r="18" fill="#DCFCE7"/>
     <!-- Leaf Icon -->
@@ -255,7 +255,7 @@
   </g>
 
   <!-- Flow Rate Indicator -->
-  <g transform="translate(930, 620)">
+  <g data-motion="rise" transform="translate(930, 620)">
     <rect x="0" y="0" width="150" height="54" rx="12" fill="#0F172A" opacity="0.95"/>
     <circle cx="28" cy="27" r="14" fill="#1E293B"/>
     <!-- Fan spinner icon -->

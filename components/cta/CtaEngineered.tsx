@@ -39,9 +39,8 @@ export function CtaEngineered({ prospect }: { prospect: ProspectConfig }) {
               <SplitLines
                 text={prospect.cta.heading}
                 as="h2"
-                className="mt-3 font-display text-4xl font-extrabold tracking-tight text-ink sm:text-5xl"
-              />
-              <Reveal delay={0.1}>
+                className="gradient-text mt-3 font-display text-4xl font-extrabold tracking-tight sm:text-5xl"
+              />              <Reveal delay={0.1}>
                 <p className="mt-5 max-w-md text-base leading-relaxed text-ink-muted">{prospect.cta.body}</p>
               </Reveal>
 

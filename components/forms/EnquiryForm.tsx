@@ -55,7 +55,7 @@ export function EnquiryForm({ prospect }: { prospect: ProspectConfig }) {
     }`;
 
   return (
-    <div className="relative overflow-hidden rounded-2xl border border-line bg-white shadow-[0_40px_90px_-40px_rgba(10,17,40,0.4)]">
+    <div className="glass relative overflow-hidden rounded-2xl border border-line bg-white shadow-[0_40px_90px_-40px_rgba(10,17,40,0.4)]">
       {phase === "success" && (
         <span className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-brand via-accent to-brand" aria-hidden />
       )}

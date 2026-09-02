@@ -21,6 +21,7 @@ import { cn } from "@/lib/utils";
 import { Reveal } from "@/components/motion/Reveal";
 import { SplitLines } from "@/components/motion/SplitLines";
 import { TiltCard } from "@/components/motion/TiltCard";
+import { SpotlightLink } from "@/components/services/SpotlightLink";
 import type { Service } from "@/lib/types";
 
 export const SERVICE_ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -89,9 +90,9 @@ export function ServiceGrid({
           const Icon = getServiceIconComponent(service.slug);
           return (
             <Reveal key={service.slug} delay={i * 0.04}>
-              <Link
+              <SpotlightLink
                 href={`${base}/services/${service.slug}`}
-                className="group grid gap-5 border-t border-line py-8 transition-colors last:border-b md:grid-cols-[1.4fr_2fr_1fr] md:items-center"
+                className="spotlight-card group grid gap-5 border-t border-line py-8 transition-colors last:border-b md:grid-cols-[1.4fr_2fr_1fr] md:items-center"
                 data-cursor="View"
               >
                 <div className="flex items-center gap-4">
@@ -137,7 +138,7 @@ export function ServiceGrid({
                     View range <ArrowUpRight className="h-4 w-4" />
                   </span>
                 </div>
-              </Link>
+              </SpotlightLink>
             </Reveal>
           );
         })}

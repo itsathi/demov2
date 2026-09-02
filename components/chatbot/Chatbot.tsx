@@ -64,7 +64,7 @@ export function Chatbot({ prospect }: { prospect: ProspectConfig }) {
             role="dialog"
             aria-label={`${t.assistant.name} chat`}
           >
-            <header className="flex items-center justify-between bg-ink px-5 py-4">
+            <header className="glass-dark flex items-center justify-between px-5 py-4">
               <div className="flex items-center gap-3">
                 <span className="relative grid h-10 w-10 place-items-center rounded-full bg-brand text-white">
                   <Bot className="h-5 w-5" />

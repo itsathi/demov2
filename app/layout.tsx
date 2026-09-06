@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Manrope, Playfair_Display } from "next/font/google";
+import { RouteTransition } from "@/components/fx/RouteTransition";
 import "./globals.css";
 
 const inter = Inter({
@@ -33,7 +34,10 @@ export const viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${inter.variable} ${manrope.variable} ${playfair.variable} h-full antialiased`}>
-      <body className="min-h-full bg-white font-sans text-ink">{children}</body>
+      <body className="min-h-full bg-white font-sans text-ink">
+        {children}
+        <RouteTransition />
+      </body>
     </html>
   );
 }

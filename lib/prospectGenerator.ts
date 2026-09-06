@@ -87,14 +87,16 @@ function deriveLocation(company: RawCompany): {
   country: string;
   fullLocation: string;
 } {
-  const city = company.location?.city || "Abu Dhabi";
-  const state = company.location?.state || city;
+  const stateRaw = company.location?.state || "";
+  const city = company.location?.city || stateRaw || "Abu Dhabi";
+  const state = stateRaw || city;
   const country = company.location?.country || "United Arab Emirates";
+  const countryShort = country === "UAE" ? "United Arab Emirates" : country;
   return {
     city,
     state,
-    country,
-    fullLocation: `${city}, ${country}`,
+    country: countryShort,
+    fullLocation: `${city}, ${countryShort}`,
   };
 }
 

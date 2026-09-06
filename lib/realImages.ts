@@ -31,6 +31,36 @@ const EMR = "https://emra.ae/assets";
 const LRK = "https://lark.ae/wp-content/uploads";
 const QLIV =
   "https://img1.wsimg.com/isteam/getty/2188405641/:/rs=w:1920,h:1080,cg:true,m";
+const QCAR = "https://qualitycareuae.ae/wp-content/uploads/2026";
+const BLUE = "https://bluemountuae.ae/wp-content/uploads/2026/01";
+const RAKEA = "https://rakeauae.com/wp-content/uploads";
+const IEC = "https://www.iecuae.ae/assets/images";
+const OSTA = "https://www.ostaservices.com";
+const DSF = "https://dsfmaintenance.ae/wp-content/uploads";
+const PWY = "https://www.powerway.ae/wp-content/uploads/2025/01";
+const ABAR = "https://albaredacrepairing.com/wp-content/uploads/2025/11";
+const LVL = "https://levelgroup.ae/wp-content/uploads";
+const TSW = "https://www.teamstalwart.com/assets/images";
+const TELU = "https://www.teluscare.com/old/uploaded_files/serviceimages";
+const NST = "https://nestfix-uae.com/wp-content/uploads";
+const CANN = "https://cannelleholdings.com/wp-content/uploads";
+const THUSH = "https://www.thushhaara.com/media_library";
+const CLIM = "https://climatech.ae/wp-content/uploads";
+const NCLIM = "https://nestclimate.ae/wp-content/uploads";
+const UAVAC = "https://uaehvac.com/wp-content/uploads";
+const FIXH = "https://fixationhub.ae/wp-content/uploads";
+const NRW = "https://noorawaal.com/wp-content/uploads";
+const HME = "https://homeexperts.ae";
+const WSI = "https://img1.wsimg.com/isteam";
+const ASD = "https://alsidras.com/img";
+const ACTD = "https://actechniciandubai.ae/wp-content/uploads/2021/02";
+const ACMD = "https://www.acmaintenancedubai.ae/wp-content/uploads/2026/06/43c908ad-aef6-4599-b32f-1bb2c70276fc.jpg";
+const AWAL = "https://awalexperts.ae";
+const ABUS = "https://abusaeed.com/assets/img";
+const HFX = "https://homefixituae.com/wp-content/uploads/2025/12";
+const BASAT = "https://www.basatanwertech.com/images";
+const IMDAAD = "https://images.ctfassets.net/j7ml8jri83gb";
+const REACH = "https://www.reachuae.com";
 
 export const realBrandImages: Record<string, Record<string, string>> = {
   "john-paul-ac": {
@@ -232,6 +262,224 @@ export const realBrandImages: Record<string, Record<string, string>> = {
     factorySharjah: `${LRK}/2025/05/wide3-1.webp`,
     heroPoster: `${LRK}/2025/05/Luxury-Villa-A-03.webp`,
     showreelPoster: `${LRK}/2025/05/Luxury-Villa-D-Main.webp`,
+  },
+  // ── RAK & Dubai demos (scraped from each company's live site, verified 200) ──
+  qualitycare: {
+    officeBanner: `${QCAR}/01/Quality-Care-Dubai.jpg`,
+    aerial: `${QCAR}/01/Quality-Care-Service-Locations.webp`,
+    factorySharjah: `${QCAR}/01/About-Quality-Care.jpg`,
+    heroPoster: `${QCAR}/02/ac-duct-cleaning-service-company-in-dubai-abu-dhabi-rasalkhaimah-and-all-over-uae.jpg`,
+    showreelPoster: `${QCAR}/01/Professional-Cleaning-Maintenance-Service-Provider-in-UAE.jpg`,
+  },
+  bluemount: {
+    officeBanner: `${BLUE}/slider-01-1920x620.jpg`,
+    aerial: `${BLUE}/before.jpg`,
+    factorySharjah: `${BLUE}/after.jpg`,
+    heroPoster: `${BLUE}/slider-01-1920x620.jpg`,
+    showreelPoster: `${BLUE}/aboutus1-300x300.png`,
+  },
+  rakea: {
+    officeBanner: `${RAKEA}/2020/07/Homepage-1-1024x582.jpg`,
+    aerial: `${RAKEA}/2020/07/Homepage-1-1024x582.jpg`,
+    factorySharjah: `${RAKEA}/2020/07/Homepage-1-1024x582.jpg`,
+    heroPoster: `${RAKEA}/2020/07/Homepage-1-1024x582.jpg`,
+    showreelPoster: `${RAKEA}/2020/07/Homepage-1-1024x582.jpg`,
+  },
+  iec: {
+    officeBanner: `${IEC}/main-slider.jpg`,
+    aerial: `${IEC}/main-slider1.jpg`,
+    factorySharjah: `${IEC}/main-slider2.jpg`,
+    heroPoster: `${IEC}/about-img.png`,
+    showreelPoster: `${IEC}/main-slider3.jpg`,
+  },
+  ostaservices: {
+    officeBanner: `${OSTA}/osta-services-ac-repair-uae.jpg`,
+    aerial: `${OSTA}/osta_services_split_ac_cleaning.webp`,
+    factorySharjah: `${OSTA}/osta_service_duct_vant_cleaning.jpg`,
+    heroPoster: `${OSTA}/osta_services_ac_Installation_replacement.webp`,
+    showreelPoster: `${OSTA}/osta%20services%20Interior%20Finishing%20Services.webp`,
+  },
+  dsfmaintenance: {
+    officeBanner: `${DSF}/2024/06/right-img.jpg`,
+    aerial: `${DSF}/2024/06/dubaiimage.webp`,
+    factorySharjah: `${DSF}/2024/06/acinstallation-1.webp`,
+    heroPoster: `${DSF}/2024/08/Electrician-Service-Ras-Al-Khaimah.webp`,
+    showreelPoster: `${DSF}/2024/07/Plumbing-work.jpg`,
+  },
+  powerway: {
+    officeBanner: `${PWY}/MEP-big.jpg`,
+    aerial: `${PWY}/Advanced-Switchgear.jpg`,
+    factorySharjah: `${PWY}/Main-Distribution-Board-mdb.jpg`,
+    heroPoster: `${PWY}/Solar-Energy-System-1.jpg`,
+    showreelPoster: `${PWY}/div-mep.jpg`,
+  },
+  albaredacrepairing: {
+    officeBanner: `${ABAR}/freepik__technician-installing-an-ac-unit-on-a-brick-wall-l__73610.png`,
+    aerial: `${ABAR}/freepik__tools-and-air-conditioners-installation-and-repair__25070.png`,
+    factorySharjah: `${ABAR}/Gemini_Generated_Image_ahewocahewocahew.png`,
+    heroPoster: `${ABAR}/freepik__air-conditioning-repairing-services-and-installati__25067.png`,
+    showreelPoster: `${ABAR}/freepik__the-style-is-candid-image-photography-with-natural__25065.png`,
+  },
+  levelgroup: {
+    officeBanner: `${LVL}/2023/11/5.jpg`,
+    aerial: `${LVL}/2023/11/3d-design-2.jpg`,
+    factorySharjah: `${LVL}/2023/11/3d-design.jpg`,
+    heroPoster: `${LVL}/2023/11/1.jpg`,
+    showreelPoster: `${LVL}/2024/08/IMG_0934.jpg`,
+  },
+  teamstalwart: {
+    officeBanner: `${TSW}/banner/banner3-1.jpg`,
+    aerial: `${TSW}/tank-cleaning.jpg`,
+    factorySharjah: `${TSW}/disinfection.jpg`,
+    heroPoster: `${TSW}/ac-duct-cleaning-service.jpg`,
+    showreelPoster: `${TSW}/pest-control.jpg`,
+  },
+  teluscare: {
+    officeBanner: `${TELU}/AC_repairing08CI.webp`,
+    aerial: `${TELU}/AC_maintenanceVymQ.webp`,
+    factorySharjah: `${TELU}/electricservicexFY0.webp`,
+    heroPoster: `${TELU}/locksmithScXG.webp`,
+    showreelPoster: `${TELU}/plumberhDsl.webp`,
+  },
+  nestfix: {
+    officeBanner: `${NST}/2023/09/Nestfix-Building-Maintenance-Ras-al-Khaimah.webp`,
+    aerial: `${NST}/2023/09/home-services-1024x768.webp`,
+    factorySharjah: `${NST}/2024/03/kitchen-renovation-by-nestfix-1024x768.webp`,
+    heroPoster: `${NST}/2023/09/kitchen-renovation-in-rak.webp`,
+    showreelPoster: `${NST}/2023/09/about-us-1024x768.webp`,
+  },
+  yello: {
+    officeBanner: `https://www.yello.ae/img/def/yello.webp`,
+    aerial: `https://www.yello.ae/img/ae/z/_1706282811-69-skt-movers.jpg`,
+    factorySharjah: `https://www.yello.ae/img/ae/s/_1730366066-44-anbi-general-trading-llc.jpg`,
+    heroPoster: `https://www.yello.ae/img/ae/d/_1788596906-48-golden-eye-gifts-general-trading.jpg`,
+    showreelPoster: `https://www.yello.ae/img/ae/m/_1788439865-44-euphoria-interiors.png`,
+  },
+  cannelleholdings: {
+    officeBanner: `${CANN}/2023/03/IUSA-ABOUT.webp`,
+    aerial: `${CANN}/2023/03/5-8.webp`,
+    factorySharjah: `${CANN}/2023/05/alquoz.webp`,
+    heroPoster: `${CANN}/2023/05/nibco-head-office.webp`,
+    showreelPoster: `${CANN}/2023/05/isua-fze.webp`,
+  },
+  thushhaara: {
+    officeBanner: `${THUSH}/thushhaara-image-h8odxz.png`,
+    aerial: `${THUSH}/thushhaara-image-n3c75m.jpg`,
+    factorySharjah: `${THUSH}/thushhaara-image-63sqmw.jpg`,
+    heroPoster: `${THUSH}/thushhaara-image-a23b3k.jpg`,
+    showreelPoster: `${THUSH}/thushhaara-image-woc40o.jpg`,
+  },
+  climatech: {
+    officeBanner: `${CLIM}/2026/05/banner2.webp`,
+    aerial: `${CLIM}/2026/05/1200x120022.png`,
+    factorySharjah: `${CLIM}/2026/05/Fairy-Project-PV.jpg`,
+    heroPoster: `${CLIM}/2026/02/23-scaled.jpg`,
+    showreelPoster: `${CLIM}/2026/05/maxresdefault.jpg`,
+  },
+  nestclimate: {
+    officeBanner: `${NCLIM}/2025/01/AC-service.jpg`,
+    aerial: `${NCLIM}/2025/08/WhatsApp-Image-2025-08-07-at-1.34.05-PM.jpeg`,
+    factorySharjah: `${NCLIM}/2025/01/electrical-service.jpg`,
+    heroPoster: `${NCLIM}/2025/08/pro1-768x768-1-1024x1024.jpg`,
+    showreelPoster: `${NCLIM}/2025/01/Plumbing-service.jpg`,
+  },
+  uaehvac: {
+    officeBanner: `${UAVAC}/2024/12/cool-background1-1.webp`,
+    aerial: `${UAVAC}/2023/08/dubai-gda2b5dd33_1280.jpg`,
+    factorySharjah: `${UAVAC}/2023/08/dubai-gda2b5dd33_1280.jpg`,
+    heroPoster: `${UAVAC}/2023/01/funfact-bg-1.jpg`,
+    showreelPoster: `${UAVAC}/2023/01/1.png`,
+  },
+  fixationhub: {
+    officeBanner: `${FIXH}/2026/03/Apartment_renovation_Service-removebg-preview.png`,
+    aerial: `${FIXH}/2026/03/villa_renovation-removebg-preview.png`,
+    factorySharjah: `${FIXH}/2026/03/bathroom_renovation-removebg-preview.png`,
+    heroPoster: `${FIXH}/2026/03/office_renovation_Service-removebg-preview.png`,
+    showreelPoster: `${FIXH}/2026/09/renovation-cartoon-scene-vector-44814253-768x427.avif`,
+  },
+  noorawaal: {
+    officeBanner: `${NRW}/2024/08/hvac-contractors-in-dubai-best-service.webp`,
+    aerial: `${NRW}/2024/08/hvac-contractors-in-dubai-ducting-works-grey-colr-1024x762.webp`,
+    factorySharjah: `${NRW}/2024/08/hvac-technicals-service-company-hvac-fighting-dubai-contractors.webp`,
+    heroPoster: `${NRW}/2024/08/hvac-contracting-company-dubai-electrical-work.webp`,
+    showreelPoster: `${NRW}/2024/07/ac-contractors-with-carpentry.webp`,
+  },
+  homeexperts: {
+    officeBanner: `${HME}/aivan2.png`,
+    aerial: `${HME}/about2.jpg`,
+    factorySharjah: `${HME}/ac_repair.jpg`,
+    heroPoster: `${HME}/watertankcleaning.jpg`,
+    showreelPoster: `${HME}/duct-cleaning.jpg`,
+  },
+  edtechnicalservices: {
+    officeBanner: `${WSI}/ip/8a9f5e22-7b8a-46d5-9343-72f8b9c877f1/WhatsApp%20Image%202025-07-26%20at%2012.53.11%20PM.jpeg`,
+    aerial: `${WSI}/ip/8a9f5e22-7b8a-46d5-9343-72f8b9c877f1/WhatsApp%20Image%202025-07-26%20at%2012.53.11%20PM.jpeg`,
+    factorySharjah: `${WSI}/getty/152120227/:/rs=w:600,h:300,cg:true,m`,
+    heroPoster: `${WSI}/ip/8a9f5e22-7b8a-46d5-9343-72f8b9c877f1/WhatsApp%20Image%202025-07-26%20at%2012.53.11%20PM.jpeg`,
+    showreelPoster: `${WSI}/ip/8a9f5e22-7b8a-46d5-9343-72f8b9c877f1/WhatsApp%20Image%202025-07-26%20at%2012.53.11%20PM.jpeg`,
+  },
+  alsidras: {
+    officeBanner: `${ASD}/hbanner01.webp`,
+    aerial: `${ASD}/hbanner02.webp`,
+    factorySharjah: `${ASD}/services01.webp`,
+    heroPoster: `${ASD}/projectimg01.webp`,
+    showreelPoster: `${ASD}/welcomeimg.webp`,
+  },
+  actechniciandubai: {
+    officeBanner: `${ACTD}/banner-1.png`,
+    aerial: `${ACTD}/11.jpg`,
+    factorySharjah: `${ACTD}/12.png`,
+    heroPoster: `${ACTD}/11.png`,
+    showreelPoster: `${ACTD}/11.jpg`,
+  },
+  acmaintenancedubai: {
+    officeBanner: ACMD,
+    aerial: ACMD,
+    factorySharjah: ACMD,
+    heroPoster: ACMD,
+    showreelPoster: ACMD,
+  },
+  awalexperts: {
+    officeBanner: `${AWAL}/images/pages/2024/02/acserviceindubai-repair-maintenance-4953.jpg`,
+    aerial: `${AWAL}/thumbs/outbound/1920x640/images/content/2024/09/ac-maintenance-cea1.webp`,
+    factorySharjah: `${AWAL}/thumbs/outbound/1920x640/images/content/2024/09/ac-maintenance-cea1.webp`,
+    heroPoster: `${AWAL}/images/content/2024/02/awal-experts-ac-service-dubai-e93e.png`,
+    showreelPoster: `${AWAL}/images/content/2024/02/ac-service-dubai-awal-experts-561d.png`,
+  },
+  abusaeed: {
+    officeBanner: `${ABUS}/og.jpg`,
+    aerial: `${ABUS}/slide5.jpg`,
+    factorySharjah: `${ABUS}/dixel.jpg`,
+    heroPoster: `${ABUS}/honeywell.jpg`,
+    showreelPoster: `${ABUS}/EMERSON.jpg`,
+  },
+  homefixit: {
+    officeBanner: `${HFX}/best-ac-repair-dubai-near-me.webp`,
+    aerial: `${HFX}/emergency-ac-repair-dubai.webp`,
+    factorySharjah: `${HFX}/24x7-ac-repair.webp`,
+    heroPoster: `${HFX}/same-day-ac-repair.webp`,
+    showreelPoster: `${HFX}/emergency-air-conditioning-repair.webp`,
+  },
+  basatanwertech: {
+    officeBanner: `${BASAT}/hero-bg.webp`,
+    aerial: `${BASAT}/bed-hero1.webp`,
+    factorySharjah: `${BASAT}/renovation.webp`,
+    heroPoster: `${BASAT}/basat.jpg`,
+    showreelPoster: `${BASAT}/ceilingblog.jpg`,
+  },
+  imdaad: {
+    officeBanner: `${IMDAAD}/6lxO8b3cLIus7RSqhFJXL7/cfc134e78cab8aeb82905a1f0c625ff7/Imdaad_Group.png`,
+    aerial: `${IMDAAD}/20ztTlQfJ9Ri8Epqmr9XhT/27bcf8521bed235f6bad942ffa57c91f/Services.png`,
+    factorySharjah: `${IMDAAD}/6aa0nc6I6KnXdLMecAwA3g/309426e5b294d5dceb183126e0e5855a/MEP_Services.png`,
+    heroPoster: `${IMDAAD}/zOGMssFqo3GXu0bUW2L3V/150d167d1dbfe9a869a6076e41e1eb85/Imdaad_Group.png`,
+    showreelPoster: `${IMDAAD}/5gzKAQmJMUCSwZPPhTFskl/b5443e567253c40000936122e3bccf6b/Hard_FM_Services.png`,
+  },
+  reach: {
+    officeBanner: `${REACH}/uploads/2025/01/4be4686Best_Metal_Steel_Tr_LLC_a.jpg`,
+    aerial: `${REACH}/uploads/2025/11/3799a62Al_Zerwa.jpg`,
+    factorySharjah: `${REACH}/uploads/2025/11/17d861cDorma.jpg`,
+    heroPoster: `${REACH}/uploads/2022/04/156970cMILANO.jpg`,
+    showreelPoster: `${REACH}/uploads/2025/01/4be4686Best_Metal_Steel_Tr_LLC_a.jpg`,
   },
 };
 
@@ -482,6 +730,185 @@ export const realServiceImages: Record<string, Record<string, string>> = {
     "villa-maintenance": `${LRK}/2025/05/Luxury-Villa-A-03.webp`,
     "emergency-ac-repair": `${LRK}/2025/05/Fares-Main.webp`,
   },
+  // ── RAK & Dubai demos ──
+  qualitycare: {
+    "hvac-duct-cleaning": `${QCAR}/02/ac-duct-cleaning-service-company-in-dubai-abu-dhabi-rasalkhaimah-and-all-over-uae.jpg`,
+    "hvac-duct-disinfection": `${QCAR}/02/ac-duct-disinfection-service-company-in-dubai-abu-dhabi-rasalkhaimah-and-all-over-uae.jpg`,
+    "mold-and-bacteria-removal": `${QCAR}/02/indoor-air-quality-testing-service-company-in-dubai-abu-dhabi-rasalkhaimah-and-all-over-uae.jpg`,
+    "dust-and-contaminant-removal": `${QCAR}/02/water-tank-cleaning-service-company-in-dubai-abu-dhabi-rasalkhaimah-and-all-over-uae.jpg`,
+    "villa-maintenance": `${QCAR}/02/water-system-disinfection-service-company-in-dubai-abu-dhabi-rasalkhaimah-and-all-over-uae.jpg`,
+    "emergency-ac-repair": `${QCAR}/01/Professional-Cleaning-Maintenance-Service-Provider-in-UAE.jpg`,
+    "duct-cleaning": `${QCAR}/02/ac-duct-cleaning-service-company-in-dubai-abu-dhabi-rasalkhaimah-and-all-over-uae.jpg`,
+  },
+  iec: {
+    "electrical-contracting": `${IEC}/service/electrical-services.jpg`,
+    "hvac-services": `${IEC}/service/hvac-services.jpg`,
+    plumbing: `${IEC}/service/plumbing-service.jpg`,
+    "bulk-ac-supply": `${IEC}/service/ac-supply-service.png`,
+    "mep-solutions": `${IEC}/service/hvac-services.jpg`,
+    "amc-annual-maintenance-contract": `${IEC}/service/electrical-services.jpg`,
+    "duct-cleaning": `${IEC}/service/hvac-services.jpg`,
+  },
+  ostaservices: {
+    "ac-services": `${OSTA}/osta_services_ac_Installation_replacement.webp`,
+    "ac-cleaning": `${OSTA}/osta_services_split_ac_cleaning.webp`,
+    "ac-coil-cleaning": `${OSTA}/osta_services_split_ac_cleaning.webp`,
+    "general-maintenance": `${OSTA}/osta_service_duct_vant_cleaning.jpg`,
+    "cleaning-services": `${OSTA}/optimized_osta%20services%20Cleaning%20Services_415x276.png`,
+    "electrical-services": `${OSTA}/osta%20services%20Electrical%20Repair_415x332.webp`,
+    "duct-cleaning": `${OSTA}/osta_service_duct_vant_cleaning.jpg`,
+  },
+  dsfmaintenance: {
+    "ac-repair": `${DSF}/2024/08/Electrician-Service-Ras-Al-Khaimah.webp`,
+    "ac-installation": `${DSF}/2024/06/acinstallation-1.webp`,
+    "ac-maintenance": `${DSF}/2024/06/right-img.jpg`,
+    "same-day-ac-installation-and-repair": `${DSF}/2024/06/acinstallation-1.webp`,
+    "bulk-ac-installationrepair": `${DSF}/2024/06/acinstallation-1.webp`,
+    "duct-cleaning": `${DSF}/2024/08/Electrician-Service-Ras-Al-Khaimah.webp`,
+  },
+  powerway: {
+    electrical: `${PWY}/div-switchgear.jpg`,
+    "plumbing-and-drainage": `${PWY}/div-mep.jpg`,
+    "hvac-works": `${PWY}/MEP-big.jpg`,
+    "electrical-panel-assembling": `${PWY}/Main-Distribution-Board-mdb.jpg`,
+    "switchgear-solutions": `${PWY}/Advanced-Switchgear.jpg`,
+    "duct-cleaning": `${PWY}/MEP-big.jpg`,
+  },
+  albaredacrepairing: {
+    "ac-repair-troubleshooting": `${ABAR}/freepik__tools-and-air-conditioners-installation-and-repair__25070.png`,
+    "component-repair-replacement": `${ABAR}/freepik__technician-installing-an-ac-unit-on-a-brick-wall-l__73610.png`,
+    "leak-detection-refrigerant-recharge": `${ABAR}/freepik__air-conditioning-repairing-services-and-installati__25067.png`,
+    "proactive-ac-maintenance-servicing": `${ABAR}/freepik__create-images-showing-ac-repair-ac-maintenance-ac-__73607.png`,
+    "deep-cleaning-coil-care": `${ABAR}/freepik__create-highquality-realistic-website-images-for-an__73606.png`,
+    "performance-optimization": `${ABAR}/Gemini_Generated_Image_ahewocahewocahew.png`,
+    "duct-cleaning": `${ABAR}/freepik__the-style-is-candid-image-photography-with-natural__25065.png`,
+  },
+  teamstalwart: {
+    "routine-ac-servicing": `${TSW}/service/s3.jpg`,
+    "ac-repair-services": `${TSW}/service/s7.jpg`,
+    "duct-cleaning-and-disinfection": `${TSW}/ac-duct-cleaning-service.jpg`,
+    "preventative-maintenance-plans": `${TSW}/service/s12.jpg`,
+    "emergency-ac-services": `${TSW}/service/s13.jpg`,
+    "duct-cleaning": `${TSW}/ac-duct-cleaning-service.jpg`,
+  },
+  teluscare: {
+    "ac-repair-service": `${TELU}/AC_repairing08CI.webp`,
+    "expert-ac-installation-service": `${TELU}/AC_maintenanceVymQ.webp`,
+    "residential-ac-repair-and-service": `${TELU}/AC_repairing08CI.webp`,
+    "duct-cleaning": `${TELU}/AC_maintenanceVymQ.webp`,
+    "villa-maintenance": `${TELU}/handymanbT6u.webp`,
+  },
+  nestfix: {
+    "home-renovation": `${NST}/2023/09/kitchen-renovation-in-rak.webp`,
+    "duct-cleaning": `${NST}/2023/09/home-services-1024x768.webp`,
+    "villa-maintenance": `${NST}/2023/09/nestfix-home-renovation-768x1024.webp`,
+  },
+  fixationhub: {
+    "home-office-renovation": `${FIXH}/2026/03/Apartment_renovation_Service-removebg-preview.png`,
+    "ac-repair-maintenance": `${FIXH}/2026/03/AC-service.png`,
+    "ac-installation": `${FIXH}/2026/03/AC-service.png`,
+    "ac-cleaning": `${FIXH}/2026/03/AC-service.png`,
+    plumbing: `${FIXH}/2026/03/plumbing_service-removebg-preview.png`,
+    "electrical-installation": `${FIXH}/2026/03/Electrical-service.png`,
+    "duct-cleaning": `${FIXH}/2026/03/AC-service.png`,
+  },
+  noorawaal: {
+    "hvac-system-installation": `${NRW}/2024/08/hvac-contractors-in-dubai-best-service.webp`,
+    "fire-fighting": `${NRW}/2024/08/hvac-technicals-service-company-hvac-fighting-dubai-contractors.webp`,
+    "electrical-services": `${NRW}/2024/08/hvac-contracting-company-dubai-electrical-work.webp`,
+    plumbingsanitation: `${NRW}/2024/08/hvac-contractors-company-dubai-plumbing.webp`,
+    "wallpaper-fixing": `${NRW}/2024/08/hvac-company-with-wall-paper-fixing-contracting-in-dubai-1024x684.webp`,
+    "carpentry-works": `${NRW}/2024/07/ac-contractors-with-carpentry.webp`,
+    "duct-cleaning": `${NRW}/2024/08/hvac-contractors-in-dubai-ducting-works-grey-colr-1024x762.webp`,
+  },
+  climatech: {
+    dehumidifiers: `${CLIM}/2026/05/dehumidifier.png`,
+    "air-curtains": `${CLIM}/2026/05/air-curtain.jpg`,
+    humidifiers: `${CLIM}/2026/05/humidifier.webp`,
+    "solar-water-heaters": `${CLIM}/2026/05/solar-water-heater.webp`,
+    "heat-pumps": `${CLIM}/2026/05/Thermo-pic.jpg`,
+    "misting-systems": `${CLIM}/2026/05/Fairy-Project-PV.jpg`,
+    "duct-cleaning": `${CLIM}/2026/05/1200x120022.png`,
+  },
+  nestclimate: {
+    "ac-service": `${NCLIM}/2025/01/AC-service.jpg`,
+    "electrical-services": `${NCLIM}/2025/01/electrical-service.jpg`,
+    plumbing: `${NCLIM}/2025/01/Plumbing-service.jpg`,
+    "smart-home-solutions": `${NCLIM}/2025/08/Honeywell-768x768-1-1024x1024.jpg`,
+    painting: `${NCLIM}/2025/01/painting-service.jpg`,
+    "duct-cleaning": `${NCLIM}/2025/01/AC-service.jpg`,
+  },
+  homeexperts: {
+    "annual-contracts": `${HME}/about2.jpg`,
+    "ac-servicing-repair-replacement": `${HME}/ac_repair.jpg`,
+    plumbing: `${HME}/plumbing.jpeg`,
+    electrical: `${HME}/handyman.jpeg`,
+    painting: `${HME}/painting.jpeg`,
+    renovation: `${HME}/about2.jpg`,
+    "duct-cleaning": `${HME}/duct-cleaning.jpg`,
+    "villa-maintenance": `${HME}/watertankcleaning.jpg`,
+  },
+  basatanwertech: {
+    "air-conditioner-service": `${BASAT}/basat.jpg`,
+    "painting-service": `${BASAT}/ceiling.jpg`,
+    "carpentry-service": `${BASAT}/renovation.webp`,
+    "electrician-service": `${BASAT}/plumbing_service.webp`,
+    "plumbing-service": `${BASAT}/plumbing001.png`,
+    "home-appliance-service": `${BASAT}/ceilingblog.jpg`,
+    "duct-cleaning": `${BASAT}/row-bgimage-10.webp`,
+  },
+  abusaeed: {
+    "hvac-equipment-supply": `${ABUS}/honeywell.jpg`,
+    "hvac-parts-distribution": `${ABUS}/EMERSON.jpg`,
+    "honeywell-product-distribution": `${ABUS}/honeywell.jpg`,
+    "valve-and-actuator-supply": `${ABUS}/dixel.jpg`,
+    "thermostat-sales": `${ABUS}/ltr.jpg`,
+    "villa-maintenance": `${ABUS}/slide5.jpg`,
+    "emergency-ac-repair": `${ABUS}/resedeo.jpg`,
+  },
+  actechniciandubai: {
+    "ac-repair-installation": `${ACTD}/11.jpg`,
+    plumbing: `${ACTD}/11.png`,
+    electrical: `${ACTD}/12.png`,
+    "home-appliances": `${ACTD}/banner-1.png`,
+    "duct-cleaning": `${ACTD}/11.jpg`,
+  },
+  acmaintenancedubai: {
+    "ac-maintenance": ACMD,
+    "ac-repair": ACMD,
+    "ac-installation": ACMD,
+    "ac-cleaning": ACMD,
+    "preventive-maintenance": ACMD,
+    "system-inspection": ACMD,
+    "duct-cleaning": ACMD,
+  },
+  imdaad: {
+    "hvac-services":
+      `${IMDAAD}/3AsnrdfvbkYFZ35vP0fCDr/365fbefbf291ea86e8fbce4f71891f85/HVAC_Services.png`,
+    "hard-fm-services":
+      `${IMDAAD}/5gzKAQmJMUCSwZPPhTFskl/b5443e567253c40000936122e3bccf6b/Hard_FM_Services.png`,
+    "mep-services":
+      `${IMDAAD}/6aa0nc6I6KnXdLMecAwA3g/309426e5b294d5dceb183126e0e5855a/MEP_Services.png`,
+    "duct-cleaning":
+      `${IMDAAD}/1wSmnalcbNfftaubgWArNw/ed14c253b62c5606475ba10f5a328911/Infrastructure_Maintenance.png`,
+  },
+  awalexperts: {
+    "ac-maintenance-service": `${AWAL}/thumbs/outbound/1920x640/images/content/2024/09/ac-maintenance-cea1.webp`,
+    "duct-cleaning": `${AWAL}/thumbs/outbound/400x300/images/content/2024/06/cleaning-service-uae-ce3f.jpg`,
+    "ac-repair": `${AWAL}/thumbs/outbound/569x320/images/content/2025/09/ac-repair-awal-experts-6a1f.webp`,
+    "coil-cleaning": `${AWAL}/images/content/2024/02/ac-repair-services-awal-experts-ec34.jpg`,
+    "refrigerant-check": `${AWAL}/images/content/2024/02/awal-experts-ac-service-dubai-e93e.png`,
+    "electrical-inspection": `${AWAL}/images/content/2024/02/ac-service-dubai-awal-experts-561d.png`,
+  },
+  homefixit: {
+    "ac-repair-services": `${HFX}/best-ac-repair-dubai-near-me.webp`,
+    "plumbing-service": `${HFX}/emergency-ac-repair-dubai.webp`,
+    "waterpump-repair": `${HFX}/24x7-ac-repair.webp`,
+    "water-heater-repair": `${HFX}/emergency-air-conditioner-repair.webp`,
+    "door-lock-repair": `${HFX}/same-day-ac-repair.webp`,
+    "bathtub-fixing": `${HFX}/emergency-air-conditioning-repair.webp`,
+    "duct-cleaning": `${HFX}/24-7-ac-repair.webp`,
+  },
 };
 
 export const realProjectImages: Record<string, string[]> = {
@@ -702,6 +1129,207 @@ export const realProjectImages: Record<string, string[]> = {
     `${LRK}/2025/05/Matar-Main.png`,
     `${LRK}/2025/05/Fares-Main.webp`,
     `${LRK}/2025/05/Interior-Design-and-Fit-out-1.webp`,
+  ],
+  // ── RAK & Dubai demos ──
+  qualitycare: [
+    `${QCAR}/02/ac-duct-cleaning-service-company-in-dubai-abu-dhabi-rasalkhaimah-and-all-over-uae.jpg`,
+    `${QCAR}/02/ac-duct-disinfection-service-company-in-dubai-abu-dhabi-rasalkhaimah-and-all-over-uae.jpg`,
+    `${QCAR}/02/water-tank-cleaning-service-company-in-dubai-abu-dhabi-rasalkhaimah-and-all-over-uae.jpg`,
+    `${QCAR}/02/water-system-disinfection-service-company-in-dubai-abu-dhabi-rasalkhaimah-and-all-over-uae.jpg`,
+    `${QCAR}/02/indoor-air-quality-testing-service-company-in-dubai-abu-dhabi-rasalkhaimah-and-all-over-uae.jpg`,
+    `${QCAR}/01/How-It-Works.jpg`,
+  ],
+  iec: [
+    `${IEC}/project/project-1.jpg`,
+    `${IEC}/project/project-2.jpg`,
+    `${IEC}/project/project-3.jpg`,
+    `${IEC}/project/project-4.jpg`,
+    `${IEC}/project/project-5.jpg`,
+    `${IEC}/project/project-6.jpg`,
+  ],
+  ostaservices: [
+    `${OSTA}/osta_services_ac_Installation_replacement.webp`,
+    `${OSTA}/osta_services_split_ac_cleaning.webp`,
+    `${OSTA}/osta_service_duct_vant_cleaning.jpg`,
+    `${OSTA}/osta%20services%20Interior%20Finishing%20Services.webp`,
+    `${OSTA}/osta%20services%20Electrical%20Repair_415x332.webp`,
+    `${OSTA}/osta-services-ac-repair-uae.jpg`,
+  ],
+  dsfmaintenance: [
+    `${DSF}/2024/06/acinstallation-1.webp`,
+    `${DSF}/2024/08/Electrician-Service-Ras-Al-Khaimah.webp`,
+    `${DSF}/2024/07/Plumbing-work.jpg`,
+    `${DSF}/2024/09/Tile_Grouting_Service.webp`,
+    `${DSF}/2024/07/Paint-Service.jpeg`,
+    `${DSF}/2024/06/right-img.jpg`,
+  ],
+  powerway: [
+    `${PWY}/MEP-big.jpg`,
+    `${PWY}/Advanced-Switchgear.jpg`,
+    `${PWY}/Main-Distribution-Board-mdb.jpg`,
+    `${PWY}/Solar-Energy-System-1.jpg`,
+    `${PWY}/Control-Panel-Door.jpg`,
+    `${PWY}/Capacitor-Bank-product-1.jpg`,
+  ],
+  albaredacrepairing: [
+    `${ABAR}/freepik__tools-and-air-conditioners-installation-and-repair__25070.png`,
+    `${ABAR}/freepik__technician-installing-an-ac-unit-on-a-brick-wall-l__73610.png`,
+    `${ABAR}/freepik__air-conditioning-repairing-services-and-installati__25067.png`,
+    `${ABAR}/freepik__create-images-showing-ac-repair-ac-maintenance-ac-__73607.png`,
+    `${ABAR}/freepik__create-highquality-realistic-website-images-for-an__73606.png`,
+    `${ABAR}/Gemini_Generated_Image_ahewocahewocahew.png`,
+  ],
+  levelgroup: [
+    `${LVL}/2023/11/5.jpg`,
+    `${LVL}/2023/11/3d-design-2.jpg`,
+    `${LVL}/2023/11/3d-design.jpg`,
+    `${LVL}/2023/11/1.jpg`,
+    `${LVL}/2023/11/2.png`,
+    `${LVL}/2023/11/bridal-bouquet2-2.jpg`,
+  ],
+  teamstalwart: [
+    `${TSW}/banner/banner3-1.jpg`,
+    `${TSW}/pest-control.jpg`,
+    `${TSW}/tank-cleaning.jpg`,
+    `${TSW}/ac-duct-cleaning-service.jpg`,
+    `${TSW}/disinfection.jpg`,
+    `${TSW}/legionella-control.jpg`,
+  ],
+  teluscare: [
+    `${TELU}/electricservicexFY0.webp`,
+    `${TELU}/locksmithScXG.webp`,
+    `${TELU}/carpentermLNg.webp`,
+    `${TELU}/groutingC98H.webp`,
+    `${TELU}/paintingUICh.webp`,
+    `${TELU}/AC_repairing08CI.webp`,
+  ],
+  nestfix: [
+    `${NST}/2023/09/home-services-1024x768.webp`,
+    `${NST}/2023/09/kitchen-renovation-in-rak.webp`,
+    `${NST}/2024/03/home-renovated-by-nestfix-1024x768.webp`,
+    `${NST}/2023/09/washroom-renovation-in-rak-768x1024.webp`,
+    `${NST}/2023/09/our-work-1024x768.webp`,
+    `${NST}/2023/09/nestfix-home-renovation-768x1024.webp`,
+  ],
+  cannelleholdings: [
+    `${CANN}/2023/03/IUSA-ABOUT.webp`,
+    `${CANN}/2023/03/5-8.webp`,
+    `${CANN}/2023/05/alquoz.webp`,
+    `${CANN}/2023/11/gree-clearsale-alquoz-copy.webp`,
+    `${CANN}/2023/05/nibco-head-office.webp`,
+    `${CANN}/2023/05/isua-fze.webp`,
+  ],
+  thushhaara: [
+    `${THUSH}/thushhaara-image-h8odxz.png`,
+    `${THUSH}/thushhaara-image-a23b3k.jpg`,
+    `${THUSH}/thushhaara-image-63sqmw.jpg`,
+    `${THUSH}/thushhaara-image-n3c75m.jpg`,
+    `${THUSH}/thushhaara-image-woc40o.jpg`,
+    `${THUSH}/thushhaara-image-0m8h24.jpg`,
+  ],
+  climatech: [
+    `${CLIM}/2026/05/1200x120022.png`,
+    `${CLIM}/2026/05/Fairy-Project-PV.jpg`,
+    `${CLIM}/2026/02/23-scaled.jpg`,
+    `${CLIM}/2026/02/8-scaled.jpeg`,
+    `${CLIM}/2025/11/IMG_7190-scaled.jpg`,
+    `${CLIM}/2025/11/IMG_7160-scaled.jpg`,
+  ],
+  nestclimate: [
+    `${NCLIM}/2025/01/AC-service.jpg`,
+    `${NCLIM}/2025/01/electrical-service.jpg`,
+    `${NCLIM}/2025/01/Plumbing-service.jpg`,
+    `${NCLIM}/2025/01/painting-service.jpg`,
+    `${NCLIM}/2025/08/pro1-768x768-1-1024x1024.jpg`,
+    `${NCLIM}/2025/08/Honeywell-768x768-1-1024x1024.jpg`,
+  ],
+  fixationhub: [
+    `${FIXH}/2026/03/Apartment_renovation_Service-removebg-preview.png`,
+    `${FIXH}/2026/03/villa_renovation-removebg-preview.png`,
+    `${FIXH}/2026/03/bathroom_renovation-removebg-preview.png`,
+    `${FIXH}/2026/03/office_renovation_Service-removebg-preview.png`,
+    `${FIXH}/2026/03/Kitchen_renovation_Service-removebg-preview.png`,
+    `${FIXH}/2026/09/renovation-cartoon-scene-vector-44814253-768x427.avif`,
+  ],
+  noorawaal: [
+    `${NRW}/2024/08/hvac-contractors-in-dubai-best-service.webp`,
+    `${NRW}/2024/08/hvac-contractors-in-dubai-ducting-works-grey-colr-1024x762.webp`,
+    `${NRW}/2024/08/hvac-technicals-service-company-hvac-fighting-dubai-contractors.webp`,
+    `${NRW}/2024/08/hvac-contracting-company-dubai-electrical-work.webp`,
+    `${NRW}/2024/08/hvac-contractors-company-dubai-plumbing.webp`,
+    `${NRW}/2024/07/ac-contractors-with-carpentry.webp`,
+  ],
+  homeexperts: [
+    `${HME}/about2.jpg`,
+    `${HME}/ac_repair.jpg`,
+    `${HME}/plumbing.jpeg`,
+    `${HME}/painting.jpeg`,
+    `${HME}/handyman.jpeg`,
+    `${HME}/watertankcleaning.jpg`,
+  ],
+  alsidras: [
+    `${ASD}/hbanner01.webp`,
+    `${ASD}/hbanner02.webp`,
+    `${ASD}/services01.webp`,
+    `${ASD}/services02.webp`,
+    `${ASD}/projectimg01.webp`,
+    `${ASD}/projectimg02.webp`,
+  ],
+  actechniciandubai: [
+    `${ACTD}/banner-1.png`,
+    `${ACTD}/11.jpg`,
+    `${ACTD}/11.png`,
+    `${ACTD}/12.png`,
+    `${ACTD}/11.jpg`,
+    `${ACTD}/12.png`,
+  ],
+  awalexperts: [
+    `${AWAL}/thumbs/outbound/1920x640/images/content/2024/09/ac-maintenance-cea1.webp`,
+    `${AWAL}/thumbs/outbound/400x300/images/content/2024/06/cleaning-service-uae-ce3f.jpg`,
+    `${AWAL}/thumbs/outbound/400x300/images/content/2024/12/carpet-cleaning-590a.jpg`,
+    `${AWAL}/thumbs/outbound/400x300/images/content/2024/12/sofa-cleaning-0d10.jpg`,
+    `${AWAL}/thumbs/outbound/400x300/images/content/2024/12/move-in-move-out-cleaning-5405.jpg`,
+    `${AWAL}/thumbs/outbound/400x300/images/content/2024/12/villa-deep-cleaning-91e7.jpg`,
+  ],
+  abusaeed: [
+    `${ABUS}/slide5.jpg`,
+    `${ABUS}/honeywell.jpg`,
+    `${ABUS}/EMERSON.jpg`,
+    `${ABUS}/dixel.jpg`,
+    `${ABUS}/ltr.jpg`,
+    `${ABUS}/resedeo.jpg`,
+  ],
+  homefixit: [
+    `${HFX}/best-ac-repair-dubai-near-me.webp`,
+    `${HFX}/emergency-ac-repair-dubai.webp`,
+    `${HFX}/24x7-ac-repair.webp`,
+    `${HFX}/same-day-ac-repair.webp`,
+    `${HFX}/emergency-air-conditioner-repair.webp`,
+    `${HFX}/emergency-air-conditioning-repair.webp`,
+  ],
+  basatanwertech: [
+    `${BASAT}/hero-bg.webp`,
+    `${BASAT}/bed-hero1.webp`,
+    `${BASAT}/basat.jpg`,
+    `${BASAT}/renovation.webp`,
+    `${BASAT}/row-bgimage-10.webp`,
+    `${BASAT}/ceilingblog.jpg`,
+  ],
+  imdaad: [
+    `${IMDAAD}/6lxO8b3cLIus7RSqhFJXL7/cfc134e78cab8aeb82905a1f0c625ff7/Imdaad_Group.png`,
+    `${IMDAAD}/20ztTlQfJ9Ri8Epqmr9XhT/27bcf8521bed235f6bad942ffa57c91f/Services.png`,
+    `${IMDAAD}/6aa0nc6I6KnXdLMecAwA3g/309426e5b294d5dceb183126e0e5855a/MEP_Services.png`,
+    `${IMDAAD}/5gzKAQmJMUCSwZPPhTFskl/b5443e567253c40000936122e3bccf6b/Hard_FM_Services.png`,
+    `${IMDAAD}/3AsnrdfvbkYFZ35vP0fCDr/365fbefbf291ea86e8fbce4f71891f85/HVAC_Services.png`,
+    `${IMDAAD}/5ER1fgxuBGhcbnoHPgh6ID/3ebc40ba978a705d4c3b465569992108/Soft_FM_Services.png`,
+  ],
+  reach: [
+    `${REACH}/uploads/2025/01/4be4686Best_Metal_Steel_Tr_LLC_a.jpg`,
+    `${REACH}/uploads/2025/11/3799a62Al_Zerwa.jpg`,
+    `${REACH}/uploads/2025/11/17d861cDorma.jpg`,
+    `${REACH}/uploads/2022/04/156970cMILANO.jpg`,
+    `${REACH}/uploads/2025/11/164e5f8bd7a8cBest_Metal_Steel_Tr_LLC_b.jpg`,
+    `${REACH}/uploads/2024/03/35901ebADEX.jpg`,
   ],
 };
 

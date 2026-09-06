@@ -1,12 +1,6 @@
 import { allProspects } from "@/lib/prospect";
 import { RegionPage } from "@/components/visual/RegionPage";
 
-export const metadata = {
-  title: "Website Concept Demos",
-  description:
-    "Re-imagined digital presences for manufacturing and engineering brands — real company data, engineered visuals and a working enquiry flow.",
-};
-
 function regionOf(location: string): string {
   const loc = location.toLowerCase();
   if (loc.includes("abu dhabi")) return "Abu Dhabi";

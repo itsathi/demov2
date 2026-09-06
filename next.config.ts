@@ -58,11 +58,6 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "www.unitedgulf.ae",
-        pathname: "/wp-content/uploads/**",
-      },
-      {
-        protocol: "https",
         hostname: "tawoostech.com",
         pathname: "/wp-content/uploads/**",
       },
@@ -93,16 +88,6 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "newwaygroupcompanies.ae",
-        pathname: "/assets/**",
-      },
-      {
-        protocol: "https",
-        hostname: "gbfm.ae",
-        pathname: "/wp-content/uploads/**",
-      },
-      {
-        protocol: "https",
         hostname: "dhabicontracting.com",
         pathname: "/wp-content/uploads/**",
       },
@@ -123,11 +108,6 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "www.primegroupuae.ae",
-        pathname: "/images/**",
-      },
-      {
-        protocol: "https",
         hostname: "specialairconditiongeneralmaintenance.com",
         pathname: "/wp-content/uploads/**",
       },
@@ -138,23 +118,96 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "air-co.ae",
+        hostname: "img1.wsimg.com",
+        pathname: "/isteam/**",
+      },
+      {
+        protocol: "https",
+        hostname: "images.ctfassets.net",
+        pathname: "/**",
+      },
+      // All local UAE-first prospect hosts (apex + www). Grouped under one
+      // glob because the config schema caps remotePatterns at 50 entries.
+      {
+        protocol: "https",
+        hostname: "**.ae",
+        pathname: "/**",
+      },
+      // ── RAK & Dubai demos (scraped from each company's live site, verified 200) ──
+      {
+        protocol: "https",
+        hostname: "rakeauae.com",
         pathname: "/wp-content/uploads/**",
       },
       {
         protocol: "https",
-        hostname: "brightstargroup.ae",
+        hostname: "www.ostaservices.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "albaredacrepairing.com",
         pathname: "/wp-content/uploads/**",
       },
       {
         protocol: "https",
-        hostname: "emra.ae",
+        hostname: "www.teamstalwart.com",
         pathname: "/assets/**",
       },
       {
         protocol: "https",
-        hostname: "lark.ae",
+        hostname: "www.teluscare.com",
+        pathname: "/old/**",
+      },
+      {
+        protocol: "https",
+        hostname: "nestfix-uae.com",
         pathname: "/wp-content/uploads/**",
+      },
+      {
+        protocol: "https",
+        hostname: "cannelleholdings.com",
+        pathname: "/wp-content/uploads/**",
+      },
+      {
+        protocol: "https",
+        hostname: "www.thushhaara.com",
+        pathname: "/media_library/**",
+      },
+      {
+        protocol: "https",
+        hostname: "uaehvac.com",
+        pathname: "/wp-content/uploads/**",
+      },
+      {
+        protocol: "https",
+        hostname: "noorawaal.com",
+        pathname: "/wp-content/uploads/**",
+      },
+      {
+        protocol: "https",
+        hostname: "alsidras.com",
+        pathname: "/img/**",
+      },
+      {
+        protocol: "https",
+        hostname: "abusaeed.com",
+        pathname: "/assets/**",
+      },
+      {
+        protocol: "https",
+        hostname: "homefixituae.com",
+        pathname: "/wp-content/uploads/**",
+      },
+      {
+        protocol: "https",
+        hostname: "www.basatanwertech.com",
+        pathname: "/images/**",
+      },
+      {
+        protocol: "https",
+        hostname: "www.reachuae.com",
+        pathname: "/uploads/**",
       },
     ],
   },

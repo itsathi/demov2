@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { usePrefersReducedMotion } from "@/components/hooks/usePrefersReducedMotion";
+import { sessionFx } from "@/lib/sessionFx";
 
 export const PRELOAD_KEY = "demo-preloaded";
 
@@ -25,23 +26,46 @@ export function Preloader({
     const root = rootRef.current;
     if (!root) return;
 
-    const finish = () => {
+    // Dismiss (and pulse the hero) without relying on the counter animation.
+    const dismissReady = () => {
       onDone();
       setGone(true);
     };
+    const dismissOnly = () => setGone(true);
 
     if (reduced) {
-      sessionStorage.setItem(PRELOAD_KEY, "1");
-      finish();
+      try {
+        sessionStorage.setItem(PRELOAD_KEY, "1");
+      } catch {
+        /* noop */
+      }
+      dismissReady();
       return;
     }
 
     if (sessionStorage.getItem(PRELOAD_KEY)) {
-      finish();
-      return;
+      // Already covered by a session transition — never double-animate.
+      if (sessionFx.isTransitioning()) {
+        dismissOnly();
+        return;
+      }
+      // Give the RouteTransition layer a beat to set its flag before deciding
+      // who owns the READY_EVENT pulse for the incoming page.
+      const t = window.setTimeout(() => {
+        if (sessionFx.isTransitioning()) {
+          dismissOnly();
+        } else {
+          dismissReady();
+        }
+      }, 480);
+      return () => window.clearTimeout(t);
     }
 
-    sessionStorage.setItem(PRELOAD_KEY, "1");
+    try {
+      sessionStorage.setItem(PRELOAD_KEY, "1");
+    } catch {
+      /* noop */
+    }
 
     const ctx = gsap.context(() => {
       const counter = { v: 0 };
@@ -74,19 +98,13 @@ export function Preloader({
         duration: 1.2,
         delay: 2.4,
         ease: "power4.inOut",
-        onComplete: finish,
+        onComplete: dismissReady,
       });
     }, root);
 
     return () => ctx.revert();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [reduced]);
-
-  useEffect(() => {
-    if (gone && sessionStorage.getItem(PRELOAD_KEY) === "1") {
-      sessionStorage.removeItem(PRELOAD_KEY);
-    }
-  }, [gone]);
 
   if (gone) return null;
 

@@ -1,0 +1,22 @@
+{
+  "slug": "advair",
+  "sourceUrl": "http://www.advair.com.au/",
+  "status": "research_failed",
+  "researchedAt": "2026-10-13T08:21:45.398Z",
+  "researchVersion": "1.0.0",
+  "pagesCrawled": [],
+  "missingFields": [
+    "website_access"
+  ],
+  "fallbacks": [],
+  "assets": [],
+  "businessName": "Advanced Air Conditioning Pty Ltd",
+  "services": [],
+  "serviceAreas": [],
+  "contact": {},
+  "ctas": [],
+  "trustSignals": [],
+  "serviceImages": {},
+  "projectImages": [],
+  "manualReview": []
+}

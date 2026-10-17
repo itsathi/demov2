@@ -17,7 +17,11 @@ const stock = {
 import type { ProspectConfig, Service, DesignDirection, VoiceCopy } from "./types";
 import { sharjahBatch } from "./prospectsBatch";
 import { rawProspectsList } from "./rawProspects";
-import { transformRawProspects } from "./prospectGenerator";
+import { rawProspectsAustraliaList } from "./rawProspectsAustralia";
+import { rawProspectsInboundList } from "./rawProspectsInbound";
+import { rawProspectsInboundBatch2List } from "./rawProspectsInboundBatch2";
+import { transformRawProspectsByIndustry } from "./industries";
+import { applyResearch } from "./research/merge";
 
 const BASE = "https://www.skmaircon.com";
 
@@ -1155,13 +1159,23 @@ export const prospects: ProspectConfig[] = [
   },
   johnPaulAc,
   ...sharjahBatch,
-  ...transformRawProspects(rawProspectsList),
+  ...transformRawProspectsByIndustry(rawProspectsList),
+  ...transformRawProspectsByIndustry(rawProspectsAustraliaList),
+  ...transformRawProspectsByIndustry(rawProspectsInboundList),
+  ...transformRawProspectsByIndustry(rawProspectsInboundBatch2List),
 ];
+
+// Curated prospects keep their hand-written service catalogues; only imagery,
+// logo, colours and contact may be upgraded by research. Raw/generator-backed
+// prospects get their (generic, templated) service list replaced with the
+// verified, prospect-specific services discovered on their own site.
+const CURATED_SLUGS = new Set(["skm-aircon", "john-paul-ac", ...sharjahBatch.map((p) => p.slug)]);
 
 // Deduplicate prospects by slug in case of any duplicate entries
 const uniqueProspectsMap = new Map<string, ProspectConfig>();
 for (const p of prospects) {
-  uniqueProspectsMap.set(p.slug, p);
+  const researched = CURATED_SLUGS.has(p.slug) ? applyResearch(p, { overrideServices: false }) : applyResearch(p);
+  uniqueProspectsMap.set(p.slug, researched);
 }
 export const allProspects = Array.from(uniqueProspectsMap.values());
 

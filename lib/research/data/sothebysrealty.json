@@ -1,0 +1,34 @@
+{
+  "slug": "sothebysrealty",
+  "sourceUrl": "https://www.sothebysrealty.com/eng/sales/du-uae",
+  "status": "manual_review_required",
+  "researchedAt": "2026-10-17T04:58:16.398Z",
+  "researchVersion": "1.0.0",
+  "pagesCrawled": [
+    "https://www.sothebysrealty.com/eng/sales/du-uae"
+  ],
+  "missingFields": [
+    "description",
+    "services",
+    "phone",
+    "email",
+    "address",
+    "service_areas"
+  ],
+  "fallbacks": [],
+  "assets": [],
+  "businessName": "Sotheby's International Realty",
+  "services": [],
+  "serviceAreas": [],
+  "contact": {},
+  "ctas": [],
+  "trustSignals": [],
+  "serviceImages": {},
+  "projectImages": [],
+  "manualReview": [
+    "logo — replace initials mark manually",
+    "hero image — using controlled fallback",
+    "phone number — unverified/not found"
+  ],
+  "resolvedUrl": "https://www.sothebysrealty.com/eng/sales/du-uae"
+}

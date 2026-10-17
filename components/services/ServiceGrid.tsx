@@ -17,6 +17,7 @@ import {
   Thermometer,
   Route,
 } from "lucide-react";
+import { createElement } from "react";
 import { cn } from "@/lib/utils";
 import { Reveal } from "@/components/motion/Reveal";
 import { SplitLines } from "@/components/motion/SplitLines";
@@ -62,8 +63,7 @@ export function getServiceIconComponent(slug: string): React.ComponentType<{ cla
 }
 
 export function ServiceIcon({ slug, className }: { slug: string; className?: string }) {
-  const Icon = getServiceIconComponent(slug);
-  return <Icon className={className} />;
+  return createElement(getServiceIconComponent(slug), { className });
 }
 
 type ServiceGridProps = {
@@ -147,12 +147,22 @@ export function ServiceGrid({
   }
 
   return (
-    <section className="bg-white py-16 lg:py-24">
+    <section id="services" className="scroll-mt-20 bg-white py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
-        <Reveal className="max-w-2xl">
-          <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand">{kicker}</p>
-          <SplitLines text={heading} className="mt-3 font-display text-3xl font-extrabold tracking-tight text-ink sm:text-4xl" />
-          {blurb && <p className="mt-4 text-base leading-relaxed text-ink-muted">{blurb}</p>}
+        <Reveal className="flex max-w-none flex-col gap-6 md:flex-row md:items-end md:justify-between">
+          <div className="max-w-2xl">
+            <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand">{kicker}</p>
+            <SplitLines text={heading} className="mt-3 font-display text-3xl font-extrabold tracking-tight text-ink sm:text-4xl" />
+            {blurb && <p className="mt-4 text-base leading-relaxed text-ink-muted">{blurb}</p>}
+          </div>
+          <Link
+            href={`${base}/services`}
+            className="group inline-flex h-11 shrink-0 items-center gap-2 rounded-lg border border-line bg-white px-5 text-sm font-semibold text-ink transition-all hover:border-brand hover:bg-brand hover:text-white"
+            data-cursor="View all"
+          >
+            View all {services.length > 4 ? `${services.length} ` : ""}services
+            <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+          </Link>
         </Reveal>
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4" style={{ perspective: "1400px" }}>
           {services.map((service, i) => {

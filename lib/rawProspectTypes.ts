@@ -51,7 +51,7 @@ export type RawCompany = {
   branding?: RawCompanyBranding | null;
   contact?: RawCompanyContact | null;
   socialProof?: RawCompanySocialProof | null;
-  decisionMakers?: RawDecisionMaker[] | null;
+  decisionMakers?: Array<RawDecisionMaker | string> | null;
 };
 
 export type RawWebsiteDetails = {

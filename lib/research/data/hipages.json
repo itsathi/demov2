@@ -1,0 +1,22 @@
+{
+  "slug": "hipages",
+  "sourceUrl": "https://hipages.com.au/find/air_conditioning/qld/brisbane_city",
+  "status": "research_failed",
+  "researchedAt": "2026-10-13T08:20:46.804Z",
+  "researchVersion": "1.0.0",
+  "pagesCrawled": [],
+  "missingFields": [
+    "website_access"
+  ],
+  "fallbacks": [],
+  "assets": [],
+  "businessName": "Top Rated Air Conditioning Services in Brisbane City QLD",
+  "services": [],
+  "serviceAreas": [],
+  "contact": {},
+  "ctas": [],
+  "trustSignals": [],
+  "serviceImages": {},
+  "projectImages": [],
+  "manualReview": []
+}

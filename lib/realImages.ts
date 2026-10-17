@@ -1333,14 +1333,26 @@ export const realProjectImages: Record<string, string[]> = {
   ],
 };
 
+import { researchedProfiles } from "./research/profiles.generated";
+
 export function brandImage(prospectSlug: string, key: string): string | undefined {
+  const research = researchedProfiles[prospectSlug];
+  if (research?.heroImage && ["officeBanner", "heroPoster", "aerial", "showreelPoster", "bandImage"].includes(key)) {
+    return research.heroImage;
+  }
   return realBrandImages[prospectSlug]?.[key];
 }
 
 export function serviceImage(prospectSlug: string, serviceSlug: string): string | undefined {
+  const research = researchedProfiles[prospectSlug];
+  const researched = research?.serviceImages?.[serviceSlug];
+  if (researched) return researched;
   return realServiceImages[prospectSlug]?.[serviceSlug];
 }
 
 export function projectImage(prospectSlug: string, index: number): string | undefined {
+  const research = researchedProfiles[prospectSlug];
+  const pool = research?.projectImages;
+  if (pool?.length) return pool[index % pool.length];
   return realProjectImages[prospectSlug]?.[index];
 }

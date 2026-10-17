@@ -1,0 +1,50 @@
+{
+  "slug": "houzz",
+  "sourceUrl": "https://www.houzz.com/professionals/hvac-contractors/perth-08-au-probr0-bo~t_11814~r_2063523",
+  "status": "manual_review_required",
+  "researchedAt": "2026-10-13T09:05:25.872Z",
+  "researchVersion": "1.0.0",
+  "pagesCrawled": [
+    "https://www.houzz.com/professionals/hvac-contractors/perth-08-au-probr0-bo~t_11814~r_2063523"
+  ],
+  "missingFields": [
+    "description",
+    "services",
+    "phone",
+    "email",
+    "address",
+    "service_areas"
+  ],
+  "fallbacks": [],
+  "assets": [
+    {
+      "originalUrl": "/_fs-ch-1T1wmsGaOgGaSxcX/assets/errorIcon.svg",
+      "resolvedUrl": "https://www.houzz.com/_fs-ch-1T1wmsGaOgGaSxcX/assets/errorIcon.svg",
+      "sourcePage": "https://www.houzz.com/professionals/hvac-contractors/perth-08-au-probr0-bo~t_11814~r_2063523",
+      "category": "favicon",
+      "quality": 0.45,
+      "status": "valid",
+      "checkedAt": "2026-10-13T09:05:25.974Z",
+      "usedInDemo": true,
+      "httpStatus": 200,
+      "fileType": "svg+xml",
+      "bytes": 1068
+    }
+  ],
+  "businessName": "TOP A/C Repair & HVAC Contractors in Perth, WA, AU",
+  "services": [],
+  "serviceAreas": [],
+  "contact": {},
+  "ctas": [],
+  "trustSignals": [],
+  "serviceImages": {},
+  "projectImages": [],
+  "manualReview": [
+    "flagged as a directory/aggregator page (not the business's own site) — confirm business identity before shipping",
+    "logo — replace initials mark manually",
+    "hero image — using controlled fallback",
+    "phone number — unverified/not found"
+  ],
+  "resolvedUrl": "https://www.houzz.com/professionals/hvac-contractors/perth-08-au-probr0-bo~t_11814~r_2063523",
+  "favicon": "https://www.houzz.com/_fs-ch-1T1wmsGaOgGaSxcX/assets/errorIcon.svg"
+}

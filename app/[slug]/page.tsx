@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getProspect, getTemplates } from "@/lib/prospect";
+import { RealEstateHome } from "@/components/realestate/RealEstateHome";
 import { HeroEngineered } from "@/components/hero/HeroEngineered";
 import { RatingStrip } from "@/components/trust/TrustStrip";
 import { MarqueeBand } from "@/components/fx/Marquee";
@@ -33,6 +34,11 @@ export default async function ProspectHomePage({
   const { slug } = await params;
   const prospect = getProspect(slug);
   if (!prospect) notFound();
+
+  if (prospect.industryKey === "real_estate") {
+    return <RealEstateHome prospect={prospect} />;
+  }
+
   const t = getTemplates(prospect);
 
   const featured = prospect.services.filter((s) => s.featured).slice(0, 4);

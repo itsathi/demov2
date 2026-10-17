@@ -24,6 +24,8 @@ import { Magnetic } from "@/components/motion/Magnetic";
 import { CountUp } from "@/components/motion/CountUp";
 import { READY_EVENT } from "@/components/fx/FxStage";
 import { BrandImage } from "@/components/visual/BrandImage";
+import { BrandField } from "@/components/webgl/BrandField";
+import { EASE } from "@/lib/motion";
 import { getTemplates } from "@/lib/prospect";
 import { brandImage } from "@/lib/realImages";
 import type { ProspectConfig } from "@/lib/types";
@@ -51,46 +53,46 @@ export function HeroEngineered({ prospect }: { prospect: ProspectConfig }) {
         gsap.fromTo(
           ".hero-eyebrow",
           { y: 14, opacity: 0 },
-          { y: 0, opacity: 1, duration: 0.65, ease: "power3.out", delay: 0.1 }
+          { y: 0, opacity: 1, duration: 0.65, ease: EASE.out, delay: 0.1 }
         );
         gsap.fromTo(
           ".hero-line > span",
           { yPercent: 120, rotateX: -14, opacity: 0 },
-          { yPercent: 0, rotateX: 0, opacity: 1, duration: 0.9, stagger: 0.08, ease: "expo.out", delay: 0.2 }
+          { yPercent: 0, rotateX: 0, opacity: 1, duration: 0.9, stagger: 0.08, ease: EASE.expo, delay: 0.2 }
         );
         gsap.fromTo(
           ".hero-sub",
           { y: 16, opacity: 0 },
-          { y: 0, opacity: 1, duration: 0.6, delay: 0.4, ease: "power3.out", stagger: 0.05 }
+          { y: 0, opacity: 1, duration: 0.6, delay: 0.4, ease: EASE.out, stagger: 0.05 }
         );
         gsap.fromTo(
           ".hero-cta",
           { y: 14, opacity: 0 },
-          { y: 0, opacity: 1, duration: 0.6, delay: 0.5, ease: "power3.out" }
+          { y: 0, opacity: 1, duration: 0.6, delay: 0.5, ease: EASE.out }
         );
         gsap.fromTo(
           ".hero-stats > div",
           { y: 12, opacity: 0 },
-          { y: 0, opacity: 1, stagger: 0.05, duration: 0.5, delay: 0.68, ease: "power2.out" }
+          { y: 0, opacity: 1, stagger: 0.05, duration: 0.5, delay: 0.68, ease: EASE.soft }
         );
         gsap.fromTo(
           ".hero-card-float",
           { y: 16, opacity: 0 },
-          { y: 0, opacity: 1, duration: 0.6, delay: 0.9, ease: "power3.out", stagger: 0.1 }
+          { y: 0, opacity: 1, duration: 0.6, delay: 0.9, ease: EASE.out, stagger: 0.1 }
         );
 
         // Framed image — parallax settle + scroll depth
         if (imageCanvas.current) {
-          gsap.fromTo(".hero-image-canvas", { yPercent: 4 }, { yPercent: -4, ease: "none", scrollTrigger: { trigger: root, start: "top top", end: "bottom top", scrub: 0.8 } });
-          gsap.fromTo(".hero-image-inner img", { scale: 1.05 }, { scale: 1.12, ease: "none", scrollTrigger: { trigger: root, start: "top top", end: "bottom top", scrub: 1.05 } });
+          gsap.fromTo(".hero-image-canvas", { yPercent: 4 }, { yPercent: -4, ease: EASE.scrub, scrollTrigger: { trigger: root, start: "top top", end: "bottom top", scrub: 0.8 } });
+          gsap.fromTo(".hero-image-inner img", { scale: 1.05 }, { scale: 1.12, ease: EASE.scrub, scrollTrigger: { trigger: root, start: "top top", end: "bottom top", scrub: 1.05 } });
         }
 
         gsap.fromTo(
           ".hero-ghost",
           { xPercent: 6 },
-          { xPercent: -8, ease: "none", scrollTrigger: { trigger: root, start: "top top", end: "bottom top", scrub: 0.6 } }
+          { xPercent: -8, ease: EASE.scrub, scrollTrigger: { trigger: root, start: "top top", end: "bottom top", scrub: 0.6 } }
         );
-        gsap.to(".hero-glow", { yPercent: -8, ease: "none", scrollTrigger: { trigger: root, start: "top top", end: "bottom top", scrub: 0.8 } });
+        gsap.to(".hero-glow", { yPercent: -8, ease: EASE.scrub, scrollTrigger: { trigger: root, start: "top top", end: "bottom top", scrub: 0.8 } });
       }, root);
     };
 
@@ -124,11 +126,20 @@ export function HeroEngineered({ prospect }: { prospect: ProspectConfig }) {
     <section
       ref={scope}
       onMouseMove={onMove}
-      className="relative overflow-hidden bg-paper selection:bg-brand/20"
+      className="relative overflow-hidden bg-paper selection:bg-brand/20 lg:flex lg:min-h-[94vh] lg:flex-col lg:justify-center"
       style={{ perspective: "1200px" }}
     >
       {/* Heritage blueprint — ultra refined */}
       <div className="heritage-pattern pointer-events-none absolute inset-0 opacity-[0.5]" aria-hidden />
+
+      {/* Ambient climate field — abstract airflow behind the editorial */}
+      <BrandField
+        variant="climate"
+        tone="light"
+        primary={prospect.branding.primaryColor}
+        accent={prospect.branding.accentColor || "#0ea5e9"}
+        className="pointer-events-none absolute inset-0 z-0"
+      />
 
       {/* Warm ambient glows */}
       <div className="hero-glow pointer-events-none absolute -right-48 -top-40 h-[720px] w-[720px] rounded-full opacity-[0.22] blur-[88px]" style={{ background: `radial-gradient(circle at 30% 40%, ${prospect.branding.accentColor}30 0%, transparent 58%)` }} />

@@ -8,25 +8,38 @@ import { ArrowUpRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { getTemplates } from "@/lib/prospect";
 import { Magnetic } from "@/components/motion/Magnetic";
+import { BrandImage } from "@/components/visual/BrandImage";
 import type { ProspectConfig } from "@/lib/types";
 
 const EASE = [0.65, 0, 0.35, 1] as const;
 
-export function Navbar({ prospect }: { prospect: ProspectConfig }) {
+export function Navbar({
+  prospect,
+  overlayTheme,
+}: {
+  prospect: ProspectConfig;
+  overlayTheme?: "light" | "dark";
+}) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [now, setNow] = useState<string | null>(null);
   const pathname = usePathname();
   const t = getTemplates(prospect);
 
+  const isRealEstate = prospect.industryKey === "real_estate";
   const home = `/${prospect.slug}`;
   const services = `${home}/services`;
+  const productsHref = isRealEstate ? `${home}/properties` : services;
 
-  const isHome = pathname === home;
-  const isServices = pathname === services || pathname.startsWith(`${services}/`);
+  const isProducts = isRealEstate
+    ? pathname === productsHref || pathname.startsWith(`${productsHref}/`)
+    : pathname === services || pathname.startsWith(`${services}/`);
+
+  /** White nav chrome when sitting over a dark hero before scrolling. */
+  const overHero = overlayTheme === "dark" && !scrolled && !open;
 
   const links = [
-    { label: t.nav.productsLabel, href: isHome ? home : services, active: isServices },
+    { label: t.nav.productsLabel, href: productsHref, active: isProducts },
     { label: t.nav.projectsLabel, href: `${home}#projects`, active: false },
     { label: t.nav.companyLabel, href: `${home}#capability`, active: false },
     { label: t.nav.contactLabel, href: `${home}#enquire`, active: false },
@@ -78,14 +91,35 @@ export function Navbar({ prospect }: { prospect: ProspectConfig }) {
             aria-label={`${prospect.displayName} home`}
             data-cursor="Home"
           >
-            <span className="grid h-9 w-9 place-items-center rounded-lg bg-brand text-[13px] font-extrabold tracking-tight text-white transition-transform duration-500 group-hover:rotate-[360deg]">
-              {t.brand.initial}
-            </span>
+            {prospect.logo ? (
+              <BrandImage
+                src={prospect.logo}
+                alt={`${prospect.displayName} logo`}
+                width={120}
+                height={40}
+                className="h-9 w-auto object-contain"
+                data-cursor="Home"
+              />
+            ) : (
+              <span className="grid h-9 w-9 place-items-center rounded-lg bg-brand text-[13px] font-extrabold tracking-tight text-white transition-transform duration-500 group-hover:rotate-[360deg]">
+                {t.brand.initial}
+              </span>
+            )}
             <span className="flex flex-col leading-none">
-              <span className="font-display text-[15px] font-extrabold tracking-tight text-ink">
+              <span
+                className={cn(
+                  "font-display text-[15px] font-extrabold tracking-tight transition-colors",
+                  overHero ? "text-white" : "text-ink"
+                )}
+              >
                 {t.brand.line1}
               </span>
-              <span className="mt-1 text-[9.5px] font-semibold uppercase tracking-[0.22em] text-ink-muted">
+              <span
+                className={cn(
+                  "mt-1 text-[9.5px] font-semibold uppercase tracking-[0.22em] transition-colors",
+                  overHero ? "text-white/60" : "text-ink-muted"
+                )}
+              >
                 {t.brand.line2}
               </span>
             </span>
@@ -97,8 +131,11 @@ export function Navbar({ prospect }: { prospect: ProspectConfig }) {
                 key={l.label}
                 href={l.href}
                 className={cn(
-                  "link-underline text-sm font-medium text-ink-muted transition-colors hover:text-ink",
-                  l.active && "text-ink"
+                  "link-underline text-sm font-medium transition-colors",
+                  overHero
+                    ? "text-white/75 hover:text-white"
+                    : "text-ink-muted hover:text-ink",
+                  l.active && (overHero ? "text-white" : "text-ink")
                 )}
               >
                 {l.label}
@@ -107,14 +144,24 @@ export function Navbar({ prospect }: { prospect: ProspectConfig }) {
           </nav>
 
           <div className="hidden items-center gap-5 lg:flex">
-            <span className="flex items-center gap-1.5 rounded-full border border-line bg-white/70 px-3 py-1 text-[11px] font-semibold tabular-nums text-ink-muted">
+            <span
+              className={cn(
+                "flex items-center gap-1.5 rounded-full border px-3 py-1 text-[11px] font-semibold tabular-nums transition-colors",
+                overHero
+                  ? "border-white/20 bg-white/10 text-white/70"
+                  : "border-line bg-white/70 text-ink-muted"
+              )}
+            >
               <span className="relative h-1.5 w-1.5 rounded-full bg-emerald-400" />
               {now ? `GST ${now}` : "GST"}
             </span>
              {prospect.contact.email && (
               <a
                 href={`mailto:${prospect.contact.email}`}
-                className="link-underline hidden text-sm font-semibold text-ink-muted transition-colors hover:text-ink xl:inline"
+                className={cn(
+                  "link-underline hidden text-sm font-semibold transition-colors xl:inline",
+                  overHero ? "text-white/70 hover:text-white" : "text-ink-muted hover:text-ink"
+                )}
               >
                 {prospect.contact.email}
               </a>
@@ -122,7 +169,12 @@ export function Navbar({ prospect }: { prospect: ProspectConfig }) {
             <Magnetic strength={0.3}>
               <Link
                 href={`${home}#enquire`}
-                className="shine group inline-flex h-11 items-center gap-2 rounded-lg bg-ink px-5 text-sm font-semibold text-white transition-colors hover:bg-brand"
+                className={cn(
+                  "shine group inline-flex h-11 items-center gap-2 rounded-lg px-5 text-sm font-semibold transition-colors",
+                  overHero
+                    ? "bg-white text-ink hover:bg-brand hover:text-white"
+                    : "bg-ink text-white hover:bg-brand"
+                )}
                 data-cursor="Quote"
               >
                 {t.nav.quoteLabel}
@@ -134,7 +186,12 @@ export function Navbar({ prospect }: { prospect: ProspectConfig }) {
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
-            className="group grid h-11 w-11 place-items-center rounded-lg border border-line bg-white/70 text-ink transition-colors hover:border-ink/30 lg:hidden"
+            className={cn(
+              "group grid h-11 w-11 place-items-center rounded-lg border transition-colors lg:hidden",
+              overHero
+                ? "border-white/25 bg-white/10 text-white hover:border-white/50"
+                : "border-line bg-white/70 text-ink hover:border-ink/30"
+            )}
             aria-expanded={open}
             aria-label={open ? "Close menu" : "Open menu"}
             data-cursor={open ? "Close" : "Menu"}

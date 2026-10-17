@@ -1,0 +1,22 @@
+{
+  "slug": "yelp",
+  "sourceUrl": "https://www.yelp.com/search?find_desc=Hvac&find_loc=Brisbane+Queensland",
+  "status": "research_failed",
+  "researchedAt": "2026-10-13T08:20:06.392Z",
+  "researchVersion": "1.0.0",
+  "pagesCrawled": [],
+  "missingFields": [
+    "website_access"
+  ],
+  "fallbacks": [],
+  "assets": [],
+  "businessName": "TOP 10 BEST Hvac in Brisbane Queensland, Australia",
+  "services": [],
+  "serviceAreas": [],
+  "contact": {},
+  "ctas": [],
+  "trustSignals": [],
+  "serviceImages": {},
+  "projectImages": [],
+  "manualReview": []
+}

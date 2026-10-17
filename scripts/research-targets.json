@@ -1,0 +1,23 @@
+[
+  { "slug": "qualitycare", "name": "Quality Care", "url": "https://qualitycareuae.ae" },
+  { "slug": "rakea", "name": "RAKEA", "url": "https://rakeauae.com" },
+  { "slug": "ostaservices", "name": "OSTA Services", "url": "https://www.ostaservices.com" },
+  { "slug": "teamstalwart", "name": "Team Stalwart", "url": "https://www.teamstalwart.com" },
+  { "slug": "dsfmaintenance", "name": "DSF Maintenance", "url": "https://dsfmaintenance.ae" },
+  { "slug": "iec", "name": "IEC", "url": "http://www.iecuae.ae" },
+  { "slug": "homeexperts", "name": "Home Experts", "url": "http://homeexperts.ae" },
+  { "slug": "noorawaal", "name": "Noor Al Awal", "url": "https://noorawaal.com" },
+  { "slug": "alsidras", "name": "Al Sidras", "url": "https://alsidras.com" },
+  { "slug": "climatech", "name": "Climatech", "url": "https://www.climatech.ae" },
+  { "slug": "nestclimate", "name": "Nest Climate", "url": "https://www.nestclimate.ae" },
+  { "slug": "fixationhub", "name": "Fixation Hub", "url": "https://fixationhub.ae" },
+  { "slug": "abusaeed", "name": "Abu Saeed", "url": "http://www.abusaeed.com" },
+  { "slug": "imdaad", "name": "Imdaad", "url": "https://www.imdaad.ae" },
+  { "slug": "nestfix", "name": "Nestfix", "url": "https://nestfix-uae.com" },
+  { "slug": "bluemount", "name": "Blue Mount", "url": "http://www.bluemountuae.ae" },
+  { "slug": "levelgroup", "name": "Level Group", "url": "https://levelgroup.ae" },
+  { "slug": "aiofm", "name": "AIO Facilities Management", "url": "http://aiofm.ae/" },
+  { "slug": "thehealthyhomeme", "name": "The Healthy Home", "url": "https://thehealthyhome.me" },
+  { "slug": "primegroup", "name": "Prime Group", "url": "https://www.primegroupuae.ae" },
+  { "slug": "yello", "name": "Yello", "url": "https://www.yello.ae", "kind": "directory" }
+]

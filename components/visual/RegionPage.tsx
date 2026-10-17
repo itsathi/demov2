@@ -6,6 +6,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowUpRight } from "lucide-react";
 import type { ProspectConfig } from "@/lib/types";
+import { NICHE_TABS, nicheOf, type NicheKey } from "@/lib/niche";
 import { brandImage } from "@/lib/realImages";
 import { BrandImage } from "@/components/visual/BrandImage";
 import { SearchBar } from "@/components/visual/SearchBar";
@@ -22,6 +23,16 @@ interface RegionPageProps {
 
 const pad = (n: number) => String(n).padStart(2, "0");
 
+const RESEARCH_CHIP: Record<string, { label: string; bg: string; text: string }> = {
+  ready_for_demo: { label: "Verified", bg: "#10B981", text: "#fff" },
+  assets_ready: { label: "Assets ready", bg: "#0EA5E9", text: "#fff" },
+  research_complete: { label: "Researched", bg: "#14B8A6", text: "#fff" },
+  assets_partial: { label: "Partial assets", bg: "#F59E0B", text: "#fff" },
+  partially_researched: { label: "Partial data", bg: "#F59E0B", text: "#fff" },
+  manual_review_required: { label: "Review needed", bg: "#EF4444", text: "#fff" },
+  research_failed: { label: "Research failed", bg: "#EF4444", text: "#fff" },
+};
+
 export function RegionPage({ regionGroups }: RegionPageProps) {
   const allProspects = useMemo(
     () => regionGroups.flatMap(([, p]) => p),
@@ -29,20 +40,43 @@ export function RegionPage({ regionGroups }: RegionPageProps) {
   );
   const [query, setQuery] = useState("");
   const [region, setRegion] = useState("All");
+  const [niche, setNiche] = useState<NicheKey>("all");
   const scopeRef = useRef<HTMLElement | null>(null);
   const reduced = usePrefersReducedMotion();
   const year = new Date().getFullYear();
 
   const searched = useMemo(() => {
     const q = query.trim().toLowerCase();
-    if (!q) return allProspects;
-    return allProspects.filter(
-      (p) =>
+    return allProspects.filter((p) => {
+      if (niche !== "all" && nicheOf(p) !== niche) return false;
+      if (!q) return true;
+      return (
         p.displayName.toLowerCase().includes(q) ||
         p.companyName.toLowerCase().includes(q) ||
         p.hero.subline.toLowerCase().includes(q) ||
         p.location.toLowerCase().includes(q)
-    );
+      );
+    });
+  }, [query, niche, allProspects]);
+
+  const nicheCounts = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    const pool = allProspects.filter((p) => {
+      if (!q) return true;
+      return (
+        p.displayName.toLowerCase().includes(q) ||
+        p.companyName.toLowerCase().includes(q) ||
+        p.hero.subline.toLowerCase().includes(q) ||
+        p.location.toLowerCase().includes(q)
+      );
+    });
+    const map = new Map<NicheKey, number>();
+    map.set("all", pool.length);
+    for (const p of pool) {
+      const k = nicheOf(p);
+      map.set(k, (map.get(k) ?? 0) + 1);
+    }
+    return map;
   }, [query, allProspects]);
 
   const groupedByRegion = useMemo(() => {
@@ -182,7 +216,7 @@ export function RegionPage({ regionGroups }: RegionPageProps) {
                 </span>
               </span>
               <span className="idx-line block -mt-1 overflow-hidden">
-                <span className="gradient-text inline-block">{allProspects.length} UAE brands</span>
+                <span className="gradient-text inline-block">{allProspects.length} brands</span>
               </span>
             </h1>
 
@@ -214,31 +248,65 @@ export function RegionPage({ regionGroups }: RegionPageProps) {
         {/* ── Filters */}
         <div className="idx-filters relative overflow-hidden border-y border-line/80 bg-white/55 backdrop-blur-sm">
           <div className="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-5 md:px-8 lg:flex-row lg:items-center lg:justify-between">
-            <div className="flex flex-wrap items-center gap-2" role="tablist" aria-label="Filter by region">
-              {regionPills.map((r) => {
-                const active = region === r;
-                const count = r === "All" ? searched.length : (regionCounts.get(r) ?? 0);
-                return (
-                  <button
-                    key={r}
-                    type="button"
-                    role="tab"
-                    aria-selected={active}
-                    onClick={() => setRegion(r)}
-                    className={
-                      active
-                        ? "inline-flex items-center gap-2 rounded-full bg-ink px-4 py-2 text-xs font-bold text-white shadow-[0_8px_20px_-10px_rgba(10,17,40,0.6)] transition-all"
-                        : "inline-flex items-center gap-2 rounded-full border border-line bg-white px-4 py-2 text-xs font-bold text-ink-muted transition-all hover:-translate-y-0.5 hover:border-ink/25 hover:text-ink"
-                    }
-                    data-cursor={active ? undefined : "Filter"}
-                  >
-                    {r}
-                    <span className={active ? "tabular-nums text-white/55" : "tabular-nums text-ink-muted/60"}>
-                      {count}
-                    </span>
-                  </button>
-                );
-              })}
+            <div className="space-y-2.5">
+              <div className="flex flex-wrap items-center gap-2" role="tablist" aria-label="Filter by industry">
+                <span className="mr-1 text-[10px] font-bold uppercase tracking-[0.16em] text-ink-muted">
+                  Industry
+                </span>
+                {NICHE_TABS.map((tab) => {
+                  const active = niche === tab.key;
+                  const count = nicheCounts.get(tab.key) ?? 0;
+                  return (
+                    <button
+                      key={tab.key}
+                      type="button"
+                      role="tab"
+                      aria-selected={active}
+                      onClick={() => setNiche(tab.key)}
+                      className={
+                        active
+                          ? "inline-flex items-center gap-2 rounded-full bg-brand-strong px-4 py-2 text-xs font-bold text-white shadow-[0_8px_20px_-10px_rgba(10,17,40,0.6)] transition-all"
+                          : "inline-flex items-center gap-2 rounded-full border border-line bg-white px-4 py-2 text-xs font-bold text-ink-muted transition-all hover:-translate-y-0.5 hover:border-ink/25 hover:text-ink"
+                      }
+                      data-cursor={active ? undefined : "Filter"}
+                    >
+                      {tab.label}
+                      <span className={active ? "tabular-nums text-white/55" : "tabular-nums text-ink-muted/60"}>
+                        {count}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+              <div className="flex flex-wrap items-center gap-2" role="tablist" aria-label="Filter by region">
+                <span className="mr-1 text-[10px] font-bold uppercase tracking-[0.16em] text-ink-muted">
+                  Region
+                </span>
+                {regionPills.map((r) => {
+                  const active = region === r;
+                  const count = r === "All" ? searched.length : (regionCounts.get(r) ?? 0);
+                  return (
+                    <button
+                      key={r}
+                      type="button"
+                      role="tab"
+                      aria-selected={active}
+                      onClick={() => setRegion(r)}
+                      className={
+                        active
+                          ? "inline-flex items-center gap-2 rounded-full bg-ink px-4 py-2 text-xs font-bold text-white shadow-[0_8px_20px_-10px_rgba(10,17,40,0.6)] transition-all"
+                          : "inline-flex items-center gap-2 rounded-full border border-line bg-white px-4 py-2 text-xs font-bold text-ink-muted transition-all hover:-translate-y-0.5 hover:border-ink/25 hover:text-ink"
+                      }
+                      data-cursor={active ? undefined : "Filter"}
+                    >
+                      {r}
+                      <span className={active ? "tabular-nums text-white/55" : "tabular-nums text-ink-muted/60"}>
+                        {count}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
             </div>
             <div className="w-full lg:w-[360px]">
               <SearchBar value={query} onChange={setQuery} />
@@ -273,6 +341,7 @@ export function RegionPage({ regionGroups }: RegionPageProps) {
               onClick={() => {
                 setQuery("");
                 setRegion("All");
+                setNiche("all");
               }}
               className="mt-6 inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand"
               data-cursor="Reset"
@@ -320,6 +389,20 @@ export function RegionPage({ regionGroups }: RegionPageProps) {
                             className="object-cover transition-transform duration-[1200ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.07]"
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-ink/25 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                          {prospect.researchSummary &&
+                            RESEARCH_CHIP[prospect.researchSummary.status as string] &&
+                            (() => {
+                              const chip = RESEARCH_CHIP[prospect.researchSummary.status as string];
+                              return (
+                                <span
+                                  className="pointer-events-none absolute left-3 top-3 rounded-full px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide shadow-sm"
+                                  style={{ backgroundColor: chip.bg, color: chip.text }}
+                                  title={`Research status: ${prospect.researchSummary.status} — ${prospect.researchSummary.assetsRendered} real assets rendered`}
+                                >
+                                  {chip.label}
+                                </span>
+                              );
+                            })()}
                           <span className="pointer-events-none absolute bottom-3 right-4 select-none font-display text-5xl font-extrabold leading-none text-white/15 transition-colors duration-500 group-hover:text-white/40">
                             {pad(i + 1)}
                           </span>

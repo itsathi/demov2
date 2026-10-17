@@ -1,4 +1,4 @@
-import type { RawProspectData, RawCompany } from "./rawProspectTypes";
+import type { RawProspectData, RawCompany, RawAudit } from "./rawProspectTypes";
 import type {
   ProspectConfig,
   Service,
@@ -29,7 +29,7 @@ const stock = {
   clean: `${S}-1581578731548-c64695cc6952?w=1920&h=1080&fit=crop&q=80`,
 };
 
-function slugify(text: string): string {
+export function slugify(text: string): string {
   return text
     .toLowerCase()
     .trim()
@@ -38,7 +38,7 @@ function slugify(text: string): string {
     .replace(/^-+|-+$/g, "");
 }
 
-function extractDisplayName(fullName: string): string {
+export function extractDisplayName(fullName: string): string {
   // Removes subtitles like "– AC & Villa Maintenance Abu Dhabi", "LLC", "Building Maintenance"
   let clean = fullName.split(/[–—\-|:]/)[0].trim();
   // Strip common corporate suffixes for display badge
@@ -46,16 +46,18 @@ function extractDisplayName(fullName: string): string {
   return clean || fullName.split(/[–—\-|:]/)[0].trim();
 }
 
-function extractCompanyName(fullName: string): string {
+export function extractCompanyName(fullName: string): string {
   const parts = fullName.split(/[–—|]/);
   return parts[0].trim();
 }
 
-function deriveSlug(raw: RawProspectData): string {
+export function deriveSlug(raw: RawProspectData): string {
   if (raw.company.contact?.domain) {
     const domainPart = raw.company.contact.domain
       .toLowerCase()
       .replace(/^www\./, "")
+      .replace(/\.(com|net|org|edu|gov)\.au$/gi, "")
+      .replace(/\.au$/gi, "")
       .replace(/\.(com|ae|org|net|io|co|uae)(\.ae)?$/gi, "")
       .replace(/uae$/gi, "");
     if (domainPart.length >= 3) {
@@ -66,13 +68,13 @@ function deriveSlug(raw: RawProspectData): string {
   return slugify(display);
 }
 
-function deriveInitials(displayName: string): string {
+export function deriveInitials(displayName: string): string {
   const words = displayName.trim().split(/\s+/).filter(Boolean);
   if (words.length === 1) return words[0].slice(0, 2).toUpperCase();
   return (words[0][0] + words[1][0]).toUpperCase();
 }
 
-function deriveEstablished(company: RawCompany): number {
+export function deriveEstablished(company: RawCompany): number {
   if (company.established && typeof company.established === "number") {
     return company.established;
   }
@@ -81,13 +83,96 @@ function deriveEstablished(company: RawCompany): number {
   return 2018;
 }
 
-function deriveLocation(company: RawCompany): {
+export type CountryKey = "UAE" | "AU";
+
+const AU_CITIES = [
+  "Perth",
+  "Brisbane",
+  "Sydney",
+  "Melbourne",
+  "Adelaide",
+  "Canberra",
+  "Darwin",
+  "Hobart",
+  "Gold Coast",
+  "Sunshine Coast",
+];
+
+/**
+ * Decide which country a prospect belongs to. UAE is the default so every
+ * existing UAE entry keeps its exact generated copy. Anything with an
+ * Australian signal (country, .au domain, state/city, or audit query) is AU.
+ */
+export function detectCountryKey(company: RawCompany, audit?: RawAudit | null): CountryKey {
+  const country = (company.location?.country || "").toLowerCase();
+  if (country.includes("australia")) return "AU";
+  if (country.includes("emirates") || country === "uae" || country.includes("united arab")) {
+    return "UAE";
+  }
+
+  const domain = (company.contact?.domain || company.contact?.website || "").toLowerCase();
+  if (/\.au(\/|$|\?)/.test(domain)) return "AU";
+
+  const haystack = [
+    company.location?.state,
+    company.location?.city,
+    company.location?.address,
+    audit?.sourceQuery,
+    company.name,
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+
+  if (
+    /\baustralia|\baustralian\b|\bperth\b|\bbrisbane\b|\bsydney\b|\bmelbourne\b|\badelaide\b|\bcanberra\b|\bdarwin\b|\bhobart\b|\bqueensland\b|western australia|new south wales|south australia|\btasmania\b|\bvictoria\b|gold coast|sunshine coast/.test(
+      haystack
+    )
+  ) {
+    return "AU";
+  }
+
+  return "UAE";
+}
+
+function scanCities(
+  company: RawCompany,
+  audit: RawAudit | null | undefined,
+  cities: string[]
+): string | null {
+  const haystack = [company.name, company.location?.address, audit?.sourceQuery]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+  return cities.find((c) => haystack.includes(c.toLowerCase())) ?? null;
+}
+
+export function deriveLocation(
+  company: RawCompany,
+  audit: RawAudit | null | undefined,
+  countryKey: CountryKey
+): {
   city: string;
   state: string;
   country: string;
   fullLocation: string;
 } {
   const stateRaw = company.location?.state || "";
+  if (countryKey === "AU") {
+    // Never use the raw state ("Western Australia", "Queensland", "WA") as the
+    // display city — resolve a real city from name/address/query, else fall
+    // back to the state capital.
+    const detected = company.location?.city || scanCities(company, audit, AU_CITIES);
+    const stateDefault = /queensland/i.test(stateRaw) ? "Brisbane" : "Perth";
+    const city = detected || stateDefault;
+    const state = stateRaw || city;
+    return {
+      city,
+      state,
+      country: "Australia",
+      fullLocation: `${city}, Australia`,
+    };
+  }
   const city = company.location?.city || stateRaw || "Abu Dhabi";
   const state = stateRaw || city;
   const country = company.location?.country || "United Arab Emirates";
@@ -100,7 +185,7 @@ function deriveLocation(company: RawCompany): {
   };
 }
 
-function pickImageForService(slug: string): string {
+export function pickImageForService(slug: string): string {
   if (slug.includes("clean") || slug.includes("sanit")) return stock.clean;
   if (slug.includes("duct") || slug.includes("vent")) return stock.duct;
   if (slug.includes("install") || slug.includes("chiller")) return stock.plant;
@@ -242,11 +327,18 @@ const serviceKnowledgeBase: Record<string, ServiceTemplateData> = {
   },
 };
 
-function buildServiceConfig(
+const AU_STANDARD_MAP: Record<string, string> = {
+  "Abu Dhabi QCC Compliant": "AS/NZS 3000 Compliant",
+  "Municipality Approved": "Licensed & Fully Insured",
+  "Estidama Pearl Rating Ready": "NABERS Energy Rating Ready",
+};
+
+export function buildServiceConfig(
   rawKeyword: string,
   index: number,
   displayName: string,
-  city: string
+  city: string,
+  countryKey: CountryKey = "UAE"
 ): Service {
   const slug = slugify(rawKeyword);
   const matchedKey =
@@ -255,6 +347,10 @@ function buildServiceConfig(
     ) || (index === 0 ? "ac-installation" : index === 1 ? "maintenance" : index === 2 ? "duct-cleaning" : "hvac-solutions");
 
   const kb = serviceKnowledgeBase[matchedKey] || serviceKnowledgeBase["hvac-solutions"];
+  const standards =
+    countryKey === "AU"
+      ? kb.standards.map((s) => AU_STANDARD_MAP[s] || s)
+      : kb.standards;
 
   const cleanName = rawKeyword
     .split(/\s+/)
@@ -274,7 +370,7 @@ function buildServiceConfig(
     summary: `${displayName} provides premium ${cleanName.toLowerCase()} in ${city} and surrounding areas. ${kb.summary}`,
     capacity: kb.capacity,
     series: kb.series,
-    standards: kb.standards,
+    standards,
     applications: kb.applications,
     features: kb.features,
     image: pickImageForService(slug),
@@ -291,7 +387,10 @@ export function transformRawProspect(raw: RawProspectData): ProspectConfig {
   const companyName = extractCompanyName(company.name);
   const slug = deriveSlug(raw);
   const established = deriveEstablished(company);
-  const { city, state, country, fullLocation } = deriveLocation(company);
+  const countryKey = detectCountryKey(company, audit);
+  const isAustralia = countryKey === "AU";
+  const regionLabel = isAustralia ? "Australia" : "UAE";
+  const { city, state, country, fullLocation } = deriveLocation(company, audit, countryKey);
 
   // Branding
   const primaryColor = company.branding?.primaryColor || "#0052FF";
@@ -320,20 +419,22 @@ export function transformRawProspect(raw: RawProspectData): ProspectConfig {
   }
 
   const services: Service[] = keywordList.map((kw, i) =>
-    buildServiceConfig(kw, i, displayName, city)
+    buildServiceConfig(kw, i, displayName, city, countryKey)
   );
 
   const featuredServiceSlug = services[0]?.slug || "ac-installation";
 
   // Contact
-  const contactPhone = company.contact?.phone || company.contact?.rawPhone || "+971 50 123 4567";
-  const contactEmail = company.contact?.email || `info@${company.contact?.domain || slugify(displayName) + ".ae"}`;
+  const fallbackPhone = isAustralia ? "+61 1300 000 000" : "+971 50 123 4567";
+  const contactPhone = company.contact?.phone || company.contact?.rawPhone || fallbackPhone;
+  const fallbackTld = isAustralia ? ".com.au" : ".ae";
+  const contactEmail = company.contact?.email || `info@${company.contact?.domain || slugify(displayName) + fallbackTld}`;
   const contactAddress =
     company.location?.address || `${city}, ${country}`;
 
   // Hero Copy
   const categoryTitle = company.category || company.industry || "Air Conditioning & Property Maintenance";
-  const heroKicker = `Est. ${established} · ${city}, UAE · ${categoryTitle}`;
+  const heroKicker = `Est. ${established} · ${city}, ${regionLabel} · ${categoryTitle}`;
   const headlineTop = "Engineered AC &";
   const headlineAccent = "property care —";
   const headlineBottom = `trusted across ${city}.`;
@@ -348,38 +449,72 @@ export function transformRawProspect(raw: RawProspectData): ProspectConfig {
     "Do the job right, charge a fair price, and keep your property cool year-round.";
 
   // Projects
-  const projects = [
-    {
-      name: `Luxury Villa AC & Duct Overhaul`,
-      location: `${company.location?.address?.split("-")[0]?.trim() || city}, UAE`,
-      img: stock.home,
-    },
-    {
-      name: `Central Air Duct Sanitisation & Cleaning`,
-      location: `${city}, UAE`,
-      img: stock.clean,
-    },
-    {
-      name: `High-Efficiency Ducted AC Installation`,
-      location: `${city} Corniche, UAE`,
-      img: stock.workshop,
-    },
-    {
-      name: `Annual Cooling Maintenance Contract (AMC)`,
-      location: `${city} Sector Development, UAE`,
-      img: stock.plant,
-    },
-    {
-      name: `Commercial Fit-Out Air Conditioning`,
-      location: `${city} Business District, UAE`,
-      img: stock.building,
-    },
-    {
-      name: `Preventive HVAC Diagnostics & Servicing`,
-      location: `${city}, UAE`,
-      img: stock.factory,
-    },
-  ];
+  const addressToken = company.location?.address?.split("-")[0]?.trim() || city;
+  const projects = isAustralia
+    ? [
+        {
+          name: `Luxury Home AC & Duct Overhaul`,
+          location: `${addressToken}, ${regionLabel}`,
+          img: stock.home,
+        },
+        {
+          name: `Central Air Duct Sanitisation & Cleaning`,
+          location: `${city}, ${regionLabel}`,
+          img: stock.clean,
+        },
+        {
+          name: `High-Efficiency Ducted AC Installation`,
+          location: `${city} Waterfront, ${regionLabel}`,
+          img: stock.workshop,
+        },
+        {
+          name: `Annual Cooling Maintenance Contract (AMC)`,
+          location: `${city} Development, ${regionLabel}`,
+          img: stock.plant,
+        },
+        {
+          name: `Commercial Fit-Out Air Conditioning`,
+          location: `${city} Business District, ${regionLabel}`,
+          img: stock.building,
+        },
+        {
+          name: `Preventive HVAC Diagnostics & Servicing`,
+          location: `${city}, ${regionLabel}`,
+          img: stock.factory,
+        },
+      ]
+    : [
+        {
+          name: `Luxury Villa AC & Duct Overhaul`,
+          location: `${addressToken}, ${regionLabel}`,
+          img: stock.home,
+        },
+        {
+          name: `Central Air Duct Sanitisation & Cleaning`,
+          location: `${city}, ${regionLabel}`,
+          img: stock.clean,
+        },
+        {
+          name: `High-Efficiency Ducted AC Installation`,
+          location: `${city} Corniche, ${regionLabel}`,
+          img: stock.workshop,
+        },
+        {
+          name: `Annual Cooling Maintenance Contract (AMC)`,
+          location: `${city} Sector Development, ${regionLabel}`,
+          img: stock.plant,
+        },
+        {
+          name: `Commercial Fit-Out Air Conditioning`,
+          location: `${city} Business District, ${regionLabel}`,
+          img: stock.building,
+        },
+        {
+          name: `Preventive HVAC Diagnostics & Servicing`,
+          location: `${city}, ${regionLabel}`,
+          img: stock.factory,
+        },
+      ];
 
   // Voice Copy & Assistant Actions
   const assistantActions: AssistantAction[] = [
@@ -452,21 +587,40 @@ export function transformRawProspect(raw: RawProspectData): ProspectConfig {
     },
   ];
 
-  const regionGroups: RegionGroup[] = [
-    {
-      title: `${city} & Municipal Sectors`,
-      items: [
-        company.location?.address?.split("-")[0]?.trim() || `${city} Center`,
-        `${city} Residential Sectors`,
-        "Khalifa City · MBZ · Al Raha",
-        "Yas Island · Saadiyat Island",
-      ],
-    },
-    {
-      title: "Wider Emirates & Northern Regions",
-      items: ["Abu Dhabi Mainland", "Dubai & Suburbs", "Commercial & Villa Developments"],
-    },
-  ];
+  const regionGroups: RegionGroup[] = isAustralia
+    ? [
+        {
+          title: `${city} & Surrounding Suburbs`,
+          items: [
+            company.location?.address?.split("-")[0]?.trim() || `${city} CBD`,
+            `${city} Metro Area`,
+            "Northern Suburbs · Southern Suburbs",
+            "Coastal & Inner-City Locations",
+          ],
+        },
+        {
+          title: "Wider Australia & Regional Coverage",
+          items: [
+            `${state} & Regional Areas`,
+            "Commercial & Residential Developments",
+          ],
+        },
+      ]
+    : [
+        {
+          title: `${city} & Municipal Sectors`,
+          items: [
+            company.location?.address?.split("-")[0]?.trim() || `${city} Center`,
+            `${city} Residential Sectors`,
+            "Khalifa City · MBZ · Al Raha",
+            "Yas Island · Saadiyat Island",
+          ],
+        },
+        {
+          title: "Wider Emirates & Northern Regions",
+          items: ["Abu Dhabi Mainland", "Dubai & Suburbs", "Commercial & Villa Developments"],
+        },
+      ];
 
   const voice: VoiceCopy = {
     brand: {
@@ -500,7 +654,7 @@ export function transformRawProspect(raw: RawProspectData): ProspectConfig {
     },
     trustLines: [
       `${googleRating} ★ Rated on Google · ${reviewCount} Reviews`,
-      `${city} Municipal Approved & Compliant`,
+      isAustralia ? `${city} Licensed & Fully Insured` : `${city} Municipal Approved & Compliant`,
     ],
     servicesKicker: "Our services",
     servicesHomeHeading: `High-performance cooling & maintenance for ${city}`,
@@ -580,7 +734,9 @@ export function transformRawProspect(raw: RawProspectData): ProspectConfig {
       },
     ],
     footer: {
-      blurb: `specialists in air conditioning, duct sanitisation, and villa maintenance in ${city}, UAE.`,
+      blurb: isAustralia
+        ? `specialists in air conditioning, duct sanitisation, and home & commercial maintenance in ${city}, Australia.`
+        : `specialists in air conditioning, duct sanitisation, and villa maintenance in ${city}, UAE.`,
     },
     assistant: {
       name: `${displayName} Assistant`,
@@ -644,18 +800,22 @@ export function transformRawProspect(raw: RawProspectData): ProspectConfig {
     },
     certifications: [
       `${googleRating} ★ Google Reviews (${reviewCount})`,
-      `${city} Municipality Approved`,
+      isAustralia ? `${city} Licensed & Fully Insured` : `${city} Municipality Approved`,
       "Certified HVAC Technicians",
     ],
-    markets: [
-      city,
-      "Abu Dhabi Emirate",
-      "Dubai",
-      "Sharjah",
-      "United Arab Emirates",
-    ],
+    markets: isAustralia
+      ? [city, state, "Australia"].filter(
+          (v, i, arr) => v && arr.indexOf(v) === i
+        )
+      : [
+          city,
+          "Abu Dhabi Emirate",
+          "Dubai",
+          "Sharjah",
+          "United Arab Emirates",
+        ],
     facilities: [
-      `Main Service Hub — ${city}, UAE`,
+      `Main Service Hub — ${city}, ${regionLabel}`,
       `Mobile Service Fleet servicing ${city} & suburbs`,
       `100% In-House Trained Technicians`,
     ],

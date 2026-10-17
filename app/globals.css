@@ -353,6 +353,22 @@ body {
   background-size: 80px 80px;
 }
 
+/* ---------------------------------------------------------------------------
+   Shared WebGL backplate (BrandField) — fades in once the scene is live
+--------------------------------------------------------------------------- */
+.brand-field-canvas {
+  opacity: 0;
+  transition: opacity 1.1s ease;
+}
+.brand-field-canvas.brand-field-ready {
+  opacity: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .brand-field-canvas {
+    transition: none;
+  }
+}
+
 /* Floating glass card — for hero overlays */
 .glass-card-float {
   background: rgba(255, 255, 255, 0.88);

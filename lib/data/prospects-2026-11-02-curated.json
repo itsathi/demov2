@@ -1,0 +1,3718 @@
+{
+  "realEstate": [
+    {
+      "slug": null,
+      "company": {
+        "id": "9d18f62e-241f-496f-864d-92fc01f9761c",
+        "name": "Briarlane Rental Property Management Inc",
+        "industry": "Real Estate",
+        "category": "Property management company",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "1580 &1600 Sandhurst Circle, Scarborough, ON M1V 1E5, Canada",
+          "city": "Toronto",
+          "state": "Ontario",
+          "country": "Canada"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "http://www.briarlane.ca/",
+          "domain": "briarlane.ca"
+        },
+        "socialProof": {
+          "googleRating": 2.3,
+          "reviewCount": 21,
+          "topKeywords": [
+            "Residential Property Management",
+            "Commercial Property Management",
+            "Tenant Insurance"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies Canada",
+        "summary": "Briarlane Rental Property Management, established in 1998, manages residential and commercial properties across multiple Canadian cities. The website presents basic information, duplicated taglines, and city lists, lacking contact details and modern marketing. They need digital improvement to attract tenants and streamline operations.",
+        "personalizationHook": "Your 25+ years of building resident relationships aligns perfectly with a modern digital marketing approach.",
+        "websiteDetails": {
+          "title": "Property Management Residential & Commercial | Briarlane",
+          "description": "Managing Residential & Commercial properties since 1998 with integrity, attention to detail & a genuine dedication to making life easier for our clients.",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "ef638e84-5a92-449d-8ac8-dc1389b814c0",
+        "name": "Marimar Puno - REMAX Real Estate Agent",
+        "industry": "Real Estate",
+        "category": "Real estate agent",
+        "businessSize": "Small",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "885 Progress Ave #209, Scarborough, ON M1H 3G3, Canada",
+          "city": "Toronto",
+          "state": "Ontario",
+          "country": "Canada"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": "+1 (647) 575-7803",
+          "rawPhone": "+16475757803",
+          "email": null,
+          "website": "http://www.remaxmarimar.com/",
+          "domain": "remaxmarimar.com"
+        },
+        "socialProof": {
+          "googleRating": 4.7,
+          "reviewCount": 47,
+          "topKeywords": [
+            "Residential Real Estate",
+            "Property Sales",
+            "Rental Services"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies Canada",
+        "summary": "Marimar Puno is a real estate sales representative with REMAX Realtron Realty Inc, operating from Toronto. The website offers property listings, search filters, and contact information but lacks modern design and AI integration.",
+        "personalizationHook": "Marimar Puno's site currently lacks modern design and AI-driven property suggestions.",
+        "websiteDetails": {
+          "title": "Toronto ON Real Estate & Homes for Sale | REMAX Realtron Realty Inc",
+          "description": null,
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "39387cf3-c588-4837-9f1f-c04825b575d8",
+        "name": "Barry Cohen Homes",
+        "industry": "Real Estate",
+        "category": "Real Estate Agency",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": null,
+          "city": "Toronto",
+          "state": "Ontario",
+          "country": "Canada"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://barrycohenhomes.com/",
+          "domain": "barrycohenhomes.com"
+        },
+        "socialProof": {
+          "googleRating": null,
+          "reviewCount": null,
+          "topKeywords": [
+            "Luxury Home Sales",
+            "Estate Brokerage",
+            "Condo Sales",
+            "Property Marketing"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "best real estate in Toronto Canada",
+        "summary": "Barry Cohen Homes is an established luxury real estate agency in Toronto, offering high‑end homes, estates, and condos with over 30 years of experience. The website showcases premium listings, market reports, and a newsletter but lacks clear contact info.",
+        "personalizationHook": "Barry Cohen’s 30+ years of luxury real estate expertise can be amplified with a modern digital experience.",
+        "websiteDetails": {
+          "title": "Toronto Luxury Real Estate – Discover Exclusive Homes",
+          "description": "Explore Toronto luxury real estate with Barry Cohen. Discover exclusive Yorkville condos and Rosedale homes. Contact us for your dream property!",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "3489b642-f7ae-4dbb-906e-07bbc6bf8bb9",
+        "name": "Condo Developers",
+        "industry": "Real Estate",
+        "category": "Real estate consultant",
+        "businessSize": "Medium",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "2225 Markham Rd Unit 201, Scarborough, ON M1B 2W4, Canada",
+          "city": "Toronto",
+          "state": "Ontario",
+          "country": "Canada"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": "+1 (416) 723-2525",
+          "rawPhone": "+14167232525",
+          "email": "info@condodevelopers.ca",
+          "website": "https://condodevelopers.ca/contact/",
+          "domain": "condodevelopers.ca"
+        },
+        "socialProof": {
+          "googleRating": null,
+          "reviewCount": null,
+          "topKeywords": [
+            "Condo Development",
+            "Land Development",
+            "Investment Guides",
+            "Calculators",
+            "Resources"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies Canada",
+        "summary": "Condo Developers is a Toronto-based real estate firm specializing in new condo development, offering tools, calculators, and investment guides for buyers and investors.",
+        "personalizationHook": "Condo Developers offers helpful calculators and investment guides for Toronto’s new condos.",
+        "websiteDetails": {
+          "title": "Contact - Toronto New Condos",
+          "description": "We are here to assist you in any way that we can.",
+          "type": "Other"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "7c9d479d-af3d-490d-8570-80c733d07f18",
+        "name": "Justo",
+        "industry": "Real Estate",
+        "category": "Real Estate Agency",
+        "businessSize": "Unknown",
+        "businessMaturity": "Unknown",
+        "established": null,
+        "location": {
+          "address": null,
+          "city": "Toronto",
+          "state": "Ontario",
+          "country": "Canada"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://justo.ca/blog/4-best-toronto-neighbourhoods-to-invest-in",
+          "domain": "justo.ca"
+        },
+        "socialProof": {
+          "googleRating": null,
+          "reviewCount": null,
+          "topKeywords": [
+            "Property Investment"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "best real estate in Toronto Canada",
+        "summary": "Justo’s blog post titled ‘4 Best Toronto Neighbourhoods to Invest In’ offers property stats and reasons to invest in Toronto real estate. It highlights average home prices and immigration trends but provides no contact details or lead capture.",
+        "personalizationHook": "Your blog ‘4 Best Toronto Neighbourhoods to Invest In’ shows strong local focus—let’s help you attract more investors with better SEO and lead capture.",
+        "websiteDetails": {
+          "title": "4 Best Toronto Neighbourhoods to Invest In",
+          "description": null,
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": "dhmanagement",
+      "company": {
+        "id": "649a716e-6d3b-4caf-9389-71c42c6e5e75",
+        "name": "DH Management",
+        "industry": "Real Estate",
+        "category": "Property management company",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "Shorting Rd, Scarborough, ON M1S 3S7, Canada",
+          "city": "Toronto",
+          "state": "Ontario",
+          "country": "Canada"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "http://dhpm.dhmanagement.ca/",
+          "domain": "dhpm.dhmanagement.ca"
+        },
+        "socialProof": {
+          "googleRating": 3.3,
+          "reviewCount": 10,
+          "topKeywords": [
+            "Property Management",
+            "Commercial Leasing",
+            "Property Maintenance",
+            "Storage",
+            "Property Search"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies Canada",
+        "summary": "DH Management is an established property management and leasing agency based in Toronto. It oversees several commercial properties, including Berczy Place, Weston-Westcreek, Shorting Sheppard Centre, and Port Credit Plaza, offering leasing, maintenance, property search, and management services.",
+        "personalizationHook": "DH Management operates notable Toronto properties such as Berczy Place and Weston-Westcreek, showcasing a strong local presence.",
+        "websiteDetails": {
+          "title": "DH Management",
+          "description": "",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "82caec7a-65fb-4a0e-8c57-b0622d79527b",
+        "name": "Niro Tharmakulasingam-Remax Community Realty Inc. Brokerage",
+        "industry": "Real Estate",
+        "category": "Real estate agency",
+        "businessSize": "Small",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "1265 Morningside Ave, Scarborough, ON M1B 3V9, Canada",
+          "city": "Toronto",
+          "state": "Ontario",
+          "country": "Canada"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": "+1 (647) 244-9878",
+          "rawPhone": "+16472449878",
+          "email": "contact@realtorniro.com",
+          "website": "https://www.realtorniro.com/",
+          "domain": "realtorniro.com"
+        },
+        "socialProof": {
+          "googleRating": 5,
+          "reviewCount": 14,
+          "topKeywords": [
+            "Residential & Commercial Real Estate"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies Canada",
+        "summary": "Niro Tharmakulasingam is a Scarborough‑based real estate agent with five years of experience, focusing on client‑centric service, property marketing, and financing guidance. He offers residential and commercial property advice, home staging, and online calculators to aid buyers and sellers.",
+        "personalizationHook": "Niro’s five‑year commitment to listening and follow‑through aligns perfectly with a modern, AI‑enhanced website.",
+        "websiteDetails": {
+          "title": "Niro Tharmakulasingam Real Estate",
+          "description": "Niro Tharmakulasingam Top Real Estate Agent in Scarborough brings five years of experience, excellent customer service and a commitment to work hard, listen and follow through, building lasting client relationships.",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "555ed6ff-a7b4-4b5c-ad87-698cd6da071e",
+        "name": "Paul Johnston",
+        "industry": "Real Estate",
+        "category": "Real Estate Agency",
+        "businessSize": "Medium",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": null,
+          "city": "Toronto",
+          "state": "Ontario",
+          "country": "Canada"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": "+1 (416) 897-5480",
+          "rawPhone": "+14168975480",
+          "email": "paul@pauljohnston.com",
+          "website": "https://www.pauljohnston.com/",
+          "domain": "pauljohnston.com"
+        },
+        "socialProof": {
+          "googleRating": null,
+          "reviewCount": null,
+          "topKeywords": [
+            "Residential Property Sales",
+            "Unique Urban Homes Brokerage",
+            "Condo & Loft Sales",
+            "Townhome Sales",
+            "Commercial Property Sales"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "best real estate in Toronto Canada",
+        "summary": "Paul Johnston is a Toronto‑based real estate agent focusing on unique urban homes, modern condos, vintage lofts, and townhomes. The website looks professional but could benefit from stronger SEO, digital marketing, and CRM integration to boost lead generation.",
+        "personalizationHook": "I saw Paul Johnston’s modern Toronto home listings – we can help you attract more online leads.",
+        "websiteDetails": {
+          "title": "Discover Unique Urban Homes in Toronto - Modern Homes, Vintage Lofts, condos",
+          "description": "Paul Johnston sells modern Toronto homes, unique lofts, condos, townhomes and commercial properties in Toronto.",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "be4c9bec-919f-4c84-aa49-048f20541e6e",
+        "name": "Michael Carr Realtor",
+        "industry": "Real Estate",
+        "category": "Real estate agency",
+        "businessSize": "Micro",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "885 Progress Ave #209, Scarborough, ON M1H 3G3, Canada",
+          "city": "Toronto",
+          "state": "Ontario",
+          "country": "Canada"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://bluffs.ca/",
+          "domain": "bluffs.ca"
+        },
+        "socialProof": {
+          "googleRating": 4.9,
+          "reviewCount": 16,
+          "topKeywords": [
+            "Property Search",
+            "Market Analysis",
+            "Negotiation",
+            "Financing Guidance",
+            "Closing Support"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies Canada",
+        "summary": "Michael Carr Realtor offers residential real estate services in Scarborough Bluffs, focusing on buying, selling, and property guidance. The website provides basic information but lacks contact details and modern marketing tools.",
+        "personalizationHook": "We love how Michael Carr showcases Scarborough Bluffs lake view homes—let's help you highlight yours like that.",
+        "websiteDetails": {
+          "title": "Scarborough Bluffs Real Estate & Guide | Michael Carr, Realtor",
+          "description": "Welcome to Scarborough Bluffs Homes in Toronto and Michael Carr real estate agent. Browse homes for sale some with beautiful lake view homes! Find and buy your dream home in Birchcliffe, Cliffside, Cliffcrest, Scarborough Village and Guildwood.",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "c9fd67e4-ff1c-4554-ae07-3f861ced938e",
+        "name": "Coldwell Banker Summit Realty, Brokerage",
+        "industry": "Real Estate",
+        "category": "Real estate agency",
+        "businessSize": "Medium",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "3100 Steeles Ave W Ste 310, Vaughan, ON L4K 3R1, Canada",
+          "city": "Vaughan",
+          "state": "Ontario",
+          "country": "Canada"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "http://www.summitly.ca/",
+          "domain": "summitly.ca"
+        },
+        "socialProof": {
+          "googleRating": 4.9,
+          "reviewCount": 56,
+          "topKeywords": [
+            "Homes for sale",
+            "Rentals",
+            "Property valuations",
+            "New construction listings"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies Canada",
+        "summary": "Coldwell Banker Summit Realty, Brokerage operates in Ontario’s real estate market, offering MLS listings for homes, rentals, and new construction through RECO-registered agents. Their site features Zara AI for property search and viewings but lacks direct contact details and appears to need digital marketing improvements. They are an established medium-sized agency seeking growth via AI integration and better online presence.",
+        "personalizationHook": "Your site highlights Zara AI but still shows “Direct line coming soon,” leaving leads without immediate contact.",
+        "websiteDetails": {
+          "title": "Ontario Real Estate: MLS® Homes for Sale & Rent | Summitly Ontario real estate on MLS®: search homes for sale and rent, sold prices and pre-construction with RECO-registered agents at Coldwell Banker Summit Realty.",
+          "description": "Summitly shows active TRREB MLS® listings across Ontario: homes for sale, rentals, new construction and sold prices. Chat or speak with Zara, our AI virtual agent, 24/7. RECO-registered Coldwell Banker Summit Realty agents handle viewings, offers and closing.",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": "remax-toronto",
+      "company": {
+        "id": "0928fc66-8a57-4605-84af-99de969871d0",
+        "name": "RE/MAX Toronto",
+        "industry": "Real Estate",
+        "category": "Real Estate Agency",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": null,
+          "city": "Toronto",
+          "state": "Ontario",
+          "country": "Canada"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://www.remax.ca/on/toronto-real-estate",
+          "domain": "remax.ca"
+        },
+        "socialProof": {
+          "googleRating": null,
+          "reviewCount": null,
+          "topKeywords": [
+            "Market Intelligence & Analytics",
+            "Agent Services & Guidance",
+            "Property Search & Filtering"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "best real estate in Toronto Canada",
+        "summary": "REMAX Toronto provides residential property listings for sale and rent, featuring houses, condos, and other property types with detailed filters. The site highlights proven expertise, market intelligence, and local trust, positioning REMAX as a leading real estate brand.",
+        "personalizationHook": "REMAX is recognized as the Most Trusted Agents in Real Estate*.",
+        "websiteDetails": {
+          "title": "Toronto Real Estate - Houses for Sale in Toronto | REMAX",
+          "description": "Toronto Real Estate - Houses for Sale in Toronto | REMAX Explore all Toronto real estate with REMAX, Canada's #1 Real Estate Brand. View homes for sale in Toronto, property images, MLS® house details and more!",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "b6332cfe-b5bf-4c97-9730-15de0cf42c6e",
+        "name": "Global Strategy Real estate, Inc. (GSR)",
+        "industry": "Real Estate",
+        "category": "Property management company",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "7625 Guijo St, cor Sacred Heart St, Makati City, 1203 Metro Manila, Philippines",
+          "city": "Makati City",
+          "state": "Metro Manila",
+          "country": "PH"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://www.gsr-ph.com/",
+          "domain": "gsr-ph.com"
+        },
+        "socialProof": {
+          "googleRating": 4.8,
+          "reviewCount": 177,
+          "topKeywords": [
+            "Property Management and Consultation",
+            "Furnishing",
+            "Online Marketing",
+            "Client Relations",
+            "Property Maintenance",
+            "Billing and Accounting"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies Philippines",
+        "summary": "GSR offers a one‑stop property management solution targeting Japanese owners in the Philippines, covering furnishing, marketing, client relations, maintenance, billing and accounting to unlock property value.",
+        "personalizationHook": "GSR’s one‑stop Japanese property management solution simplifies real‑estate ownership in the Philippines.",
+        "websiteDetails": {
+          "title": "One-stop Japanese Property Management Solution in the Philippines | Global Strategy Real estate, Inc. (GSR株式会社) – Keeping Real Estate Simple KEEPING REAL ESTATE SIMPLE",
+          "description": "One-stop Japanese Property Management Solution in the Philippines",
+          "type": "Other"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "2f03b4e6-dfaf-45e1-93ec-3b17910cbcc1",
+        "name": "Cathay Land, Inc.",
+        "industry": "Real Estate",
+        "category": "Real estate developer",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "Ortigas Ave, Ortigas Center, Quezon City, Metro Manila, Philippines",
+          "city": "Quezon City",
+          "state": "Metro Manila",
+          "country": "PH"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "http://www.cathaylandinc.com/",
+          "domain": "cathaylandinc.com"
+        },
+        "socialProof": {
+          "googleRating": 4.3,
+          "reviewCount": 54,
+          "topKeywords": [
+            "Real Estate Development",
+            "Luxury Residential Communities",
+            "Township & Mixed-Use Development",
+            "Condominium Projects",
+            "Outlet Mall Development",
+            "Business District Creation"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies Philippines",
+        "summary": "Cathay Land, Inc. is a Philippine real‑estate developer focused on luxury residential communities, townships, and mixed‑use projects such as South Forbes Golf City and Acienda Designer Outlet. The firm emphasizes future‑oriented, high‑end living spaces that reflect Filipino aspirations, with joint ventures like the Ayala Land partnership.",
+        "personalizationHook": "Cathay Land builds future‑focused luxury communities like South Forbes Golf City, shaping the next generation of Filipino living spaces.",
+        "websiteDetails": {
+          "title": "Home - Cathay Land Inc. We build in settings that favor the future. Learn how we defy modern luxury, comfort, and convenience to originate lifestyle options for the coming generations.",
+          "description": "Home - Cathay Land Inc. We build in settings that favor the future. Learn how we defy modern luxury, comfort, and convenience to originate lifestyle options for the coming generations.",
+          "type": "Other"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "72ec7315-a603-4daf-bac0-bddf831ea192",
+        "name": "Rockwell Land Corporation",
+        "industry": "Real Estate",
+        "category": "Real estate developer",
+        "businessSize": "Large",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "8 Rockwell Hidalgo Drive Rockwell Center, Makati City, Metro Manila, Philippines",
+          "city": "Makati City",
+          "state": "Metro Manila",
+          "country": "PH"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://e-rockwell.com/",
+          "domain": "e-rockwell.com"
+        },
+        "socialProof": {
+          "googleRating": 4.2,
+          "reviewCount": 53,
+          "topKeywords": [
+            "Residential property development",
+            "Luxury condominium development",
+            "Master‑planned community creation"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies Philippines",
+        "summary": "Rockwell Land Corporation develops premium residential communities across the Philippines, including luxury condos, master‑planned neighborhoods, and beachfront properties in key cities and provinces.",
+        "personalizationHook": "Rockwell’s Cabo San Diego spans over 350 hectares, redefining beachfront living.",
+        "websiteDetails": {
+          "title": "Rockwell Land Corporation",
+          "description": "Rockwell Land offers prime residential communities across key locations in the Philippines, including Makati, Cebu, Bacolod, Pampanga, and more. Inquire today.",
+          "type": "Other"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "62d906bf-0033-4b49-9935-a1d2d30bf9a5",
+        "name": "La Theoz Real Estate Solution Services, Inc",
+        "industry": "Real Estate",
+        "category": "Real estate agent",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "Rockwell Center, 5/F Phinma Plaza 39 Plaza Dr Makati, 1200, Rockwell Dr, Makati City, 1227 Metro Manila, Philippines",
+          "city": "Makati City",
+          "state": "Metro Manila",
+          "country": "PH"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "http://www.latheoz.com/",
+          "domain": "latheoz.com"
+        },
+        "socialProof": {
+          "googleRating": 4.9,
+          "reviewCount": 40,
+          "topKeywords": [
+            "Property Sales",
+            "Property Rental",
+            "Rent‑to‑Own",
+            "Pre‑selling Projects",
+            "Property Listing Service"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies Philippines",
+        "summary": "La Theoz Real Estate Solution Services, Inc is an established real estate marketing firm in Metro Manila offering property sales, rentals, rent‑to‑own and pre‑selling projects across multiple Philippine locations. The site showcases featured listings but lacks modern design and lead capture.",
+        "personalizationHook": "La Theoz promotes “SMART INVESTMENT IS TO INVEST NOW” with diverse property options across the Philippines.",
+        "websiteDetails": {
+          "title": "La Theoz Real Estate Solution Services, Inc",
+          "description": "Service You Deserve. People You can TRUST! - La Theoz offers property sales, rentals, rent‑2 Own and pre‑selling projects across the Philippines.",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "11b2092b-2d1d-4c12-9591-404fa75320a6",
+        "name": "AM Properties PH (Quezon City)",
+        "industry": "Real Estate",
+        "category": "Real estate agency",
+        "businessSize": "Unknown",
+        "businessMaturity": "Growing",
+        "established": null,
+        "location": {
+          "address": "Nueva Ecija street, Misamis St, Quezon City, 1105 Metro Manila, Philippines",
+          "city": "Quezon City",
+          "state": "Metro Manila",
+          "country": "PH"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://amproperties.ph/",
+          "domain": "amproperties.ph"
+        },
+        "socialProof": {
+          "googleRating": 5,
+          "reviewCount": 27,
+          "topKeywords": [
+            "Property acquisition",
+            "Property marketing",
+            "Property management",
+            "Rent-to-own programs",
+            "Professional guidance for sellers"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies Philippines",
+        "summary": "AM Properties PH is a Philippine real estate agency founded in Mabalacat, Pampanga, focusing on simplifying property transactions for buyers, sellers, and investors. It offers property acquisition, marketing, management, rent‑to‑own programs, and professional guidance across Metro Manila and the Philippines.",
+        "personalizationHook": "Simplify your property journey with AM Properties PH – we turn possibilities into reality.",
+        "websiteDetails": {
+          "title": "AMProperties – Official Website",
+          "description": "Where Property Meets Possibility At AM PROPERTIES PH, we believe every property holds potential. From dream homes to smart investments, we connect you with opportunities that turn possibilities into reality.",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "9e4d4a3d-1918-45ec-a060-9d701385e081",
+        "name": "Easy Property Match - Real Estate Broker Philippines",
+        "industry": "Real Estate",
+        "category": "Real estate agency",
+        "businessSize": null,
+        "businessMaturity": null,
+        "established": null,
+        "location": {
+          "address": "Cityland Pasong Tamo, Makati, 1230, Pio del Pilar, Makati City, 1200 Metro Manila, Philippines",
+          "city": "Makati City",
+          "state": "Metro Manila",
+          "country": "PH"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": "+639190686068",
+          "rawPhone": "+639190686068",
+          "email": null,
+          "website": "https://easypropertymatch.com/",
+          "domain": "easypropertymatch.com"
+        },
+        "socialProof": {
+          "googleRating": 5,
+          "reviewCount": 3,
+          "topKeywords": [
+            "Real estate agency"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies Philippines",
+        "summary": null,
+        "personalizationHook": null,
+        "websiteDetails": {
+          "title": null,
+          "description": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "slug": "dreamhome",
+      "company": {
+        "id": "6ce2d5c5-a3fb-49c2-90ab-a6e4263ec29d",
+        "name": "Dream Home Real Estate PH",
+        "industry": "Real Estate",
+        "category": "Real estate agency",
+        "businessSize": "Small",
+        "businessMaturity": "Growing",
+        "established": null,
+        "location": {
+          "address": "Harvard Suites Condominium, 1952 Taft Ave, Malate, Manila, 1004 Metro Manila, Philippines",
+          "city": "Manila",
+          "state": "Metro Manila",
+          "country": "PH"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://dreamhomerealestate.mystrikingly.com/",
+          "domain": "dreamhomerealestate.mystrikingly.com"
+        },
+        "socialProof": {
+          "googleRating": 5,
+          "reviewCount": 62,
+          "topKeywords": [
+            "Buying Properties",
+            "Rental Solutions",
+            "Entertainment Room"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies Philippines",
+        "summary": "Dream Home Real Estate PH provides property buying, rental (including Airbnb), and an entertainment room for events, targeting home seekers and renters in the Philippines.",
+        "personalizationHook": "Discover the ultimate entertainment room for gaming and unforgettable gatherings at Dream Home Real Estate.",
+        "websiteDetails": {
+          "title": "Dream Home Real Estate",
+          "description": "Discover a world of exceptional real estate opportunities tailored just for you.",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "996b025b-fd3e-4912-be61-de9aa79758d1",
+        "name": "Top Realty Corporation",
+        "industry": "Real Estate",
+        "category": "Real estate agency",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "22nd Floor, High Street South Corporate Plaza, Tower 1, Unit 2218 26th St, Taguig, Metro Manila, Philippines",
+          "city": "Taguig",
+          "state": "Metro Manila",
+          "country": "PH"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "http://toprealty.com.ph/",
+          "domain": "toprealty.com.ph"
+        },
+        "socialProof": {
+          "googleRating": 4.9,
+          "reviewCount": 282,
+          "topKeywords": [
+            "Property Sales",
+            "Property Leasing"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies Philippines",
+        "summary": "Top Realty Corporation is a Metro Manila-based real estate brokerage offering condominiums, houses, and lots for sale and lease. Their website provides property listings and location filters but lacks modern design, branding, and lead capture. The business appears established with clear digital marketing needs.",
+        "personalizationHook": "Top Realty offers brand new and resale condominiums across Metro Manila to help you buy, lease, or sell quickly.",
+        "websiteDetails": {
+          "title": "Top Realty",
+          "description": "Top Realty is your real estate partner to expedite buying, leasing, and selling your property. Brand New and Resale Condominiums,House and Lot For Sale.",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "4d58fc28-c7d6-4b34-ad72-062a4a0c516a",
+        "name": "Rafeli Realty & Development Corp.",
+        "industry": "Real Estate",
+        "category": "Real estate developer",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "4723 Arellano Ave, Makati City, Metro Manila, Philippines",
+          "city": "Makati City",
+          "state": "Metro Manila",
+          "country": "PH"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "http://www.rafelirealty.com/",
+          "domain": "rafelirealty.com"
+        },
+        "socialProof": {
+          "googleRating": 4.8,
+          "reviewCount": 15,
+          "topKeywords": [
+            "Property Development",
+            "Affordable Housing",
+            "Condominium Construction"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies Philippines",
+        "summary": "Rafeli Realty & Development Corp. is a property developer founded in 1993, offering expandable condominiums like 102 Plaza, Rafael Tower, Elaine Tower, Eli Tower, The Fleming Residences, and Zamora Sky Towers. Their mission is to provide affordable, comfortable homes for Filipinos. The website is basic with limited online presence and lead capture.",
+        "personalizationHook": "We admire Rafeli’s mission to provide affordable homes for Filipinos and can help modernize your online presence.",
+        "websiteDetails": {
+          "title": "Rafeli Realty & Development Corporation",
+          "description": "Property developer offering expandable condominiums such as 102 Plaza, Rafael Tower, Elaine Tower, Eli Tower, The Fleming Residences, Zamora Sky Towers and upcoming projects, with a mission to provide affordable homes for Filipinos.",
+          "type": "Other"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "12f67cec-7b5e-4786-81b9-c95810eabee2",
+        "name": "EVERRA Real Estate",
+        "industry": "Real Estate",
+        "category": "Real estate agency",
+        "businessSize": "Small",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "UB, 111 Paseo de Roxas, Legazpi Village, Makati City, 1229 Metro Manila, Philippines",
+          "city": "Makati City",
+          "state": "Metro Manila",
+          "country": "PH"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://makatibroker.com/",
+          "domain": "makatibroker.com"
+        },
+        "socialProof": {
+          "googleRating": 4.8,
+          "reviewCount": 17,
+          "topKeywords": [
+            "Property Sales",
+            "Property Leasing",
+            "Luxury Real Estate Consulting",
+            "Investment Advisory"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies Philippines",
+        "summary": "EVERRA Real Estate (MakatiBroker.com) offers luxury condos and homes for sale, lease, and investment across Makati, BGC, and Metro Manila. Led by Vinia B. Lapuz, a licensed real estate consultant, the firm provides prestigious property services but has limited digital presence and lead‑capture tools.",
+        "personalizationHook": "Vinia B. Lapuz, the licensed real estate consultant behind MakatiBroker, helps you find prestige addresses in Makati and BGC.",
+        "websiteDetails": {
+          "title": "Your Trusted Makati Broker | Luxury Condos & Homes | MakatiBroker.com",
+          "description": "Buy, sell, or lease luxury condos and homes in Makati & BGC with MakatiBroker. Trusted real estate services by EVERRA Real Estate. Contact us today.",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "547cceb5-77c7-4930-9d65-e6c7486554f2",
+        "name": "CitiGlobal Realty and Development, Inc.",
+        "industry": "Real Estate",
+        "category": "Real estate developer",
+        "businessSize": "Medium",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "12th Floor, 5 West Ave, Quezon City, Metro Manila, Philippines",
+          "city": "Quezon City",
+          "state": "Metro Manila",
+          "country": "PH"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "http://www.citiglobal.com.ph/",
+          "domain": "citiglobal.com.ph"
+        },
+        "socialProof": {
+          "googleRating": 4.3,
+          "reviewCount": 236,
+          "topKeywords": [
+            "Real estate development",
+            "Investment property sales",
+            "Leisure property development"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies Philippines",
+        "summary": "CitiGlobal Realty & Development, Inc. is a Philippine real estate developer focusing on affordable, income‑generating leisure properties in vacation hotspots such as Palawan and Tagaytay. They offer house‑and‑lot packages and aim to promote the Philippines as a premier tourist destination.",
+        "personalizationHook": "CitiGlobal’s exclusive Tagaytay Fontaine Villas highlight the Philippines’ vacation potential.",
+        "websiteDetails": {
+          "title": "Best Real Estate Developer in the Philippines for Investment Properties | CitiGlobal Realty & Development, Inc.",
+          "description": "CitiGlobal Realty & Development, Inc. is a trusted real estate developer in the Philippines that offers affordable, income-generating leisure properties for investment in different vacation hotspots in the Philippines including Palawan, Tagaytay, and others.",
+          "type": "Other"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "2a9a577f-0f29-4bb7-a033-2a15391c14e7",
+        "name": "BedandGo Real Estate",
+        "industry": "Real Estate",
+        "category": "Real estate agency",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "5th Flr., Insular Health Care Building 167 Dela Rosa, corner Legazpi St, Legazpi Village, Makati City, 1229 Metro Manila, Philippines",
+          "city": "Makati City",
+          "state": "Metro Manila",
+          "country": "PH"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "http://bedandgoinc.com/",
+          "domain": "bedandgoinc.com"
+        },
+        "socialProof": {
+          "googleRating": 4.9,
+          "reviewCount": 282,
+          "topKeywords": [
+            "Property Sales",
+            "Property Rentals",
+            "Property Management",
+            "Online Property Tours",
+            "Japanese Language Support"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies Philippines",
+        "summary": "BedandGo Inc. is a Japanese‑language real estate agency based in Manila, providing condo sales, rentals, and management for Japanese expats and investors. With over 15 years of experience, they guide clients from property search through purchase and post‑sale care, leveraging TV exposure and online tours.",
+        "personalizationHook": "Bed&Go has served Japanese expats in Manila for 15+ years and appeared on Japanese TV—let’s modernize your digital presence the same way.",
+        "websiteDetails": {
+          "title": "フィリピン・マニラのコンドミニアム売買・賃貸・不動産管理｜日本人向け不動産サポート | BedandGo Inc. フィリピン・マニラを中心に、マカティ・BGC・オルティガスなどメトロマニラのコンドミニアム売買、賃貸、不動産管理を日本語でサポート。物件探し、内見、交渉、契約、引き渡しから購入後の物件管理まで、フィリピン不動産を検討する日本人駐在員、投資家、海外在住オーナーのニーズに合わせてBed&Goがお手伝いします。",
+          "description": "BedandGo Inc. is a Japanese‑language real estate agency in Manila offering condo sales, rentals, and full property management for Japanese expatriates, investors, and owners, with end‑to‑end support from search to post‑purchase care.",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": "remax-philippines",
+      "company": {
+        "id": "7654089c-adcd-4f26-89d5-93dbde5ec5c2",
+        "name": "RE/MAX Philippines",
+        "industry": "Real Estate",
+        "category": "Real Estate Agency",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": null,
+          "city": null,
+          "state": null,
+          "country": null
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://remax.ph/",
+          "domain": "remax.ph"
+        },
+        "socialProof": {
+          "googleRating": null,
+          "reviewCount": null,
+          "topKeywords": []
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "best real estate in Metro Manila Philippines",
+        "summary": "REMAX Philippines is a real estate agency offering residential and commercial property services. The website currently fails to load due to JavaScript requirements and provides minimal accessible content or contact information, limiting its effectiveness as a lead generation tool.",
+        "personalizationHook": "REMAX Philippines promises unparalleled professional service for residential and commercial properties.",
+        "websiteDetails": {
+          "title": "REMAX Philippines",
+          "description": "Main REMAX Philippines offers unparalleled professional service and caters to a wide variety of real estate properties ranging from residential to commercial.",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "cdce7a66-bd95-4b1b-b1a8-1f408c70d6b0",
+        "name": "The Lead Realty",
+        "industry": "Real Estate",
+        "category": "Real estate agency",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "Unit 910, High Street South Corporate Plaza, Tower 1, 26th St, cor 9th Ave, Taguig, 1634, Philippines",
+          "city": "Taguig",
+          "state": "Metro Manila",
+          "country": "PH"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "http://www.theleadrealty.com/",
+          "domain": "theleadrealty.com"
+        },
+        "socialProof": {
+          "googleRating": 4.7,
+          "reviewCount": 23,
+          "topKeywords": [
+            "Property Investments",
+            "Property Management",
+            "Aftersales Service",
+            "Bank Financing",
+            "Property Loan Assistance"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies Philippines",
+        "summary": "The Lead Realty is a Philippines‑based property consultancy and agency offering investment, management, aftersales, financing, and loan assistance, partnered with major developers to serve buyers, renters, sellers, and property owners.",
+        "personalizationHook": "The Lead Realty partners with major Philippine developers to deliver comprehensive property solutions.",
+        "websiteDetails": {
+          "title": "The Lead Realty",
+          "description": "The Lead Realty Company is a realty and property consultancy firm based in the Philippines specializing in property investments, property management, aftersales service, bank financing and property loan assistance. Partnered and accredited with the major developers in the Philippines. Whether you're looking for a property to buy or to rent, or you want your property to be sold or rented out, Lead Realty is the best company to deal with.",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "272b34c6-8b73-4719-8ea9-20d92a7e0fdd",
+        "name": "Property Source PH - RE/MAX Capital",
+        "industry": "Real Estate",
+        "category": "Real estate agency",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "5th floor, Phinma Plaza, 39 Hidalgo Dr, Rockwell Center, Makati City, 1210 Metro Manila, Philippines",
+          "city": "Makati City",
+          "state": "Metro Manila",
+          "country": "PH"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://propertysourceph.com/",
+          "domain": "propertysourceph.com"
+        },
+        "socialProof": {
+          "googleRating": 5,
+          "reviewCount": 68,
+          "topKeywords": [
+            "Residential property sales",
+            "Real estate brokerage"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies Philippines",
+        "summary": "Property Source PH - RE/MAX Capital is a real‑estate agency offering houses, condos, townhouses and vacant lots for sale across Metro Manila’s premium areas such as New Manila, San Juan, Makati and Greenhills.",
+        "personalizationHook": "Your perfect Metro Manila home could be just a search away on Property Source PH.",
+        "websiteDetails": {
+          "title": "Metro Manila Houses for Sale | Property Source PH",
+          "description": "Buying a house for sale in Metro Manila will be the best decision you can make. We will help you towards your journey to your dream home, check us out!",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "4dc3a124-99d1-40db-b4bf-1f640505604f",
+        "name": "Forte Realty Corporation",
+        "industry": "Real Estate",
+        "category": "Real estate developer",
+        "businessSize": null,
+        "businessMaturity": null,
+        "established": null,
+        "location": {
+          "address": "5th Floor, Kalayaan Building, 164, Salcedo, Makati City, 1229 Metro Manila, Philippines",
+          "city": "Makati City",
+          "state": "Metro Manila",
+          "country": "PH"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": "+63288107577",
+          "rawPhone": "+63288107577",
+          "email": null,
+          "website": "http://www.forterealty.com/",
+          "domain": "forterealty.com"
+        },
+        "socialProof": {
+          "googleRating": 4.5,
+          "reviewCount": 2,
+          "topKeywords": [
+            "Real estate developer"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies Philippines",
+        "summary": null,
+        "personalizationHook": null,
+        "websiteDetails": {
+          "title": null,
+          "description": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "c4bc3aff-85fd-4037-b5b8-a18ac43ce9f9",
+        "name": "Kondo Ko",
+        "industry": "Real Estate",
+        "category": "Property management company",
+        "businessSize": "Medium",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "21/F Unit 2116-17 Park Triangle Corporate Plaza, North Tower 32nd St. cor. 11th Avenue Bonifacio Global City, Taguig, 1630 Metro Manila, Philippines",
+          "city": "Taguig",
+          "state": "Metro Manila",
+          "country": "PH"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://www.kondoko.com/",
+          "domain": "kondoko.com"
+        },
+        "socialProof": {
+          "googleRating": 4.2,
+          "reviewCount": 128,
+          "topKeywords": [
+            "Condo leasing and sales",
+            "Tenant acquisition and management",
+            "Maintenance & repairs coordination",
+            "Rental yield & income optimization",
+            "Marketing & listing of condo units",
+            "Inventory and supplies management"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies Philippines",
+        "summary": "Kondo Ko is a Philippines‑based property management agency focusing on condo units, offering leasing, tenant handling, maintenance, rental yield optimization, and related services for owners.",
+        "personalizationHook": "Kondo Ko already helps over 300 condo owners boost rental yields—let’s optimize yours together.",
+        "websiteDetails": {
+          "title": "Property Management Companies in Philippines | Kondo Ko",
+          "description": "Get expert property management in the Philippines with Kondo Ko. We handle tenants, maintenance & rentals while maximizing your ROI. Trusted by investors in Makati, BGC & Cebu.",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "cd6351d2-369c-473c-a654-25343ab2be4b",
+        "name": "RE/MAX Gold Philippines - Real Estate Brokerage",
+        "industry": "Real Estate",
+        "category": "Real estate agency",
+        "businessSize": "Medium",
+        "businessMaturity": "Growing",
+        "established": null,
+        "location": {
+          "address": "Unit F Garden Level, Corinthian Plaza, 121 Paseo de Roxas, Legazpi Village, Makati City, 1229 Metro Manila, Philippines",
+          "city": "Makati City",
+          "state": "Metro Manila",
+          "country": "PH"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://remaxgold.ph/?utm_source=local&utm_medium=organic&utm_campaign=gmb-PH",
+          "domain": "remaxgold.ph"
+        },
+        "socialProof": {
+          "googleRating": 4.9,
+          "reviewCount": 100,
+          "topKeywords": [
+            "Residential Property Sales",
+            "Commercial Property Sales",
+            "Industrial Property Sales"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies Philippines",
+        "summary": "RE/MAX Gold Philippines, founded in 2020 by Rose Flores and Jimmy Cassells, is a growing real estate brokerage offering residential, commercial, and industrial property services across multiple Philippine locations with a team of 20+ agents.",
+        "personalizationHook": "Your 20+ agent team covers Makati, BGC, and all major Philippine markets – let’s boost your online listings to match your world‑class service.",
+        "websiteDetails": {
+          "title": "#1 Real Estate Broker in the Philippines | RE/MAX Gold",
+          "description": "RE/MAX Philippines is the top real estate broker in the country - buying & selling more property than any other real estate company.",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "7b4dd367-7541-4be3-9257-9b66b6ec0b06",
+        "name": "Best Realtor - Philippines",
+        "industry": "Real Estate",
+        "category": "Real Estate Agency",
+        "businessSize": "Unknown",
+        "businessMaturity": "Unknown",
+        "established": null,
+        "location": {
+          "address": null,
+          "city": null,
+          "state": null,
+          "country": null
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://bestrealtor.ph/",
+          "domain": "bestrealtor.ph"
+        },
+        "socialProof": {
+          "googleRating": null,
+          "reviewCount": null,
+          "topKeywords": [
+            "Real Estate Services"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "best real estate in Metro Manila Philippines",
+        "summary": "",
+        "personalizationHook": "",
+        "websiteDetails": {
+          "title": "Unknown",
+          "description": "Unknown",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "3ae755af-8f04-469b-a333-6cb1c47d09c3",
+        "name": "LJ Hooker Gold Coast",
+        "industry": "Real Estate",
+        "category": "Real Estate Agency",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": null,
+          "city": "Gold Coast",
+          "state": "Queensland",
+          "country": "Australia"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://goldcoast.ljhooker.com.au/",
+          "domain": "goldcoast.ljhooker.com.au"
+        },
+        "socialProof": {
+          "googleRating": null,
+          "reviewCount": null,
+          "topKeywords": [
+            "Buying",
+            "Selling",
+            "Renting",
+            "Investment Management"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "best real estate in Queensland ,Gold Coast  Australia",
+        "summary": "LJ Hooker Gold Coast, established in 1956, is a longstanding real estate agency on the Gold Coast offering property buying, selling, renting, and investment services. They aim to provide expert advice and maximise client outcomes through award‑winning training and local market knowledge.",
+        "personalizationHook": "Since 1956, LJ Hooker Gold Coast has been a trusted name in property on the Gold Coast.",
+        "websiteDetails": {
+          "title": "LJ Hooker Gold Coast – Homepage",
+          "description": "Gold Coast's Real Estate Agent. Buying, renting, investing and sell your home in Gold Coast and surrounds",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "8b8d5e44-4e49-4972-aeff-7a56a0d289bf",
+        "name": "Driven Properties",
+        "industry": "Real Estate",
+        "category": "Real Estate Agency",
+        "businessSize": "Large",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": null,
+          "city": "Dubai",
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://www.drivenproperties.com/blog/best-real-estate-companies-in-dubai",
+          "domain": "drivenproperties.com"
+        },
+        "socialProof": {
+          "googleRating": null,
+          "reviewCount": null,
+          "topKeywords": [
+            "Real estate agency"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "best real estate in Dubai UAE",
+        "summary": "Driven Properties publishes a 2026 guide ranking Dubai’s leading real estate firms, emphasizing sales performance, market presence, project quality, and buyer demand. The article highlights major developers like Emaar, Nakheel, and emerging players, noting market challenges such as handover records, service charges, and buyer selection criteria. It serves as a data-driven resource for property buyers navigating Dubai’s complex market.",
+        "personalizationHook": "Driven Properties points out that buyers now care about handover quality, service charges, and community upkeep over flashy tower launches.",
+        "websiteDetails": {
+          "title": "11 Best Real Estate Companies in Dubai 2026",
+          "description": "Discover Dubai’s top real estate companies ranked by sales, market presence, project quality, and buyer demand. Get data-driven insights on the top real estate companies in Dubai for 2026.",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "3e4d6c1c-7067-4d7c-b5a3-c6ccd9ed4373",
+        "name": "Real Choice Real Estate Brokers LLC",
+        "industry": "Real Estate",
+        "category": "Real estate agent",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "API World Tower - Office # 401 Sheikh Zayed Rd - Trade Center First - Dubai - United Arab Emirates",
+          "city": null,
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://realchoicedubai.com/",
+          "domain": "realchoicedubai.com"
+        },
+        "socialProof": {
+          "googleRating": 4.7,
+          "reviewCount": 158,
+          "topKeywords": [
+            "Property Sales",
+            "Property Rentals",
+            "Off‑Plan Sales",
+            "Property Search & Consultancy",
+            "International Investor Services"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies UAE",
+        "summary": "Real Choice Real Estate Brokers LLC is a RERA‑registered Dubai brokerage offering curated residential and investment properties across the UAE. The site currently lacks listings, contact info, and modern UI, indicating a need for digital improvement and marketing support.",
+        "personalizationHook": "Real Choice promises RERA‑registered, transparent transactions for Dubai’s global investors.",
+        "websiteDetails": {
+          "title": "Real Choice Real Estate Brokers Dubai",
+          "description": "Curated selection of Dubai's finest residential and investment properties.",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "738f5687-9907-4d6f-bb26-0aadf2d54225",
+        "name": "Sotheby's International Realty Dubai",
+        "industry": "Real Estate",
+        "category": "Real Estate Agency",
+        "businessSize": "Unknown",
+        "businessMaturity": "Unknown",
+        "established": null,
+        "location": {
+          "address": null,
+          "city": "Dubai",
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://www.sothebysrealty.com/eng/sales/du-uae",
+          "domain": "sothebysrealty.com"
+        },
+        "socialProof": {
+          "googleRating": null,
+          "reviewCount": null,
+          "topKeywords": [
+            "Luxury Real Estate"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "best real estate in Dubai UAE",
+        "summary": "Sotheby's Realty – Dubai listing website offering luxury homes for sale. The site currently requires JavaScript to view content and provides limited online presence, indicating room for a professional website redesign, improved UX, and lead‑generation tools.",
+        "personalizationHook": "Your luxury real estate site currently blocks visitors without JavaScript, limiting lead generation.",
+        "websiteDetails": {
+          "title": "Unknown",
+          "description": "Unknown",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "8233bc11-1f68-438f-8ec1-5469dafb3095",
+        "name": "Excel Properties",
+        "industry": "Real Estate",
+        "category": "Real estate agent",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "6 Sheikh Zayed Rd - Trade Center First - Dubai - United Arab Emirates",
+          "city": null,
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://excelproperties.ae/",
+          "domain": "excelproperties.ae"
+        },
+        "socialProof": {
+          "googleRating": 4.8,
+          "reviewCount": 73,
+          "topKeywords": [
+            "Luxury Property Sales",
+            "Luxury Property Rentals",
+            "Branded Residence Placement",
+            "Property Search & Consultation"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies UAE",
+        "summary": "Excel Properties is an established Dubai luxury real estate agency since 2001, offering high‑end villas, apartments, penthouses, and branded residences with a focus on concierge service and strategic insights. The website showcases property search but lacks contact info and advanced digital tools.",
+        "personalizationHook": "Excel Properties’ concierge-level luxury service and decades of Dubai expertise.",
+        "websiteDetails": {
+          "title": "Luxury Homes in Dubai | Excel Properties",
+          "description": "Your one-stop destination for luxury homes in Dubai. Explore high-end villas, apartments, penthouses & waterfront properties for sale or rent in Dubai.",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "b45e01b2-2622-4379-8a98-42b134ef0c5f",
+        "name": "Springfield Properties - #1 Real Estate Agency in Dubai",
+        "industry": "Real Estate",
+        "category": "Real Estate Agency",
+        "businessSize": "Large",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": null,
+          "city": "Dubai",
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://springfieldproperties.ae/",
+          "domain": "springfieldproperties.ae"
+        },
+        "socialProof": {
+          "googleRating": null,
+          "reviewCount": null,
+          "topKeywords": [
+            "Property sales",
+            "Property rentals",
+            "Property valuation"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "best real estate in Dubai UAE",
+        "summary": "Springfield Properties, founded in 2008, is Dubai’s top real estate agency with 200+ specialists, 5,000+ clients, and strong market presence across premium communities. They provide sales, rentals, and valuation services.",
+        "personalizationHook": "Springfield Properties boasts 200+ property specialists and 5,000+ happy clients.",
+        "websiteDetails": {
+          "title": "Springfield Properties - #1 Real Estate Agency in Dubai",
+          "description": "Springfield Properties is Dubai’s #1 real estate agency, offering expert guidance on buying, selling, and investing in premium properties across the UAE.",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": "vihaan",
+      "company": {
+        "id": "db5b3249-4033-49a2-b18b-0c6ebfd39bf7",
+        "name": "Vihaan Real Estate Brokerage",
+        "industry": "Real Estate",
+        "category": "Property investment company",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "M06 - Al Jawhara 2 Building, Khalid Bin Walid Road, Bur Dubai, Dubai, U.A.E, 7842+J2V17, located inside Al Jawhara 2 Building 1A St - Khalid Bin Al Waleed Rd - Mankhool - Dubai - United Arab Emirates",
+          "city": null,
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://vrebuae.com/",
+          "domain": "vrebuae.com"
+        },
+        "socialProof": {
+          "googleRating": 4.8,
+          "reviewCount": 38,
+          "topKeywords": [
+            "Property Buy/Sell/Rent",
+            "Off‑Plan Properties",
+            "Mortgages",
+            "Holiday Homes"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies UAE",
+        "summary": "Vihaan Real Estate Brokerage is an established Dubai agency offering property buy/sell/rent, off‑plan and mortgage services. The site provides basic navigation, an ROI calculator, and inquiry forms but lacks contact details, strong branding, and digital marketing, indicating a need for website enhancement and lead generation.",
+        "personalizationHook": "Your ROI calculator shows data‑driven insights for Dubai property investments.",
+        "websiteDetails": {
+          "title": "Vihaan Real Estate Brokerage",
+          "description": "Making Your Dream a Reality Trusted Dubai Property Experts Making your Dubai real estate journey smooth and successful.",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "be5b3f42-32d3-4be4-a801-cfff7a78ea2e",
+        "name": "Aalmar Real Estate Broker",
+        "industry": "Real Estate",
+        "category": "Real estate agency",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "metro - 401, Floor 4, One Deira Plaza - Exit 3 - above Gold Souq - Deira - Dubai - United Arab Emirates",
+          "city": null,
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": "+971502767550",
+          "rawPhone": "+971502767550",
+          "email": "info@aalmargroup.com",
+          "website": "http://www.aalmargroup.com/",
+          "domain": "aalmargroup.com"
+        },
+        "socialProof": {
+          "googleRating": 5,
+          "reviewCount": 22,
+          "topKeywords": [
+            "Real estate management services",
+            "Brokerage sales and leasing",
+            "Tenant representation",
+            "Development solutions",
+            "Valuation and advisory services",
+            "Landlord representation"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies UAE",
+        "summary": "Aalmar Real Estate Broker in Dubai offers home buying, selling, and renting, property management, valuations, and investment services, aiming to provide a hassle‑free experience for clients.",
+        "personalizationHook": "Aalmar Real Estate helps you find your perfect home in Dubai with expert agents.",
+        "websiteDetails": {
+          "title": "Aalmar Real Estate",
+          "description": "Aalmar Real Estate: At Your Service",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "81b691c1-e53d-49d4-a52e-d8d2c5a67d17",
+        "name": "Betterhomes",
+        "industry": "Real Estate",
+        "category": "Real Estate Agency",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": null,
+          "city": "Dubai",
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://www.bhomes.com/en",
+          "domain": "bhomes.com"
+        },
+        "socialProof": {
+          "googleRating": null,
+          "reviewCount": null,
+          "topKeywords": [
+            "Property Sales",
+            "Property Rentals",
+            "Off‑plan Projects"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "best real estate in Dubai UAE",
+        "summary": "Betterhomes is a 40‑year‑old Dubai real estate agency offering property sales, rentals, and off‑plan projects across the UAE.",
+        "personalizationHook": "Backed by 40 years of expertise, Betterhomes guides Dubai’s property market.",
+        "websiteDetails": {
+          "title": "Homes that move you",
+          "description": "Top Real Estate Agency & Brokerage in Dubai UAE UAE’s #1 real estate agency—Betterhomes—brings buyers, sellers, renters, and landlords together with expert agents. Find the best properties in the UAE today!",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "9c7e2922-c208-4851-afb5-fd24158b846b",
+        "name": "Property Junction International Real Estate Broker LLC",
+        "industry": "Real Estate",
+        "category": "Real estate agency",
+        "businessSize": "Medium",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "B301, Metha Plaza Building - Oud Metha - Dubai - United Arab Emirates",
+          "city": null,
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://www.propjunction.ae/",
+          "domain": "propjunction.ae"
+        },
+        "socialProof": {
+          "googleRating": 4.7,
+          "reviewCount": 96,
+          "topKeywords": [
+            "Property Listings",
+            "Off‑Plan Development Directory",
+            "Payment Plan Guidance"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies UAE",
+        "summary": "Property Junction International Real Estate Broker LLC is a UAE‑based agency offering an extensive off‑plan property directory with listings across apartments, villas, townhouses and more, emphasizing developer details, location, size, price and payment plans.",
+        "personalizationHook": "Property Junction offers over 1,988 townhouse listings across the UAE, making it a prime candidate for a modern, lead‑driving website.",
+        "websiteDetails": {
+          "title": "New Off Plan Developments in UAE | Property For Sale",
+          "description": "Property Junction provide a detailed off plan property directory complete with developer, location, features, sizes, price range and payment plan.",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "50241398-f27c-4736-b207-0a369e8fda76",
+        "name": "Auric Acres Real Estate Brokers, Dubai, UAE",
+        "industry": "Real Estate",
+        "category": "Real estate consultant",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "M-17, Atrium Center, Bank Street - Dubai - United Arab Emirates",
+          "city": null,
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": "+971529578280",
+          "rawPhone": "+971529578280",
+          "email": null,
+          "website": "https://auric-acres.com/",
+          "domain": "auric-acres.com"
+        },
+        "socialProof": {
+          "googleRating": 4.7,
+          "reviewCount": 29,
+          "topKeywords": [
+            "Real estate consulting",
+            "Property sales & rentals",
+            "Project information & pre‑launch deals"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies UAE",
+        "summary": "Auric Acres Real Estate Brokers in Dubai provides consultancy and brokerage services for Indian and Dubai real estate projects, offering exclusive pre‑launch deals, property sales, rentals, and loan assistance with transparent, fee‑free service.",
+        "personalizationHook": "I noticed Auric Acres offers exclusive pre‑launch deals with no agency fees, which aligns with our goal to boost transparency for real‑estate clients.",
+        "websiteDetails": {
+          "title": "Auric Acres Dubai UAE | India and Dubai Real Estate Consultants – Exclusive offers on Latest Real Estate Projects in India & Dubai | No Agency Fee | Transparent Deals | Bank Loan Assistance | Call: +971529578280",
+          "description": "Exclusive Pre Launch offers and Best Deals on Prime Real Estate Projects by Top developers in India and Dubai - Get Best Value for your Money!",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "2636e055-71c0-4c21-a104-c674d8f50ffa",
+        "name": "Landcom Real Estate LLC.",
+        "industry": "Real Estate",
+        "category": "Property management company",
+        "businessSize": "Large",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "Al, Dubai qasimi building - 1 - M04 Salah Al Din St - opp. Reef Mall - Al Muteena - Deira - Dubai - United Arab Emirates",
+          "city": null,
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "http://landcomre.com/",
+          "domain": "landcomre.com"
+        },
+        "socialProof": {
+          "googleRating": 4.7,
+          "reviewCount": 77,
+          "topKeywords": [
+            "Property Buying & Selling",
+            "Property Renting",
+            "Property Management Services"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies UAE",
+        "summary": "Landcom Real Estate LLC provides Dubai property buying, selling, renting, and management services with 17 years of experience and 14k+ satisfied clients.",
+        "personalizationHook": "Landcom’s 17 years of trusted Dubai real estate experience.",
+        "websiteDetails": {
+          "title": "Landcom Real Estate | Trusted Real Estate Company in Dubai for Property Investment",
+          "description": "Landcom Real Estate | Trusted Real Estate Company in Dubai for Property Investment Landcom Real Estate is a trusted real estate company in Dubai, helping investors and buyers find premium properties, secure investments, and expert real estate solutions across Dubai.",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "0d14479f-7b0c-4f54-807c-8e2904cf2f83",
+        "name": "Emirates Properties",
+        "industry": "Real Estate",
+        "category": "Property management company",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "Office Tower, Al Ghurair Centre - Office No. 839, 8th Floor - Al Muraqqabat - Deira - Dubai - United Arab Emirates",
+          "city": null,
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "http://www.emiratesproperties.com/",
+          "domain": "emiratesproperties.com"
+        },
+        "socialProof": {
+          "googleRating": 3.8,
+          "reviewCount": 952,
+          "topKeywords": [
+            "Property Leasing",
+            "Property Management",
+            "Tenant Screening & Leasing",
+            "Rental Collection & Financial Management"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies UAE",
+        "summary": "Emirates Properties is a Dubai‑based real estate agency offering leasing, property management, tenant screening, and rent collection for commercial, residential, and villa properties. They aim for hassle‑free leasing and maximum landlord returns. Their current website is basic with limited digital presence, suggesting strong demand for a modern, brand‑aligned site, CRM, and automation solutions.",
+        "personalizationHook": "Emirates Properties ensures effortless leasing and maximum returns for landlords.",
+        "websiteDetails": {
+          "title": "Emirates Properties",
+          "description": "Emirates Properties is your reliable real estate partner in Dubai, specializing in property leasing, management, and investment solutions across commercial, residential, and villa properties.",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "e9fa9930-95ab-451b-85d8-4ae013ee518e",
+        "name": "fäm Properties",
+        "industry": "Real Estate",
+        "category": "Real Estate Agency",
+        "businessSize": "Large",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": null,
+          "city": "Dubai",
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://famproperties.com/",
+          "domain": "famproperties.com"
+        },
+        "socialProof": {
+          "googleRating": null,
+          "reviewCount": null,
+          "topKeywords": [
+            "Buy & Sell Real Estate",
+            "Property Rental",
+            "Off‑plan Projects",
+            "Property Valuation"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "best real estate in Dubai UAE",
+        "summary": "fäm Properties is a Dubai real estate agency offering buying, selling, rentals, and off‑plan projects with trusted experts. They showcase premium villas, flats, and developments, leveraging 17 years of experience and direct developer relationships. Their site highlights flexible payment plans and aims to be the one‑stop partner for property decisions.",
+        "personalizationHook": "fäm Properties promises ‘The Life You Want ✦ Has An Address’ – let’s build a website that reflects that premium vision.",
+        "websiteDetails": {
+          "title": "Best Real Estate Company in Dubai – Buy or Invest in Property",
+          "description": "Explore premium Dubai real estate with fäm Properties. Buy, sell, or rent apartments, villas & offplan projects with trusted experts. Start your journey today.",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "3d44ed79-c7a9-4e59-b3c2-e35a7f8d1396",
+        "name": "Sobha Realty",
+        "industry": "Real Estate",
+        "category": "Real Estate Agency",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": null,
+          "city": "Dubai",
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://sobharealty.com/media-center/blogs/best-places-to-buy-investment-properties-in-dubai",
+          "domain": "sobharealty.com"
+        },
+        "socialProof": {
+          "googleRating": null,
+          "reviewCount": null,
+          "topKeywords": [
+            "Dubai Investment Properties"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "best real estate in Dubai UAE",
+        "summary": "Sobha Realty is an established Dubai real‑estate developer showcasing a 2026 investment guide highlighting strong market growth and transaction volumes. The website offers blog content on property investment but lacks visible contact details, clear service pages, and lead capture tools.",
+        "personalizationHook": "Sobha Realty's 2026 investment guide highlights Dubai's booming market with 60% YoY growth in property transactions.",
+        "websiteDetails": {
+          "title": "Best Property Investment in Dubai: Best Places to Buy in 2026 | Sobha Realty",
+          "description": "Best Property Investment in Dubai: Best Places to Buy in 2026 | Sobha Realty Explore the best property investment in Dubai and discover the best places to buy in 2026. Compare top areas, investment potential and property options for buyers.",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "20e077ab-ec25-4e9c-ad6d-407267838fd0",
+        "name": "Engel & Völkers",
+        "industry": "Real Estate",
+        "category": "Real Estate Agency",
+        "businessSize": "Large",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": null,
+          "city": "Dubai",
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://www.engelvoelkers.com/ae/en/resources/top-10-real-estate-developers-in-dubai",
+          "domain": "engelvoelkers.com"
+        },
+        "socialProof": {
+          "googleRating": null,
+          "reviewCount": null,
+          "topKeywords": []
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "best real estate in Dubai UAE",
+        "summary": "Engel & Völkers offers a 2026 ranking of Dubai’s leading real‑estate developers, covering sales performance, build quality and market trends. The page serves buyers and investors seeking insight on top developers such as Emaar, DAMAC, Nakheel and emerging firms.",
+        "personalizationHook": "Your 2026 guide to Dubai’s top developers highlights Azizi’s sales and Emaar’s market leadership.",
+        "websiteDetails": {
+          "title": "Top 12 Real Estate Developers in Dubai (2026 Edition)",
+          "description": "Engel & Völkers Discover the top real estate developers in Dubai for 2026. From luxury homes to smart investments, explore trusted names shaping the city.",
+          "type": "Agency"
+        }
+      }
+    }
+  ],
+  "hvac": [
+    {
+      "slug": null,
+      "company": {
+        "id": "1d292eb6-6842-405d-9764-e08b10afde3a",
+        "name": "Asly Facilities Management",
+        "industry": "HVAC & Building Services",
+        "category": "Property management company",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "Hyatt Regency - Al Corniche - Deira - Dubai - United Arab Emirates",
+          "city": null,
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "http://www.aslyfm.com/",
+          "domain": "aslyfm.com"
+        },
+        "socialProof": {
+          "googleRating": 4.8,
+          "reviewCount": 90,
+          "topKeywords": [
+            "Facility Management",
+            "Pest Control",
+            "Cleaning Services",
+            "Electrical & Plumbing",
+            "Painting & Carpentry"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "real estate companies UAE",
+        "summary": "Asly FM delivers 24/7 integrated facilities management for commercial and residential properties, including cleaning, licensed pest control, electrical/plumbing, painting, and carpentry, emphasizing quality service and customer care.",
+        "personalizationHook": "Asly FM’s 24/7 operations across Dubai and beyond—let’s elevate your service experience.",
+        "websiteDetails": {
+          "title": "Asly FM - Integrated Facilities Management in UAE",
+          "description": "Integrated facilities management for commercial and residential properties across Dubai and the UAE, offering cleaning, licensed pest control, electrical & plumbing, painting & carpentry, and 24/7 operations with a focus on quality and customer care.",
+          "type": "Agency"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "ed3c5034-dec0-4a04-9ae1-10b361358c26",
+        "name": "Shahid pervaiz technical services llc",
+        "industry": "HVAC & Building Services",
+        "category": "Air conditioning repair service",
+        "businessSize": "Small",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "105 Khalid Bin Al Waleed Rd - Al Souq Al Kabeer - Al Fahidi - Dubai - United Arab Emirates",
+          "city": null,
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "http://www.actechniciandubai.ae/",
+          "domain": "actechniciandubai.ae"
+        },
+        "socialProof": {
+          "googleRating": 5,
+          "reviewCount": 28,
+          "topKeywords": [
+            "AC Repair & Installation",
+            "Plumbing",
+            "Electrical",
+            "Home Appliances"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "HVAC/Home services companies United Arab Emirates",
+        "summary": "Shahid Pervaiz Technical Services LLC provides AC repair, installation, plumbing, electrical, and home appliance services across Dubai. Limited online presence suggests need for website redesign, SEO, CRM, branding, and AI automation. Strong fit for Athinem’s digital and AI services.",
+        "personalizationHook": "Your AC service partner covering Dubai Mall, Marina, and Palm Jumeirah.",
+        "websiteDetails": {
+          "title": "AC Technician & Repairing Services Dubai",
+          "description": "All TYPE OF AC REPAIR SERVICE AND INSTALLATION BY SHAHID PERVAIZ TECHNICAL SERVICES LLC",
+          "type": "Other"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "01bfbea5-ffb6-4c09-b5c1-384cd87e0999",
+        "name": "Home Maintenance Experts Dubai | AC Repair | Plumbing | Handyman Service | 24/7 Repair Services in Dubai | Emergency Repair",
+        "industry": "HVAC & Building Services",
+        "category": "Property maintenance",
+        "businessSize": "Medium",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "Riggat Al Buteen - Dubai - United Arab Emirates",
+          "city": null,
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": "+1 (055) 475-3102",
+          "rawPhone": "+10554753102",
+          "email": null,
+          "website": "http://homeexperts.ae/",
+          "domain": "homeexperts.ae"
+        },
+        "socialProof": {
+          "googleRating": 4.9,
+          "reviewCount": 27,
+          "topKeywords": [
+            "Annual Contracts",
+            "AC Servicing, Repair & Replacement",
+            "Plumbing",
+            "Electrical",
+            "Painting",
+            "Renovation"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "HVAC/Home services companies United Arab Emirates",
+        "summary": "Home Maintenance Experts Dubai offers AC repair, plumbing, electrical, painting, and renovation services across the UAE with 24/7 emergency support. Established since 2014, they have completed over 12,588 jobs and hold a 4.8★ Google rating.",
+        "personalizationHook": "Home Experts has completed over 12,588 jobs with a 4.8★ Google rating.",
+        "websiteDetails": {
+          "title": "Home Experts",
+          "description": "Home Experts | Home Maintenance & AMC Services in UAE Professional home maintenance services across Dubai. AC servicing, plumbing, electrical, painting, renovation, and AMC packages. Call Home Experts UAE today on 055 475 3102.",
+          "type": "Other"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "c6883bd9-8d3a-45ee-a9ec-486705c2c0e3",
+        "name": "Elanday Technical Services",
+        "industry": "HVAC & Building Services",
+        "category": "Electrical installation service",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "Abu Hail - Deira - Dubai - United Arab Emirates",
+          "city": null,
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://www.edtechnicalservices.com/",
+          "domain": "edtechnicalservices.com"
+        },
+        "socialProof": {
+          "googleRating": 5,
+          "reviewCount": 10,
+          "topKeywords": [
+            "MEP contracting",
+            "Interior design & fit-out",
+            "Building construction",
+            "Custom sauna room installation",
+            "HVAC service & maintenance",
+            "Annual maintenance contracts (AMC"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "HVAC/Home services companies United Arab Emirates",
+        "summary": "Elanday Technical Services LLC offers MEP contracting, interior design & fit-out, building construction, and custom sauna installations in the UAE with 10+ years of experience, plus HVAC sales, service, installation, and maintenance, and provides free quotes to prospective clients.",
+        "personalizationHook": "Your company’s decade‑long MEP expertise and free quote service show you value quality and convenience.",
+        "websiteDetails": {
+          "title": "Expert HVAC Solutions for Every Project",
+          "description": "Ed-Tech Delivering quality MEP contracting and fit-out services in the UAE.",
+          "type": "Consulting"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "a9c26c28-6be5-4145-8d2e-f75df8f9fe5e",
+        "name": "Thushhaara Divisions Services",
+        "industry": "HVAC & Building Services",
+        "category": "HVAC Contractor",
+        "businessSize": "Medium",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": null,
+          "city": null,
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": "+971 4 41 66 888",
+          "rawPhone": "+97144166888",
+          "email": "infouae@thushhaara.com",
+          "website": "https://www.thushhaara.com/divisions",
+          "domain": "thushhaara.com"
+        },
+        "socialProof": {
+          "googleRating": null,
+          "reviewCount": null,
+          "topKeywords": [
+            "Manufacturing",
+            "Trading",
+            "Facilities Management",
+            "HVAC Solutions"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "best HVAC/Home services in Dubai United Arab Emirates",
+        "summary": "Thushhaara Divisions Services provides HVAC solutions in Dubai, offering installation, maintenance, energy-efficient systems, manufacturing, trading, and facilities management since 2019.",
+        "personalizationHook": "Thushhaara Divisions has been delivering HVAC solutions across Dubai since 2019, supporting both homes and businesses.",
+        "websiteDetails": {
+          "title": "HVAC Solutions in Dubai | Thushhaara Divisions Services",
+          "description": "HVAC Solutions in Dubai | Thushhaara Divisions Services UAE Discover top HVAC solutions in Dubai at Thushhaara Divisions. Expert installation, maintenance & energy-efficient systems for homes & businesses. Contact us!",
+          "type": "Manufacturing"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "4dfd956d-948f-4848-b193-8fce52ccf152",
+        "name": "Al Sidras",
+        "industry": "HVAC & Building Services",
+        "category": "HVAC Contractor",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": null,
+          "city": null,
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://alsidras.com/",
+          "domain": "alsidras.com"
+        },
+        "socialProof": {
+          "googleRating": null,
+          "reviewCount": null,
+          "topKeywords": [
+            "Interior Design",
+            "Fitout",
+            "Electrical Contracting",
+            "HVAC Contracting",
+            "Building Construction",
+            "Building Maintenance"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "best HVAC/Home services in Dubai United Arab Emirates",
+        "summary": "Al Sidra Technical Services L.L.C. is a Dubai‑based MEP and interior design contractor, certified with ISO 9001, 14001, and 45001. They deliver fitout, construction, electrical, HVAC, and building maintenance services for villas, retail, offices and more.",
+        "personalizationHook": "Al Sidra Technical Services is DEWA‑approved and ISO‑certified, making them Dubai’s trusted MEP and interior design partner.",
+        "websiteDetails": {
+          "title": "Best interior designing company in Dubai | HVAC contractor in UAE Best interior designing company in Dubai, HVAC contractor in UAE, Best fitout companies in Dubai, Electrical contractor in UAE, Top interior designing company",
+          "description": "Discover Luxury with Dubai's Premier Interior Designers! Best fitout Company in DubaiBest Interior Designing Company in DubaiDEWA Approved Contractor + More ServicesContact Us Transforming Spaces, Exceeding Expectations... Dubai's Ultimate Fitout Experts",
+          "type": "Other"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "279ed2fe-d383-4de5-8604-1a03d9a7d7ed",
+        "name": "Al Naveed AC Repair & Maintenance",
+        "industry": "HVAC & Building Services",
+        "category": "Air conditioning repair service",
+        "businessSize": "Medium",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "28C St - Naif - Deira - Dubai - United Arab Emirates",
+          "city": null,
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": "+1 (050) 297-7603",
+          "rawPhone": "+10502977603",
+          "email": "info@acmaintenancedubai.ae",
+          "website": "https://www.acmaintenancedubai.ae/",
+          "domain": "acmaintenancedubai.ae"
+        },
+        "socialProof": {
+          "googleRating": 4.5,
+          "reviewCount": 205,
+          "topKeywords": [
+            "AC Maintenance",
+            "AC Repair",
+            "AC Installation",
+            "AC Cleaning",
+            "Preventive Maintenance",
+            "System Inspection"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "HVAC/Home services companies United Arab Emirates",
+        "summary": "Al Naveed AC Repair & Maintenance offers residential and commercial AC services in Dubai for 16 years, with 45,000+ satisfied customers and 24/7 support. Their basic website lists contact info and services but lacks modern design, online booking, and digital marketing. They need website redesign, CRM, and automation to grow.",
+        "personalizationHook": "Your 16 years in Dubai AC service shows expertise—let’s modernize your customer reach with a professional website and CRM.",
+        "websiteDetails": {
+          "title": "AC Maintenance Dubai - Ac Repair - Ac installation and Ac cleaning Services",
+          "description": "Best Ac maintenance Services ac Repair, ac installation, ac cleaning for homes and businesses. 24/7 Ac services",
+          "type": "Other"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "89af13f8-92b2-4ae9-8f71-fbd96f005757",
+        "name": "Awal Experts",
+        "industry": "HVAC & Building Services",
+        "category": "Air duct cleaning service",
+        "businessSize": "Small",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "Al Bakhit Center - Al Maktoum Rd near Kabayal Deira, Office 407 - Dubai - United Arab Emirates",
+          "city": null,
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": "+971 50 303 8464",
+          "rawPhone": "+971503038464",
+          "email": "[email protected]",
+          "website": "https://awalexperts.com/",
+          "domain": "awalexperts.com"
+        },
+        "socialProof": {
+          "googleRating": 4.9,
+          "reviewCount": 5608,
+          "topKeywords": [
+            "AC Maintenance Service",
+            "Duct cleaning",
+            "AC repair",
+            "Coil cleaning",
+            "Refrigerant check",
+            "Electrical inspection"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "HVAC/Home services companies United Arab Emirates",
+        "summary": "Awal Experts is an established AC maintenance service provider with over 20 years of experience in Dubai. Based in Al Karama, they provide 24/7 support for major brands like Daikin and LG. While they have a functional site, their manual enquiry process and traditional marketing approach offer significant room for optimization through automation and advanced SEO to better capture the competitive Dubai home services market.",
+        "personalizationHook": "Your 20-year legacy servicing major brands like Daikin and Mitsubishi across Dubai from your Al Karama base is impressive.",
+        "websiteDetails": {
+          "title": "AC Maintenance in Dubai | Awal Experts",
+          "description": "AC maintenance service Dubai by certified experts for AC repair, duct cleaning and other comprehensive home maintenance needs. Competitive prices. Call now",
+          "type": "Other"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "ac5cbbf4-7ac4-4841-9dec-fbfd7a562ff0",
+        "name": "Climatech UAE",
+        "industry": "HVAC & Building Services",
+        "category": "HVAC contractor",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "Building No. 29 Arab Bank Building , Port Saeed - Al Ittihad Rd - Deira - Dubai - United Arab Emirates",
+          "city": null,
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://www.climatech.ae/",
+          "domain": "climatech.ae"
+        },
+        "socialProof": {
+          "googleRating": 4.7,
+          "reviewCount": 7,
+          "topKeywords": [
+            "Dehumidifiers",
+            "Air Curtains",
+            "Humidifiers",
+            "Solar Water Heaters",
+            "Heat Pumps",
+            "Misting Systems"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "HVAC/Home services companies United Arab Emirates",
+        "summary": "Climatech UAE provides dehumidifiers, air curtains, humidifiers, solar water heaters, misting systems, and heat pumps for residential and commercial climate control in the UAE. With 30 years of experience and over 200 clients, they focus on energy efficiency and moisture management.",
+        "personalizationHook": "Climatech UAE has 30 years of experience and 200+ clients—let’s discuss how we can accelerate your growth.",
+        "websiteDetails": {
+          "title": "Climatech UAE – Dehumidifiers & Air Curtains",
+          "description": "Dehumidifiers & Air Curtains in Dubai, UAE | Climatech Climatech supplies dehumidifiers, air curtains, humidifiers and solar water heaters across the UAE. 30 years of experience, 200+ clients. Get a quote.",
+          "type": "Manufacturing"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "8fcdf9a2-9098-4cb9-9ff4-7d7ec03e76d6",
+        "name": "Nest climate",
+        "industry": "HVAC & Building Services",
+        "category": "Mechanical engineer",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "Port Saeed - Deira - Dubai - United Arab Emirates",
+          "city": null,
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://www.nestclimate.ae/",
+          "domain": "nestclimate.ae"
+        },
+        "socialProof": {
+          "googleRating": 4.9,
+          "reviewCount": 15,
+          "topKeywords": [
+            "AC Service",
+            "Electrical Services",
+            "Plumbing",
+            "Smart Home Solutions",
+            "Painting"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "HVAC/Home services companies United Arab Emirates",
+        "summary": "Nest Climate Technical Service LLC provides AC repair, electrical, plumbing, and smart home solutions in UAE, focusing on comfort and reliability. They have completed over 20k projects, indicating established presence but limited digital footprint.",
+        "personalizationHook": "Nest Climate delivers 20k+ projects; we can help you showcase that success with a modern website and targeted ads.",
+        "websiteDetails": {
+          "title": "Nest Climate",
+          "description": "Nest Climate Technical Service LLC – UAE",
+          "type": "Consulting"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "bbede611-c7e7-411e-8160-36c02789c042",
+        "name": "AL TAWAKKAL GEN TRDG",
+        "industry": "HVAC & Building Services",
+        "category": "HVAC contractor",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "Wasl District - Block A - Old Maktoum Hospital Road - 23rd St - near Fish Roundabout - Dubai - United Arab Emirates",
+          "city": null,
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": "+971 55 874 6925",
+          "rawPhone": "+971558746925",
+          "email": "contact@uaehvac.com",
+          "website": "https://uaehvac.com/",
+          "domain": "uaehvac.com"
+        },
+        "socialProof": {
+          "googleRating": 4.9,
+          "reviewCount": 71,
+          "topKeywords": [
+            "Refrigerant Gases",
+            "Fan Motors",
+            "Compressors",
+            "HVAC Tools",
+            "Copper Coils & Fittings",
+            "HVAC Parts"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "HVAC/Home services companies United Arab Emirates",
+        "summary": "Al Tawakkal General Trading LLC is a Dubai‑based supplier of HVAC and AC spare parts, offering categories such as refrigerant gases, fan motors, compressors, HVAC tools, copper coils and fittings. The company markets itself as a reliable provider across the UAE, MENA, Africa, Eurasia and the Middle East, emphasizing a wide inventory and global brand parts.",
+        "personalizationHook": "Al Tawakkal offers a wide inventory of HVAC spare parts from global brands.",
+        "websiteDetails": {
+          "title": "AC Spare Parts Suppliers in Dubai | Al Tawakkal HVAC Leading AC Spare Parts Suppliers in Dubai",
+          "description": "Al Tawakkal HVAC Leading AC Spare Parts Suppliers in Dubai with a wide stock of HVAC parts, accessories, and replacement components from global brands.",
+          "type": "Manufacturing"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "d6bcf920-7c9a-479d-90c1-d45b5e349a99",
+        "name": "Imdaad",
+        "industry": "HVAC & Building Services",
+        "category": "HVAC Contractor",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": null,
+          "city": null,
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://www.imdaad.ae/services/hard-fm-services/mep/hvac",
+          "domain": "imdaad.ae"
+        },
+        "socialProof": {
+          "googleRating": null,
+          "reviewCount": null,
+          "topKeywords": [
+            "HVAC Services",
+            "Hard FM Services",
+            "MEP Services"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "best HVAC/Home services in Dubai United Arab Emirates",
+        "summary": "Imdaad is a leading HVAC contractor in Dubai, providing reliable HVAC services across UAE, including maintenance, emergency support, and customized solutions for various building types.",
+        "personalizationHook": "Imdaad’s HVAC services include customized solutions and emergency support for critical systems.",
+        "websiteDetails": {
+          "title": "Imdaad – HVAC Contracting in Dubai, UAE",
+          "description": "Imdaad is a leading HVAC contractor in Dubai, delivering reliable HVAC services across UAE. Trusted among top HVAC companies in Dubai.",
+          "type": "Other"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "14ad74db-49cc-46d5-8bad-8701424dfa81",
+        "name": "Basat Anwer Technical Services L.L.C",
+        "industry": "HVAC & Building Services",
+        "category": "Property maintenance",
+        "businessSize": "Small",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "Al Fahad - Building Office No G - 010 Hor Al Anz St - Hor Al Anz - Deira - Dubai - United Arab Emirates",
+          "city": null,
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": "+971524052485",
+          "rawPhone": "+971524052485",
+          "email": "info@basatanwertech.com",
+          "website": "http://basatanwertech.com/",
+          "domain": "basatanwertech.com"
+        },
+        "socialProof": {
+          "googleRating": 4.9,
+          "reviewCount": 56,
+          "topKeywords": [
+            "Air Conditioner Service",
+            "Painting Service",
+            "Carpentry Service",
+            "Electrician Service",
+            "Plumbing Service",
+            "Home Appliance Service"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "HVAC/Home services companies United Arab Emirates",
+        "summary": "Basat Anwer Technical Services L.L.C provides a range of renovation and maintenance services in Dubai, including AC, electrical, plumbing, painting, carpentry, false ceiling, flooring and more. The company offers quick support with phone and email contact, aiming to meet diverse property improvement needs.",
+        "personalizationHook": "Basat Anwer offers top Dubai renovation services including AC, painting and false ceiling – we can help you showcase these to more clients online.",
+        "websiteDetails": {
+          "title": "Top Renovation & Construction Services in Dubai | Expert Electricians, AC Maintenance, False Ceiling, House Renovation, Painting, Carpentry, Plumbing, Flooring & More",
+          "description": "",
+          "type": "Other"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "c2b459a9-d22d-4472-957b-9a792b3d6a62",
+        "name": "Saith Technical Services - Emergency AC Service & Repair Dubai",
+        "industry": "HVAC & Building Services",
+        "category": "Air conditioning repair service",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "Al Fahidi Building, Office No 43/44 - Bur Dubai - Dubai - United Arab Emirates",
+          "city": null,
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://homefixituae.com/24hr-emergency-ac-repair-dubai/",
+          "domain": "homefixituae.com"
+        },
+        "socialProof": {
+          "googleRating": 4.7,
+          "reviewCount": 57,
+          "topKeywords": [
+            "AC Repair & Services",
+            "Plumbing Service",
+            "Waterpump Repair",
+            "Water Heater Repair",
+            "Door Lock Repair",
+            "Bathtub Fixing"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "HVAC/Home services companies United Arab Emirates",
+        "summary": "Saith Technical Services offers 24/7 emergency AC repair in Dubai, providing services for AC repair, plumbing, water pump, water heater, door lock, and bathtub fixes. The site highlights experienced technicians and prompt response but lacks detailed contact info and online booking.",
+        "personalizationHook": "We see your focus on reliable emergency AC repair with decades of experience in Dubai.",
+        "websiteDetails": {
+          "title": "Emergency AC Repair in Dubai, UAE: 24/7 Air Conditioner Service",
+          "description": "Emergency AC Repair in Dubai, UAE: 24/7 Air Conditioner Service Need emergency AC repair in Dubai, UAE? Get fast 24/7 air conditioner service from expert technicians for homes and businesses. Call now!",
+          "type": "Other"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "20c1b493-a652-4ec0-86b3-906f5c248d5f",
+        "name": "Abu Saeed Trading Co. Main",
+        "industry": "HVAC & Building Services",
+        "category": "Air conditioning store",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "Omar Bin Al Khattab St - Al Rigga - Deira - Dubai - United Arab Emirates",
+          "city": null,
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "http://www.abusaeed.com/",
+          "domain": "abusaeed.com"
+        },
+        "socialProof": {
+          "googleRating": 4.3,
+          "reviewCount": 19,
+          "topKeywords": [
+            "HVAC Equipment Supply",
+            "HVAC Parts Distribution",
+            "Honeywell Product Distribution",
+            "Valve and Actuator Supply",
+            "Thermostat Sales"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "HVAC/Home services companies United Arab Emirates",
+        "summary": "Abu Saeed Trading Co. is an established HVAC equipment supplier based in Dubai, offering a range of HVAC parts and authorized Honeywell products since 1988.",
+        "personalizationHook": "Abu Saeed Trading Co. is an authorized Honeywell distributor in Dubai since 1988.",
+        "websiteDetails": {
+          "title": "Abu Saeed Trading Co.",
+          "description": "Leading HVAC equipment supplier in Dubai, authorized Honeywell distributor since 1988, offering valves, actuators, thermostats and related parts.",
+          "type": "Manufacturing"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "6714d53c-27f1-4d17-9560-1a027b9353b9",
+        "name": "Noor Awaal Technical Services",
+        "industry": "HVAC & Building Services",
+        "category": "HVAC Contractor",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": null,
+          "city": null,
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://noorawaal.com/",
+          "domain": "noorawaal.com"
+        },
+        "socialProof": {
+          "googleRating": null,
+          "reviewCount": null,
+          "topKeywords": [
+            "HVAC System Installation",
+            "Fire Fighting",
+            "Electrical Services",
+            "Plumbing/Sanitation",
+            "Wallpaper Fixing",
+            "Carpentry Works"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "best HVAC/Home services in Dubai United Arab Emirates",
+        "summary": "Noor Awaal Technical Services LLC, a Dubai‑based MEP and HVAC contractor since 2015, delivering ducting, piping, cladding, FCU, AHU, pumps, chillers, fire fighting, electrical, plumbing, and carpentry for construction projects. Emphasizes safety, quality, and reliability.",
+        "personalizationHook": "Noor Awaal has been Dubai’s trusted HVAC partner since 2015, delivering safety‑focused MEP solutions.",
+        "websiteDetails": {
+          "title": "HVAC Contractors In Dubai | UAE | Noor Awaal",
+          "description": "We are the leading MEP & HVAC Contractors in Dubai | UAE. Our services include Ducting, Piping, Cladding, FCU, AHU, Pump, and chiller installation. Leading HVAC Contractors in Dubai provides all your heating and cooling needs.",
+          "type": "Other"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "823f7cfe-7b58-414b-b1be-2b469e411e22",
+        "name": "Fixation Hub| Maintainence company in Dubai",
+        "industry": "HVAC & Building Services",
+        "category": "Property maintenance",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "AL SOUQ AL KABEER - 312, DUBAI AL SOUQ AL KABEER - 312 - Dubai - United Arab Emirates",
+          "city": null,
+          "state": "Dubai",
+          "country": "United Arab Emirates"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://fixationhub.ae/",
+          "domain": "fixationhub.ae"
+        },
+        "socialProof": {
+          "googleRating": 4.7,
+          "reviewCount": 32,
+          "topKeywords": [
+            "Home & Office Renovation",
+            "AC Repair & Maintenance",
+            "AC Installation",
+            "AC Cleaning",
+            "Plumbing",
+            "Electrical Installation"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "HVAC/Home services companies United Arab Emirates",
+        "summary": "Fixation Hub offers professional home and office renovation, AC, plumbing, electrical, painting, carpentry, false ceiling, interior upgrades, and villa renovation across Dubai and UAE, delivering quality workmanship and a satisfaction guarantee.",
+        "personalizationHook": "Fixation Hub delivers trusted AC, plumbing, and electrical services across Dubai – let’s modernize your client outreach together.",
+        "websiteDetails": {
+          "title": "Fixation Hub – Trusted Home & Office Maintenance Company in Dubai",
+          "description": "Fixation Hub provides professional home and office renovation, AC repair, plumbing, electrical services, painting, carpentry, false ceiling installation, interior upgrades, and villa renovation across Dubai and UAE, delivering quality workmanship and a satisfaction guarantee.",
+          "type": "Other"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "897456b2-917d-46cd-a853-86715be530ef",
+        "name": "1st Choice Plumbing, Air & Insulation",
+        "industry": "HVAC & Building Services",
+        "category": "HVAC contractor",
+        "businessSize": "Small",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "23309 N 17th Dr Ste 116, Phoenix, AZ 85027",
+          "city": "Phoenix",
+          "state": "Arizona",
+          "country": "United States"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": "+1 (623) 323-1021",
+          "rawPhone": "+16233231021",
+          "email": null,
+          "website": "https://1stchoicemechanicalaz.com/air-conditioning-phoenix-az/",
+          "domain": "1stchoicemechanicalaz.com"
+        },
+        "socialProof": {
+          "googleRating": 4.9,
+          "reviewCount": 1318,
+          "topKeywords": [
+            "AC Installation",
+            "AC Repair",
+            "AC Maintenance",
+            "Air Duct Cleaning",
+            "Blown‑In Insulation",
+            "Ductless AC Installation & Replacement"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "HVAC/Home services companies United States",
+        "summary": "1st Choice Plumbing, Air & Insulation is an established Phoenix‑based HVAC and plumbing contractor with over 20 years experience, offering AC installation, repair, insulation and duct services. Their website is basic, lacking strong SEO, modern design and online lead capture.",
+        "personalizationHook": "I noticed you offer 24/7 AC quoting and blown‑in insulation services in Phoenix.",
+        "websiteDetails": {
+          "title": "AC Contractor in Phoenix, AZ | Reliable HVAC Expert",
+          "description": "Need an AC contractor in Phoenix, AZ? 1st Choice Mechanical provides air conditioning solutions to keep your home cool and comfortable.",
+          "type": "Other"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "22b8f48b-80c8-413a-a282-eabf6ec88c3b",
+        "name": "ABC Air Conditioning, Inc.",
+        "industry": "HVAC & Building Services",
+        "category": "HVAC contractor",
+        "businessSize": "Small",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "20235 N Cave Creek Rd 104 403, Phoenix, AZ 85024",
+          "city": "Phoenix",
+          "state": "Arizona",
+          "country": "United States"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "http://www.abcairconditioning.com/",
+          "domain": "abcairconditioning.com"
+        },
+        "socialProof": {
+          "googleRating": 5,
+          "reviewCount": 193,
+          "topKeywords": [
+            "HVAC Maintenance",
+            "HVAC Repair",
+            "Elite Club Maintenance Program",
+            "Air Scrubbers & Air Purifiers",
+            "HVAC Installation",
+            "Summer Rebate Equipment Upgrades"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "HVAC/Home services companies United States",
+        "summary": "ABC Air Conditioning, Inc. is a Trane Comfort Specialist dealer in Phoenix offering HVAC maintenance, repair, installation, and air purification services. The site highlights seasonal rebates, an Elite Club maintenance program, and discounts, but shows limited digital presence and outdated design.",
+        "personalizationHook": "I saw your Elite Club offers twice‑yearly maintenance and up to 20% off repairs—great for keeping Phoenix homes comfortable year‑round.",
+        "websiteDetails": {
+          "title": "ABC Air Conditioning | Home",
+          "description": "ABC Air Conditioning is a Trane Comfort Specialist dealer serving Phoenix and surrounding areas with total home comfort",
+          "type": "Other"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "351f1fd0-ec8c-43e8-b541-7939e34a637a",
+        "name": "Certify HVAC Air Conditioning, Heating and Ventilation",
+        "industry": "HVAC & Building Services",
+        "category": "Air conditioning contractor",
+        "businessSize": "Small",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "3832 E Bighorn Ave, Phoenix, AZ 85044",
+          "city": "Phoenix",
+          "state": "Arizona",
+          "country": "United States"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": "+1 (480) 501-1310",
+          "rawPhone": "+14805011310",
+          "email": "filler@godaddy.com",
+          "website": "http://www.certifyhvac.com/",
+          "domain": "certifyhvac.com"
+        },
+        "socialProof": {
+          "googleRating": 5,
+          "reviewCount": 46,
+          "topKeywords": [
+            "HVAC Maintenance",
+            "HVAC Installation",
+            "HVAC Repair",
+            "Free Consultations",
+            "Equipment Sales",
+            "Financing Options"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "HVAC/Home services companies United States",
+        "summary": "Certify HVAC provides residential and commercial HVAC repair, installation, and maintenance in Arizona, offering free consultations, financing, and licensed, insured service. The website shows basic CTAs but lacks modern design, SEO, and automated lead capture, indicating a need for digital upgrades.",
+        "personalizationHook": "I noticed you offer free trip charge with repair and financing options for major HVAC purchases—great customer perks.",
+        "websiteDetails": {
+          "title": "Air Conditioning Furnace Repairs and Installations - Certify HVAC",
+          "description": "Air Conditioning Furnace Repairs and Installations - Certify HVAC Air conditioning repair. Furnace repairs. Sales of new equipment. Maintenace and inspections. Free consultations. Free trip charge with repair. Licensed and Insured",
+          "type": "Other"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "f8334a96-420d-43e6-87ef-e7a53a4e7212",
+        "name": "Four Seasons Home Services - Phoenix, AZ",
+        "industry": "HVAC & Building Services",
+        "category": "HVAC contractor",
+        "businessSize": "Small",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "1535 W Parkside Ln A, Phoenix, AZ 85027",
+          "city": "Phoenix",
+          "state": "Arizona",
+          "country": "United States"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": "+1 (623) 288-0759",
+          "rawPhone": "+16232880759",
+          "email": null,
+          "website": "https://fourseasonshs.com/",
+          "domain": "fourseasonshs.com"
+        },
+        "socialProof": {
+          "googleRating": 4.9,
+          "reviewCount": 137,
+          "topKeywords": [
+            "WiFi Thermostats",
+            "Indoor Air Quality",
+            "Heat Pumps",
+            "Ductwork Services",
+            "Ductless HVAC / Mini Splits",
+            "Duct Cleaning"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "HVAC/Home services companies United States",
+        "summary": "Four Seasons Home Services is a women‑owned HVAC and plumbing provider serving Phoenix and surrounding areas, offering residential and commercial air conditioning, heating, and plumbing solutions with a 4.9‑star Google rating.",
+        "personalizationHook": "I noticed your 4.9‑star Google rating and women‑owned commitment—impressive for a Phoenix HVAC & plumbing leader.",
+        "websiteDetails": {
+          "title": "Plumber, HVAC Installation, Heating Service & AC Repair | Cave Creek, AZ, Deer Valley, AZ, Phoenix, AZ, Paradise Valley, AZ, Sun City, AZ & New River, AZ | Four Seasons Home Services",
+          "description": "Four Seasons Home Services provides top quality Air Conditioning and HVAC installation and repair services in Cave Creek, Deer Valley, Phoenix, Paradise Valley, Sun City, and New River, AZ.",
+          "type": "Other"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "152c74ae-7045-4ca6-b86a-5f63575f8b97",
+        "name": "Expert HVAC Services Inc",
+        "industry": "HVAC & Building Services",
+        "category": "HVAC contractor",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": "23650 N 35th Dr #120, Glendale, AZ 85310",
+          "city": "Glendale",
+          "state": "Arizona",
+          "country": "United States"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://www.experthvacservices.com/",
+          "domain": "experthvacservices.com"
+        },
+        "socialProof": {
+          "googleRating": 4.9,
+          "reviewCount": 477,
+          "topKeywords": [
+            "New Installations",
+            "New Custom Homes",
+            "Residential",
+            "Commercial",
+            "Service Agreements",
+            "Custom Ductwork"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "HVAC/Home services companies United States",
+        "summary": "Expert HVAC Services Inc provides residential and commercial HVAC installation, repair, and maintenance across Arizona, boasting 5,500+ systems installed. The website emphasizes free estimates and service agreements but lacks clear contact details and modern digital features. Opportunities exist for website redesign, SEO, paid ads, social media, and CRM integration to boost lead generation and operational efficiency.",
+        "personalizationHook": "I saw Expert HVAC Services highlights 5,500+ systems installed and offers free estimates—perfect for a digital upgrade to capture more leads.",
+        "websiteDetails": {
+          "title": "Expert HVAC Services",
+          "description": "Expert HVAC Services – Delivering Comfort and Efficiency to Every Home and Business",
+          "type": "Other"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "e19f1a88-d424-4bc3-9bff-cb4700519a71",
+        "name": "Berkeys Air Conditioning, Plumbing & Electrical",
+        "industry": "HVAC & Building Services",
+        "category": "HVAC Contractor",
+        "businessSize": "Unknown",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": null,
+          "city": "Dallas",
+          "state": "Texas",
+          "country": "United States"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "https://www.berkeys.com/air-conditioning/",
+          "domain": "berkeys.com"
+        },
+        "socialProof": {
+          "googleRating": null,
+          "reviewCount": null,
+          "topKeywords": [
+            "AC Repair",
+            "AC Replacement",
+            "AC Installation",
+            "AC Tune-Up & Maintenance",
+            "Emergency HVAC Service",
+            "HVAC Maintenance"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "best HVAC / Home Services in Dallas-Fort Worth USA",
+        "summary": "Berkeys is an established HVAC contractor serving Dallas and DFW since 1975, offering 24/7 emergency AC repair, installation, replacement, and maintenance. The website highlights licensed technicians and same-day service but lacks modern conversion features and strong online marketing.",
+        "personalizationHook": "I noticed Berkeys has been serving Dallas since 1975 with 24/7 emergency HVAC service—great legacy to build on.",
+        "websiteDetails": {
+          "title": "AC Repair Dallas | Berkeys",
+          "description": "AC Repair Dallas 972-464-2460 Emergency HVAC Service Berkeys Need AC repair Dallas TX? Berkeys offers 24/7 emergency air conditioning repair, HVAC service Dallas, and same-day AC repair near me. Licensed contractors since 1975. Call 972-464-2460 https://www.berkeys.com/air-conditioning/",
+          "type": "Other"
+        }
+      }
+    },
+    {
+      "slug": null,
+      "company": {
+        "id": "ef7e4507-19c8-44ab-a997-dff05c3cfb9a",
+        "name": "United States Home Services",
+        "industry": "HVAC & Building Services",
+        "category": "HVAC Contractor",
+        "businessSize": "Medium",
+        "businessMaturity": "Established",
+        "established": null,
+        "location": {
+          "address": null,
+          "city": "Dallas",
+          "state": "Texas",
+          "country": "United States"
+        },
+        "branding": {
+          "primaryColor": "#0052FF",
+          "secondaryColor": "#003DCC",
+          "accentColor": null,
+          "tintColor": null,
+          "logoUrl": null
+        },
+        "contact": {
+          "phone": null,
+          "rawPhone": null,
+          "email": null,
+          "website": "http://www.unitedstateshomeservices.com/",
+          "domain": "unitedstateshomeservices.com"
+        },
+        "socialProof": {
+          "googleRating": null,
+          "reviewCount": null,
+          "topKeywords": [
+            "HVAC installation, repair, and tune‑up",
+            "Insulation installation",
+            "Water filtration systems",
+            "Maintenance plans"
+          ]
+        },
+        "decisionMakers": []
+      },
+      "audit": {
+        "sourceQuery": "best HVAC / Home Services in Dallas-Fort Worth USA",
+        "summary": "United States Home Services is an established residential HVAC, plumbing, insulation, and water filtration provider operating across Texas and Oklahoma for over 20 years. Boasting 1,000+ five‑star reviews and flat written pricing, the company emphasizes licensed, background‑checked technicians and 24/7 emergency service. Their website highlights service breadth and strong social proof but shows room for modern design and digital lead generation.",
+        "personalizationHook": "I noticed your 20‑year legacy and 1,000+ five‑star reviews across DFW, Houston, Austin/San Antonio, OKC, and Tulsa.",
+        "websiteDetails": {
+          "title": "United States Home Services",
+          "description": "Licensed HVAC, Plumbing, Insulation & Water Filtration in TX & OK Two decades of master-licensed HVAC, plumbing, insulation, and water filtration across DFW, Houston, Austin/San Antonio, OKC, and Tulsa. Flat written pricing, 24/7 dispatch, and 1,000+ five-star reviews.",
+          "type": "Other"
+        }
+      }
+    }
+  ]
+}

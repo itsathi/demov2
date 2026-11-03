@@ -90,4 +90,6 @@ export type RawAudit = {
 export type RawProspectData = {
   company: RawCompany;
   audit?: RawAudit | null;
+  /** Optional explicit demo slug, used when two domains would collide. */
+  slug?: string | null;
 };

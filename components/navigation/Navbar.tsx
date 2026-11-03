@@ -39,6 +39,15 @@ export function Navbar({
   const overHero = overlayTheme === "dark" && !scrolled && !open;
 
   const links = [
+    ...(isRealEstate
+      ? [
+          {
+            label: "Overview",
+            href: `${home}/overview`,
+            active: pathname === `${home}/overview`,
+          },
+        ]
+      : []),
     { label: t.nav.productsLabel, href: productsHref, active: isProducts },
     { label: t.nav.projectsLabel, href: `${home}#projects`, active: false },
     { label: t.nav.companyLabel, href: `${home}#capability`, active: false },
@@ -78,9 +87,11 @@ export function Navbar({
     <>
       <header
         className={cn(
-          "fixed inset-x-0 top-0 z-[60] transition-all duration-300",
+          "fixed inset-x-0 top-0 z-[60] transition-all duration-500",
           scrolled || open
-            ? "border-b border-line bg-white/85 backdrop-blur-md"
+            ? isRealEstate
+              ? "border-b border-[#D8D0C4]/40 bg-[#F7F4EE]/90 backdrop-blur-xl"
+              : "border-b border-line bg-white/85 backdrop-blur-md"
             : "border-b border-transparent bg-transparent"
         )}
       >
@@ -108,15 +119,19 @@ export function Navbar({
             <span className="flex flex-col leading-none">
               <span
                 className={cn(
-                  "font-display text-[15px] font-extrabold tracking-tight transition-colors",
-                  overHero ? "text-white" : "text-ink"
+                  "text-[15px] font-semibold tracking-tight transition-colors",
+                  overHero
+                    ? "text-white"
+                    : isRealEstate
+                      ? "font-re-display text-ink"
+                      : "font-display font-extrabold text-ink"
                 )}
               >
                 {t.brand.line1}
               </span>
               <span
                 className={cn(
-                  "mt-1 text-[9.5px] font-semibold uppercase tracking-[0.22em] transition-colors",
+                  "mt-1 text-[9.5px] font-semibold uppercase tracking-[0.28em] transition-colors",
                   overHero ? "text-white/60" : "text-ink-muted"
                 )}
               >
@@ -134,7 +149,9 @@ export function Navbar({
                   "link-underline text-sm font-medium transition-colors",
                   overHero
                     ? "text-white/75 hover:text-white"
-                    : "text-ink-muted hover:text-ink",
+                    : isRealEstate
+                      ? "text-ink/70 hover:text-ink"
+                      : "text-ink-muted hover:text-ink",
                   l.active && (overHero ? "text-white" : "text-ink")
                 )}
               >
@@ -170,10 +187,14 @@ export function Navbar({
               <Link
                 href={`${home}#enquire`}
                 className={cn(
-                  "shine group inline-flex h-11 items-center gap-2 rounded-lg px-5 text-sm font-semibold transition-colors",
-                  overHero
-                    ? "bg-white text-ink hover:bg-brand hover:text-white"
-                    : "bg-ink text-white hover:bg-brand"
+                  "group inline-flex h-11 items-center gap-2 px-6 text-sm font-semibold transition-all",
+                  isRealEstate && !overHero && !scrolled && !open
+                    ? "border border-white/30 text-white hover:border-[#B7A17A] hover:text-[#B7A17A]"
+                    : isRealEstate
+                      ? "bg-[#B7A17A] text-white hover:bg-[#a08c68]"
+                      : overHero
+                        ? "rounded-lg bg-white text-ink hover:bg-brand hover:text-white"
+                        : "rounded-lg bg-ink text-white hover:bg-brand"
                 )}
                 data-cursor="Quote"
               >

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getProspect } from "@/lib/prospect";
+import { buildRealEstateDemo } from "@/lib/realEstateDemo";
 import { PropertyDetailView } from "@/components/realestate/PropertyDetailView";
 
 export async function generateMetadata({
@@ -33,5 +34,26 @@ export default async function PropertyDetailPage({
 
   const others = (prospect.listings ?? []).filter((l) => l.id !== listing.id);
 
-  return <PropertyDetailView prospect={prospect} listing={listing} others={others} />;
+  const demo = buildRealEstateDemo(prospect);
+  const owner = demo.owners.find((o) => o.propertyIds.includes(listing.id));
+  const crm = {
+    leadCount: demo.leads.filter((l) => l.propertyId === listing.id).length,
+    dealCount: demo.deals.filter((d) => d.propertyId === listing.id).length,
+    viewingCount: demo.viewings.filter((v) => v.propertyId === listing.id).length,
+    documentCount: demo.documents.filter(
+      (d) => d.entityType === "Property" && d.entityId === listing.id
+    ).length,
+    ownerName: owner?.name,
+    ownerType: owner?.type,
+    ownerAgreement: owner?.agreement,
+  };
+
+  return (
+    <PropertyDetailView
+      prospect={prospect}
+      listing={listing}
+      others={others}
+      crm={crm}
+    />
+  );
 }

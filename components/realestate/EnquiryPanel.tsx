@@ -66,8 +66,8 @@ export function EnquiryPanel({
   return (
     <div
       className={cn(
-        "overflow-hidden rounded-2xl border border-line bg-card",
-        variant === "section" && "shadow-[0_30px_80px_-50px_rgba(10,17,40,0.5)]"
+        "overflow-hidden border border-[#D8D0C4]/60 bg-white text-ink",
+        variant === "section" && "shadow-[0_60px_90px_-70px_rgba(17,17,16,0.8)]"
       )}
     >
       <AnimatePresence mode="wait">

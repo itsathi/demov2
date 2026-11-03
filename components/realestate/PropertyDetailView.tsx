@@ -17,6 +17,11 @@ import {
   Check,
   Building2,
   ShieldCheck,
+  Calendar,
+  FileText,
+  UserRound,
+  Users,
+  Target,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { BrandImage } from "@/components/visual/BrandImage";
@@ -41,14 +46,26 @@ const AVAILABILITY_LABEL: Record<PropertyAvailability, string | null> = {
   unknown: null,
 };
 
+export type PropertyCrmContext = {
+  leadCount: number;
+  dealCount: number;
+  viewingCount: number;
+  documentCount: number;
+  ownerName?: string;
+  ownerType?: string;
+  ownerAgreement?: string;
+};
+
 export function PropertyDetailView({
   prospect,
   listing,
   others,
+  crm,
 }: {
   prospect: ProspectConfig;
   listing: PropertyListing;
   others: PropertyListing[];
+  crm?: PropertyCrmContext;
 }) {
   const base = `/${prospect.slug}`;
   const [active, setActive] = useState(0);
@@ -83,7 +100,7 @@ export function PropertyDetailView({
   }, [lightbox, go]);
 
   return (
-    <article className="bg-paper pt-[72px]">
+    <article className="bg-[#F7F4EE] pt-[72px]">
       {/* ── Gallery ──────────────────────────────────────────── */}
       <div className="mx-auto max-w-7xl px-5 pt-8 md:px-8">
         <Link
@@ -162,7 +179,7 @@ export function PropertyDetailView({
               )}
             </div>
 
-            <h1 className="mt-5 font-serif text-4xl font-medium leading-tight tracking-tight text-ink sm:text-5xl">
+            <h1 className="mt-5 font-re-display text-4xl leading-[1.08] tracking-tight text-ink sm:text-5xl md:text-6xl">
               {listing.title}
             </h1>
             {(listing.location || listing.community) && (
@@ -233,8 +250,8 @@ export function PropertyDetailView({
 
           {/* ── Sticky enquiry rail ──────────────────────────── */}
           <aside className="lg:sticky lg:top-24 lg:self-start">
-            <div className="rounded-2xl border border-line bg-card p-6 shadow-sm">
-              <p className="font-serif text-3xl font-semibold text-ink">
+            <div className="border border-[#D8D0C4]/60 bg-white p-7">
+              <p className="font-re-display text-3xl text-ink">
                 {listing.priceLabel ?? "Price on application"}
               </p>
               {listing.tenure && (
@@ -262,7 +279,7 @@ export function PropertyDetailView({
 
               <a
                 href="#enquire-property"
-                className="shine mt-6 inline-flex h-12 w-full items-center justify-center gap-2 rounded-lg bg-ink text-sm font-semibold text-white transition-colors hover:bg-brand"
+                className="mt-6 inline-flex h-12 w-full items-center justify-center gap-2 bg-ink text-sm font-semibold text-white transition-colors hover:bg-[#B7A17A]"
                 data-cursor="Enquire"
               >
                 {prospect.voice?.assistant?.actions?.[0]?.label ?? "Arrange a viewing"}
@@ -272,12 +289,78 @@ export function PropertyDetailView({
                 Availability confirmed before any viewing.
               </p>
             </div>
+
+            {crm && (
+              <div className="mt-4 border border-[#D8D0C4]/60 bg-white p-6">
+                <div className="flex items-center justify-between">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#B7A17A]">
+                    Agency workspace
+                  </p>
+                  <Link
+                    href={`${base}/overview`}
+                    className="inline-flex items-center gap-0.5 text-[10.5px] font-semibold text-ink-muted transition-colors hover:text-[#8a7444]"
+                  >
+                    Overview <ArrowUpRight className="h-2.5 w-2.5" />
+                  </Link>
+                </div>
+
+                <div className="mt-4 grid grid-cols-2 gap-2">
+                  <CrmLink
+                    href={`${base}/leads`}
+                    icon={Users}
+                    label="Leads"
+                    value={crm.leadCount}
+                  />
+                  <CrmLink
+                    href={`${base}/pipeline`}
+                    icon={Target}
+                    label="Deals"
+                    value={crm.dealCount}
+                  />
+                  <CrmLink
+                    href={`${base}/viewings`}
+                    icon={Calendar}
+                    label="Viewings"
+                    value={crm.viewingCount}
+                  />
+                  <CrmLink
+                    href={`${base}/documents`}
+                    icon={FileText}
+                    label="Documents"
+                    value={crm.documentCount}
+                  />
+                </div>
+
+                {crm.ownerName && (
+                  <Link
+                    href={`${base}/owners`}
+                    className="mt-3 flex items-center gap-2.5 border border-[#D8D0C4]/60 bg-[#F7F4EE]/50 p-3 transition-colors hover:border-[#B7A17A]"
+                  >
+                    <UserRound className="h-4 w-4 shrink-0 text-[#B7A17A]" />
+                    <span className="min-w-0 flex-1">
+                      <span className="block truncate text-[11.5px] font-semibold text-ink">
+                        {crm.ownerName}
+                      </span>
+                      <span className="block truncate text-[10px] text-ink-muted">
+                        {crm.ownerType}
+                        {crm.ownerAgreement ? ` · ${crm.ownerAgreement} mandate` : ""}
+                      </span>
+                    </span>
+                    <ChevronRight className="h-3.5 w-3.5 shrink-0 text-ink-muted" />
+                  </Link>
+                )}
+
+                <p className="mt-3 text-[10px] leading-relaxed text-ink-muted">
+                  Illustrative demo records linked to this listing — not verified client data.
+                </p>
+              </div>
+            )}
           </aside>
         </div>
       </div>
 
       {/* ── Enquiry ──────────────────────────────────────────── */}
-      <div id="enquire-property" className="scroll-mt-24 border-t border-line bg-card py-16 md:py-20">
+      <div id="enquire-property" className="scroll-mt-24 border-t border-[#D8D0C4]/60 bg-[#111110] py-16 text-white md:py-20">
         <div className="mx-auto max-w-4xl px-5 md:px-8">
           <h2 className="mb-8 text-center font-serif text-3xl font-medium tracking-tight text-ink sm:text-4xl">
             Enquire about this property
@@ -387,5 +470,30 @@ export function PropertyDetailView({
         )}
       </AnimatePresence>
     </article>
+  );
+}
+
+function CrmLink({
+  href,
+  icon: Icon,
+  label,
+  value,
+}: {
+  href: string;
+  icon: React.ComponentType<{ className?: string }>;
+  label: string;
+  value: number;
+}) {
+  return (
+    <Link
+      href={href}
+      className="flex items-center gap-2 border border-[#D8D0C4]/60 p-2.5 transition-colors hover:border-[#B7A17A]"
+    >
+      <Icon className="h-3.5 w-3.5 shrink-0 text-[#B7A17A]" />
+      <span className="min-w-0 flex-1 truncate text-[10.5px] font-medium text-ink-muted">
+        {label}
+      </span>
+      <span className="text-[12px] font-semibold tabular-nums text-ink">{value}</span>
+    </Link>
   );
 }

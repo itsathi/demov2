@@ -35,36 +35,39 @@ export default async function PropertiesIndexPage({
   const base = `/${prospect.slug}`;
 
   return (
-    <div className="bg-paper pt-[112px]">
-      <div className="mx-auto max-w-7xl px-5 pb-20 md:px-8">
-        <header className="max-w-3xl">
-          <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-accent">
+    <div className="bg-[#F7F4EE] pt-[120px]">
+      <div className="mx-auto max-w-7xl px-5 pb-24 md:px-8">
+        <header className="max-w-4xl">
+          <div className="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.32em] text-[#B7A17A]">
+            <span className="h-px w-10 bg-[#B7A17A]" />
             {t.nav.productsLabel} · {prospect.location}
-          </p>
-          <h1 className="mt-3 font-serif text-4xl font-medium leading-tight tracking-tight text-ink sm:text-5xl">
-            {t.servicesIndexHeading}
+          </div>
+          <h1 className="mt-6 font-re-display text-4xl leading-[1.08] tracking-tight text-ink sm:text-5xl md:text-6xl">
+            The Collection
           </h1>
-          <p className="mt-4 text-base leading-relaxed text-ink-muted">{t.servicesIndexBlurb}</p>
+          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-ink-muted">
+            A considered portfolio of exceptional properties — curated for those who value architecture, place and discretion.
+          </p>
         </header>
 
         <div className="mt-10">
           <PropertyDiscovery listings={prospect.listings ?? []} base={base} initialQuery={q ?? ""} />
         </div>
 
-        <div className="mt-16 flex flex-col items-center gap-4 rounded-2xl border border-line bg-card p-10 text-center">
-          <h2 className="font-serif text-3xl font-medium tracking-tight text-ink">
+        <div className="mt-20 flex flex-col items-center gap-5 border border-[#D8D0C4]/60 bg-white p-12 text-center">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-[#B7A17A]">Private Advisory</p>
+          <h2 className="font-re-display text-3xl tracking-tight text-ink sm:text-4xl">
             Can&rsquo;t see what you&rsquo;re after?
           </h2>
-          <p className="max-w-xl text-sm leading-relaxed text-ink-muted">
-            Tell us your brief and the {prospect.displayName} team will shortlist what is genuinely
-            available — no endless listings, no wasted viewings.
+          <p className="max-w-xl text-base leading-relaxed text-ink-muted">
+            Tell us your brief and our advisors will shortlist properties that are genuinely available — discreetly and without obligation.
           </p>
           <Link
             href={`${base}#enquire`}
-            className="shine group mt-2 inline-flex h-12 items-center gap-2 rounded-lg bg-ink px-6 text-sm font-semibold text-white transition-colors hover:bg-brand"
+            className="group mt-3 inline-flex items-center gap-2 bg-ink px-8 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#B7A17A]"
             data-cursor="Enquire"
           >
-            {t.nav.quoteLabel}
+            Request a Private Viewing
             <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </Link>
         </div>

@@ -45,7 +45,7 @@ export function PropertyCard({
       href={href}
       data-cursor="View"
       className={cn(
-        "group relative flex flex-col overflow-hidden rounded-2xl border border-line bg-card transition-all duration-500 hover:border-ink/20 hover:shadow-[0_30px_60px_-30px_rgba(10,17,40,0.35)]",
+        "group relative flex flex-col overflow-hidden border border-[#D8D0C4]/60 bg-white transition-all duration-700 hover:-translate-y-1 hover:shadow-[0_60px_90px_-70px_rgba(17,17,16,0.9)]",
         variant === "wide" && "sm:flex-row"
       )}
     >
@@ -84,18 +84,18 @@ export function PropertyCard({
         </div>
       </div>
 
-      <div className="flex flex-1 flex-col p-5">
+      <div className="flex flex-1 flex-col p-6">
         <div className="flex items-start justify-between gap-4">
           <div>
-            <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-ink-muted">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-[#B7A17A]">
               {listing.propertyType}
               {listing.reference ? ` · ${listing.reference}` : ""}
             </p>
-            <h3 className="mt-1.5 font-serif text-xl font-semibold leading-snug text-ink">
+            <h3 className="mt-2 font-re-display text-2xl leading-snug text-ink">
               {listing.title}
             </h3>
           </div>
-          <span className="mt-1 grid h-9 w-9 shrink-0 place-items-center rounded-full border border-line text-ink transition-colors group-hover:border-ink group-hover:bg-ink group-hover:text-white">
+          <span className="mt-1 grid h-9 w-9 shrink-0 place-items-center rounded-full border border-[#D8D0C4] text-ink transition-all group-hover:border-[#B7A17A] group-hover:text-[#B7A17A]">
             <ArrowUpRight className="h-4 w-4" />
           </span>
         </div>
@@ -118,13 +118,13 @@ export function PropertyCard({
           </div>
         )}
 
-        <div className="mt-auto flex items-end justify-between gap-4 pt-5">
+        <div className="mt-auto flex items-end justify-between gap-4 pt-6">
           <div>
-            <p className="font-serif text-lg font-semibold text-ink">
+            <p className="font-re-display text-xl text-ink">
               {listing.priceLabel ?? "Price on application"}
             </p>
             {listing.tenure && (
-              <p className="text-[11px] uppercase tracking-[0.16em] text-ink-muted">{listing.tenure}</p>
+              <p className="mt-1 text-[10px] uppercase tracking-[0.22em] text-ink-muted">{listing.tenure}</p>
             )}
           </div>
         </div>

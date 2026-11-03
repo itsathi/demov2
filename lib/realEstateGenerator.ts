@@ -22,8 +22,11 @@ import {
   deriveInitials,
   deriveEstablished,
   detectCountryKey,
+  countryRegionLabel,
+  contactFallbackFor,
   deriveLocation,
 } from "./prospectGenerator";
+import { buildDemoMeta } from "./demoExport";
 import { prospectHaystack } from "./industries/types";
 
 /**
@@ -62,6 +65,12 @@ export const reStock = {
   interiorWarm: `${S}-1560185007-cde436f6a4d0${q}`,
   facade: `${S}-1600585154340-be6161a56a0c${q}`,
   garden: `${S}-1600607687920-4e2a09cf159d${q}`,
+  travertineTerrace: `${S}-1600585154526-990dced4db0d${q}`,
+  skyPenthouse: `${S}-1567496898669-ee935f5f647a${q}`,
+  loungeMinimal: `${S}-1618221195710-dd6b41faaea6${q}`,
+  diningTravertine: `${S}-1617806118233-18e1de247200${q}`,
+  masterSuite: `${S}-1595526114035-0d45ed16cfbf${q}`,
+  spaBath: `${S}-1584622650111-993a426fbf0a${q}`,
 };
 
 /* ------------------------------------------------------------------ */
@@ -320,117 +329,547 @@ type ListingSeed = {
   title: string;
   status: PropertyStatus;
   propertyType: string;
+  architecturalStyle: string;
+  lifestyle: "waterfront" | "contemporary" | "penthouse" | "estate" | "architectural";
   bedrooms: number;
   bathrooms: number;
   areaSqft: number;
-  price: { value: number; currency: string; period?: "monthly" | "yearly" };
+  exteriorSqft?: number;
+  yearBuilt?: number;
+  exposure?: string;
+  parkingSpaces?: number;
+  architect?: string;
+  price?: { value: number; currency: string; period?: "monthly" | "yearly" };
   images: string[];
   highlights: string[];
   features: string[];
+  curatedAmenities: { title: string; desc: string }[];
+  floorSchedule?: { level: string; name: string; dimensions: string; notes?: string }[];
   availability: PropertyAvailability;
+  description: string;
 };
 
 function listingSeeds(city: string): ListingSeed[] {
   return [
     {
-      title: `Contemporary garden villa in ${city}`,
+      title: `The Travertine Pavilion at ${city} Coast`,
+      status: "sale",
+      propertyType: "Private Estate",
+      architecturalStyle: "Minimalist Travertine Pavilion",
+      lifestyle: "waterfront",
+      bedrooms: 6,
+      bathrooms: 7,
+      areaSqft: 8400,
+      exteriorSqft: 4200,
+      yearBuilt: 2023,
+      exposure: "Sunset / West Water Panorama",
+      parkingSpaces: 4,
+      architect: "Studio K Architecture",
+      price: { value: 28500000, currency: "AED" },
+      images: [
+        reStock.travertineTerrace,
+        reStock.villaExterior,
+        reStock.livingRoom,
+        reStock.poolVilla,
+        reStock.diningTravertine,
+        reStock.masterSuite,
+      ],
+      highlights: [
+        "Monolithic Roman travertine cantilevers over private water frontage",
+        "20-meter zero-edge lap pool oriented to true sunset",
+        "Subterranean four-vehicle gallery and private yacht mooring access",
+        "Triple-height glass pavilion framing uninterrupted horizon views",
+      ],
+      features: [
+        "Private Jetty Access",
+        "Roman Travertine Terraces",
+        "20m Infinity Lap Pool",
+        "Bespoke Boffi Kitchen",
+        "Temperature-Controlled Wine Cellar",
+        "Acoustic Primary Suite Sanctuary",
+        "Staff Quarters & Chef Prep Kitchen",
+        "Integrated Lutron Lighting & Shading",
+      ],
+      curatedAmenities: [
+        { title: "Private Waterfront Mooring", desc: "Direct deep-water access accommodating vessels up to 75ft." },
+        { title: "Wellness & Spa Wing", desc: "Cedar dry sauna, marble hammam, and cold-plunge plunge pool." },
+        { title: "Travertine Reflection Terraces", desc: "4,200 sq ft of outdoor living with sunken gas fire lounge." },
+        { title: "Architectural Glazing", desc: "Floor-to-ceiling minimal acoustic glass with motorized sliding panels." },
+      ],
+      floorSchedule: [
+        { level: "Level 01", name: "Grand Living Pavilion & Terrace", dimensions: "18.4m × 12.2m", notes: "Triple-height 6.8m volume open to water" },
+        { level: "Level 01", name: "Chef's Show Kitchen & Scullery", dimensions: "9.2m × 6.4m", notes: "Poliform cabinetry with Sub-Zero refrigeration" },
+        { level: "Level 02", name: "Primary Suite Wing", dimensions: "14.6m × 8.8m", notes: "Dual walk-in dressing galleries and spa terrace" },
+        { level: "Level 02", name: "Guest Suites (4 En-suite)", dimensions: "6.5m × 5.2m each", notes: "Private sunrise balconies and Italian terrazzo" },
+        { level: "Basement", name: "Private Gallery & Wine Room", dimensions: "16.0m × 8.5m", notes: "Climate-monitored 1,200 bottle wine sanctuary" },
+      ],
+      availability: "available",
+      description:
+        "An architectural tour de force conceived in monolithic Roman travertine and frameless acoustic glazing. Oriented to capture the drama of evening light across open water, the residence balances monumental cantilevered forms with intimate, contemplative internal courtyards. Crafted without compromise for those who appreciate pure spatial volume and discreet luxury.",
+    },
+    {
+      title: `The Horizon Triplex Penthouse`,
+      status: "sale",
+      propertyType: "Penthouse",
+      architecturalStyle: "Modernist Sky Residence",
+      lifestyle: "penthouse",
+      bedrooms: 4,
+      bathrooms: 5,
+      areaSqft: 5600,
+      exteriorSqft: 1800,
+      yearBuilt: 2024,
+      exposure: "360° Skyline & Water Horizon",
+      parkingSpaces: 3,
+      architect: "Foster-Inspired Tower Atelier",
+      price: { value: 18200000, currency: "AED" },
+      images: [
+        reStock.penthouse,
+        reStock.skyPenthouse,
+        reStock.loungeMinimal,
+        reStock.diningTravertine,
+        reStock.bedroom,
+        reStock.spaBath,
+      ],
+      highlights: [
+        "Crown triplex residence spanning floors 54 through 56",
+        "Private heated rooftop glass pool with floating daybeds",
+        "Private high-speed keycard elevator with biometric arrival",
+        "Double-height 6.4m living gallery with sculptural steel staircase",
+      ],
+      features: [
+        "Private Rooftop Sky Pool",
+        "Double-Height Glass Curtain Wall",
+        "Biometric Lift Lobby",
+        "Minotti Custom Millwork",
+        "Gaggenau 400 Series Suite",
+        "Panoramic Sunset Sky Lounge",
+        "Three Dedicated Valet Bays",
+        "24/7 White-Glove Concierge",
+      ],
+      curatedAmenities: [
+        { title: "Rooftop Sky Sanctuary", desc: "Private heated infinity pool suspended 210 meters above the cityscape." },
+        { title: "Executive Study & Library", desc: "Fumed eucalyptus wood paneling and acoustic leather doors." },
+        { title: "Primary Spa Suite", desc: "Freestanding stone soaking tub overlooking the skyline lights." },
+        { title: "Sommelier Showcase", desc: "Custom back-lit bronze and glass temperature-controlled display." },
+      ],
+      floorSchedule: [
+        { level: "Floor 54", name: "Grand Reception & Formal Dining", dimensions: "16.2m × 10.4m", notes: "Double-height void with panoramic corner view" },
+        { level: "Floor 55", name: "Family Gallery & Three Suites", dimensions: "15.0m × 9.8m", notes: "En-suite marble bathrooms and dressing suites" },
+        { level: "Floor 56", name: "Private Sky Terrace & Heated Pool", dimensions: "14.2m × 8.6m", notes: "Open-air sunset cocktail bar and lounge" },
+      ],
+      availability: "available",
+      description:
+        "Occupying the three highest tiers of an architectural landmark tower, the Horizon Penthouse redefines sky living. Frameless double-height glazing brings the changing desert sky and waterfront horizon into every living space, while the private rooftop pool provides an absolute sanctuary above the bustling metropolis.",
+    },
+    {
+      title: `Villa Canted Stone`,
       status: "sale",
       propertyType: "Villa",
+      architecturalStyle: "Sculptural Contemporary",
+      lifestyle: "architectural",
       bedrooms: 5,
       bathrooms: 6,
       areaSqft: 6200,
-      price: { value: 6200000, currency: "AED" },
-      images: [reStock.villaExterior, reStock.livingRoom, reStock.kitchen, reStock.poolVilla],
-      highlights: ["Private garden", "Double-height living space", "Covered parking for four"],
-      features: ["Landscaped garden", "Guest suite", "Maid's room", "Private pool"],
+      exteriorSqft: 2400,
+      yearBuilt: 2022,
+      exposure: "South-West / Garden Aspect",
+      parkingSpaces: 3,
+      architect: "Atelier Forme",
+      price: { value: 12800000, currency: "AED" },
+      images: [
+        reStock.modernHome,
+        reStock.facade,
+        reStock.interiorWarm,
+        reStock.livingRoom,
+        reStock.garden,
+        reStock.kitchen,
+      ],
+      highlights: [
+        "Sculptural canted board-formed concrete and sand-blasted limestone",
+        "Central glass courtyard hosting a century-old sculptural olive tree",
+        "Seamless terrazzo flooring flowing from interior reception to pool deck",
+        "Custom Poliform kitchen with fluted walnut and Fior di Bosco marble",
+      ],
+      features: [
+        "Board-Formed Concrete Architecture",
+        "Internal Olive Tree Atrium",
+        "Continuous Terrazzo Slabs",
+        "Poliform Bespoke Joinery",
+        "Infinity Edge Pool",
+        "Outdoor Teppanyaki Kitchen",
+        "Discreet Service Quarters",
+        "Smart Climate Management",
+      ],
+      curatedAmenities: [
+        { title: "Lightwell Courtyard", desc: "Provides natural ambient illumination and passive cross-ventilation." },
+        { title: "Private Guest Lodge", desc: "Detached garden suite with private entrance for visitors or staff." },
+        { title: "Automated Shading Fin Walls", desc: "Architectural motorized louvers that tune natural sunlight throughout the day." },
+        { title: "Subterranean Cinema", desc: "Acoustically tuned private screening room with custom velvet seating." },
+      ],
+      floorSchedule: [
+        { level: "Ground Floor", name: "Atrium Living & Courtyard", dimensions: "15.5m × 11.0m", notes: "Surrounds central olive lightwell" },
+        { level: "Ground Floor", name: "Chef's Kitchen & Dining", dimensions: "8.5m × 6.0m", notes: "Marble island with concealed scullery" },
+        { level: "First Floor", name: "Master Suite & Private Terrace", dimensions: "12.0m × 7.5m", notes: "Views over manicured native gardens" },
+        { level: "First Floor", name: "Three Family Bedrooms", dimensions: "5.5m × 4.8m each", notes: "Oak flooring with private bathrooms" },
+      ],
       availability: "available",
+      description:
+        "A masterclass in quiet luxury and architectural restraint. Villa Canted Stone uses raw texture—board-formed concrete, hand-chiseled limestone, and warm oiled walnut—to create an enduring sense of calm. All ground-level rooms pivot around an open-air central courtyard, ensuring natural daylight filters deep into the home at every hour.",
     },
     {
-      title: `Skyline apartment with panoramic views`,
-      status: "sale",
-      propertyType: "Apartment",
-      bedrooms: 2,
-      bathrooms: 2,
-      areaSqft: 1350,
-      price: { value: 1750000, currency: "AED" },
-      images: [reStock.penthouse, reStock.interiorWarm, reStock.bedroom],
-      highlights: ["Full-height glazing", "Concierge building", "Walk to retail and dining"],
-      features: ["Balcony", "Built-in wardrobes", "Central A/C", "Gym & pool access"],
-      availability: "available",
-    },
-    {
-      title: `Furnished townhouse, ready to move in`,
-      status: "rent",
-      propertyType: "Townhouse",
-      bedrooms: 3,
-      bathrooms: 4,
-      areaSqft: 2400,
-      price: { value: 185000, currency: "AED", period: "yearly" },
-      images: [reStock.townhouse, reStock.livingRoom, reStock.garden],
-      highlights: ["Community living", "Landscaped frontage", "Near schools"],
-      features: ["Furnished", "Garden", "Covered parking", "Community pool"],
-      availability: "available",
-    },
-    {
-      title: `Waterfront penthouse residence`,
+      title: `The Promenade Marina Residence`,
       status: "sale",
       propertyType: "Penthouse",
+      architecturalStyle: "Marine Modernism",
+      lifestyle: "waterfront",
+      bedrooms: 3,
+      bathrooms: 4,
+      areaSqft: 3900,
+      exteriorSqft: 1100,
+      yearBuilt: 2023,
+      exposure: "Marina Waterfront Promenade",
+      parkingSpaces: 2,
+      architect: "Waterfront Design Group",
+      price: { value: 14500000, currency: "AED" },
+      images: [
+        reStock.facade,
+        reStock.loungeMinimal,
+        reStock.penthouse,
+        reStock.bedroom,
+        reStock.livingRoom,
+      ],
+      highlights: [
+        "Unobstructed waterfront panorama over the marina yachts",
+        "Generous 1,100 sq ft wrap-around travertine entertaining terrace",
+        "Private direct lift opening into private gallery foyer",
+        "Finishes in natural Calacatta marble, brushed bronze, and smoked glass",
+      ],
+      features: [
+        "Wrap-Around Marina Deck",
+        "Calacatta Gold Bathrooms",
+        "Direct Yacht Berth Access",
+        "Private Elevator Entry",
+        "Wine Storage Column",
+        "Electric Hearth Fireplace",
+        "Dual Secure Parking Bays",
+        "Concierge & Valet",
+      ],
+      curatedAmenities: [
+        { title: "Marina Promenade Access", desc: "Private gate onto the water boardwalk and private dining berths." },
+        { title: "Residents' Wellness Club", desc: "Access to private gym, vitality pool, and treatment suites." },
+        { title: "Sunset Dining Terrace", desc: "Covered pergola with integrated infrared heating and outdoor sound." },
+        { title: "Bespoke Millwork", desc: "Custom smoked-oak wardrobes with sensor-activated micro-LED illumination." },
+      ],
+      availability: "available",
+      description:
+        "Perched directly above the marina promenade, this penthouse pairs nautical elegance with metropolitan convenience. The generous wrap-around terrace functions as an outdoor salon, offering unmatched views of returning sailing vessels against the evening sunset.",
+    },
+    {
+      title: `Courtyard Sanctuary No. 7`,
+      status: "sale",
+      propertyType: "Villa",
+      architecturalStyle: "Biophilic Minimalist",
+      lifestyle: "contemporary",
       bedrooms: 4,
       bathrooms: 5,
       areaSqft: 4800,
-      price: { value: 11500000, currency: "AED" },
-      images: [reStock.facade, reStock.penthouse, reStock.bedroom, reStock.livingRoom],
-      highlights: ["Private terrace", "Marina aspect", "Signature building"],
-      features: ["Private lift lobby", "Roof terrace", "Smart home", "Two parking bays"],
+      exteriorSqft: 1600,
+      yearBuilt: 2021,
+      exposure: "East-West / Lightwell Aspect",
+      parkingSpaces: 2,
+      architect: "Green Minimalist Collective",
+      price: { value: 9200000, currency: "AED" },
+      images: [
+        reStock.garden,
+        reStock.modernHome,
+        reStock.interiorWarm,
+        reStock.livingRoom,
+        reStock.bedroom,
+      ],
+      highlights: [
+        "Biophilic design with integrated indoor water gardens and living walls",
+        "Passive thermal cooling architecture reducing energy footprint",
+        "Zero-edge courtyard reflection pool with floating stone pavers",
+        "Bespoke cedar slat privacy screening and poured micro-cement floors",
+      ],
+      features: [
+        "Living Green Atrium",
+        "Zero-Edge Reflection Pool",
+        "Poured Micro-Cement Floors",
+        "Japanese Soaking Tubs",
+        "Organic Teak Millwork",
+        "Solar Integrated Roof",
+        "Triple-Filtered Air Systems",
+        "Gated Private Close",
+      ],
+      curatedAmenities: [
+        { title: "Meditation & Tea Pavilion", desc: "Timber pavilion suspended above serene courtyard reflection water." },
+        { title: "Acoustic Silence Design", desc: "Triple-glazed acoustic panes engineered to isolate urban sound completely." },
+        { title: "Chef's Organic Garden", desc: "Automated micro-herb planters and citrus trees in private courtyard." },
+        { title: "Minimalist Master Bath", desc: "Hand-carved granite freestanding bathtub with rain skylight." },
+      ],
       availability: "available",
+      description:
+        "A peaceful sanctuary created for deliberate, mindful living. The architecture dissolves the boundary between indoors and nature through internal water gardens, mature vegetation, and soft natural materials that age gracefully over time.",
     },
     {
-      title: `New-build residences — register your interest`,
-      status: "off-plan",
-      propertyType: "Apartment",
-      bedrooms: 3,
+      title: `The Glass Monolith Estate`,
+      status: "sale",
+      propertyType: "Private Estate",
+      architecturalStyle: "Glass Pavilion Architecture",
+      lifestyle: "estate",
+      bedrooms: 5,
+      bathrooms: 6,
+      areaSqft: 7100,
+      exteriorSqft: 3200,
+      yearBuilt: 2024,
+      exposure: "Panoramic Hillside & Coast",
+      parkingSpaces: 6,
+      architect: "Studio Monolith",
+      price: { value: 22500000, currency: "AED" },
+      images: [
+        reStock.villaExterior,
+        reStock.facade,
+        reStock.travertineTerrace,
+        reStock.livingRoom,
+        reStock.masterSuite,
+        reStock.spaBath,
+      ],
+      highlights: [
+        "Daring structural cantilever that appears to float above the landscape",
+        "Six-car subterranean climate gallery with glass display ceiling",
+        "Private wellness retreat featuring Finnish sauna and cold-water cascade",
+        "Full-height structural glass walls that slide completely into hidden wall pockets",
+      ],
+      features: [
+        "Cantilevered Infinity Pool",
+        "Subterranean Car Gallery",
+        "Discreet Wellness Suite",
+        "Motorized Pocket Doors",
+        "Italian Fluted Marble",
+        "Chef's Demonstration Kitchen",
+        "Separate Guard / Security Post",
+        "High-Security Vault & Storage",
+      ],
+      curatedAmenities: [
+        { title: "Floating Cantilever Deck", desc: "A 5m structural overhang creating an amphitheater of panoramic scenery." },
+        { title: "Subterranean Motor Gallery", desc: "Climate-conditioned space for 6 collector automobiles with exhibition spots." },
+        { title: "Private Spa & Hydrotherapy", desc: "Bespoke marble hammam, Himalayan salt sauna, and cold-plunge." },
+        { title: "Smart Biometrics", desc: "Discreet iris and facial recognition at all private thresholds." },
+      ],
+      availability: "available",
+      description:
+        "The Glass Monolith represents an uncompromising vision of modern estate architecture. Utilizing advanced cantilever engineering, the main pavilion hovers weightlessly above landscaped terraces, offering cinematic vistas through uninterrupted 4-meter high panes of structural glass.",
+    },
+    {
+      title: `The Atrium Loft Penthouse`,
+      status: "rent",
+      propertyType: "Penthouse",
+      architecturalStyle: "Industrial Minimalist",
+      lifestyle: "contemporary",
+      bedrooms: 2,
       bathrooms: 3,
-      areaSqft: 1700,
-      price: { value: 2400000, currency: "AED" },
-      images: [reStock.offPlan, reStock.apartmentTower, reStock.interiorWarm],
-      highlights: ["Range of residence types", "Amenity-led masterplan", "Early registrations open"],
-      features: ["Choice of layouts", "Retail podium", "Landscaped podium", "Completion date on request"],
-      availability: "coming-soon",
+      areaSqft: 2200,
+      exteriorSqft: 600,
+      yearBuilt: 2022,
+      exposure: "North-West Sunset Skyline",
+      parkingSpaces: 2,
+      architect: "Urban Atelier",
+      price: { value: 340000, currency: "AED", period: "yearly" },
+      images: [
+        reStock.penthouse,
+        reStock.interiorWarm,
+        reStock.bedroom,
+        reStock.diningTravertine,
+        reStock.livingRoom,
+      ],
+      highlights: [
+        "Full-floor architectural loft with 6.2-meter soaring ceiling voids",
+        "Custom blackened steel floating staircase and industrial crittall screens",
+        "Fully furnished with curated designer pieces by Minotti and B&B Italia",
+        "Private sunset terrace featuring outdoor hearth and skyline view",
+      ],
+      features: [
+        "Double-Height 6.2m Ceilings",
+        "Blackened Steel Accents",
+        "Bespoke Italian Furnishings",
+        "Private Sunset Terrace",
+        "Integrated Sonos Sound",
+        "Polished Concrete Floors",
+        "Miele Kitchen Appliance Suite",
+        "Dual Underground Parking",
+      ],
+      curatedAmenities: [
+        { title: "Turnkey Designer Collection", desc: "Complete interior curation by Milanese architects with original artwork." },
+        { title: "Private Terrace Lounge", desc: "Equipped with gas fire table and panoramic skyline vantage." },
+        { title: "Executive Mezzanine", desc: "Open-plan study and library cantilevered over the main salon." },
+      ],
+      availability: "available",
+      description:
+        "A rare full-floor penthouse loft marrying industrial materiality with refined Italian luxury. Featuring soaring 6.2-meter volumes, bespoke blackened steel details, and floor-to-ceiling glazing, this residence offers a dramatic pied-à-terre for design aficionados.",
     },
     {
-      title: `Investment apartment with strong rental demand`,
-      status: "investment",
-      propertyType: "Apartment",
-      bedrooms: 1,
-      bathrooms: 1,
-      areaSqft: 780,
-      price: { value: 980000, currency: "AED" },
-      images: [reStock.apartmentTower, reStock.bedroom, reStock.livingRoom],
-      highlights: ["Central location", "High occupancy area", "Managed letting available"],
-      features: ["Pool & gym", "24/7 security", "Community retail", "Metro access"],
+      title: `The Palm Grove Private Sanctuary`,
+      status: "sale",
+      propertyType: "Private Estate",
+      architecturalStyle: "Modern Mediterranean",
+      lifestyle: "estate",
+      bedrooms: 6,
+      bathrooms: 8,
+      areaSqft: 9800,
+      exteriorSqft: 5400,
+      yearBuilt: 2023,
+      exposure: "Direct Water Sunset Aspect",
+      parkingSpaces: 5,
+      architect: "Mediterranean Atelier",
+      price: { value: 36000000, currency: "AED" },
+      images: [
+        reStock.poolVilla,
+        reStock.villaExterior,
+        reStock.travertineTerrace,
+        reStock.loungeMinimal,
+        reStock.diningTravertine,
+        reStock.masterSuite,
+      ],
+      highlights: [
+        "Ultra-prime gated beachfront estate with 45 meters of private beach frontage",
+        "Private championship padel court and illuminated tennis pavilion",
+        "Dual infinity pools including a heated 25m training lap pool",
+        "Independent staff cottage and professional catering prep facility",
+      ],
+      features: [
+        "45m Private Beach Frontage",
+        "Championship Padel Court",
+        "Dual Infinity Pools",
+        "Private Guest Cottage",
+        "Catering Commercial Kitchen",
+        "Subterranean 5-Car Garage",
+        "Private Security Boundary",
+        "Private Spa & Steam",
+      ],
+      curatedAmenities: [
+        { title: "Private Beach Sanctuary", desc: "Direct private access to soft white sands with private cabana." },
+        { title: "Padel & Athletic Pavilion", desc: "Championship glass-walled court with viewing pavilion." },
+        { title: "Estate Security Network", desc: "Independent security station with 24/7 perimeter coverage." },
+      ],
       availability: "available",
+      description:
+        "A private gated world in itself. Spread across an expansive beachfront plot, The Palm Grove estate seamlessly combines private resort living with the intimacy of a generational family compound.",
+    },
+    {
+      title: `Skyline Sanctuary Tower Residence`,
+      status: "sale",
+      propertyType: "Apartment",
+      architecturalStyle: "Contemporary Urban",
+      lifestyle: "contemporary",
+      bedrooms: 2,
+      bathrooms: 2,
+      areaSqft: 1450,
+      exteriorSqft: 250,
+      yearBuilt: 2023,
+      exposure: "Dual-Aspect Corner / Skyline",
+      parkingSpaces: 1,
+      architect: "Metropolitan Towers",
+      price: { value: 3850000, currency: "AED" },
+      images: [
+        reStock.apartmentTower,
+        reStock.bedroom,
+        reStock.interiorWarm,
+        reStock.livingRoom,
+      ],
+      highlights: [
+        "High-floor corner residence with wrap-around floor-to-ceiling glass",
+        "French chevron oak parquetry and natural limestone bathrooms",
+        "Direct access to building spa, infinity pool, and concierge services",
+        "Walking distance to premier cultural districts and fine dining",
+      ],
+      features: [
+        "Corner Dual-Aspect Vistas",
+        "Chevron Oak Parquetry",
+        "Limestone Clad Bathrooms",
+        "Sub-Zero Wine Column",
+        "24-Hour Valet & Porter",
+        "Resident Library Lounge",
+        "Wellness Gym & Spa",
+        "High-Speed Smart Lifts",
+      ],
+      curatedAmenities: [
+        { title: "Corner Glass Vista", desc: "270-degree panorama over the city lights and urban gardens." },
+        { title: "Resident Club Privileges", desc: "Private screening lounge, boardrooms, and concierge booking desk." },
+      ],
+      availability: "available",
+      description:
+        "Clean lines, warm natural timber, and expansive corner windows define this turnkey high-floor residence. Designed for effortless city living with five-star hotel-level amenities at your doorstep.",
+    },
+    {
+      title: `Botanical Garden Architectural Townhouse`,
+      status: "rent",
+      propertyType: "Townhouse",
+      architecturalStyle: "Organic Modernist",
+      lifestyle: "architectural",
+      bedrooms: 3,
+      bathrooms: 4,
+      areaSqft: 2900,
+      exteriorSqft: 950,
+      yearBuilt: 2022,
+      exposure: "Garden & Park Panorama",
+      parkingSpaces: 2,
+      architect: "Studio Habitat",
+      price: { value: 260000, currency: "AED", period: "yearly" },
+      images: [
+        reStock.townhouse,
+        reStock.livingRoom,
+        reStock.garden,
+        reStock.kitchen,
+        reStock.bedroom,
+      ],
+      highlights: [
+        "Low-density architectural development bordering private parklands",
+        "Private landscaped ground garden with sunken plunge pool",
+        "Rooftop entertaining terrace with outdoor summer kitchen",
+        "Natural clay plaster walls and custom warm ash joinery",
+      ],
+      features: [
+        "Private Ground Garden",
+        "Sunken Plunge Pool",
+        "Rooftop Terrace Kitchen",
+        "Clay Plaster Finishes",
+        "Solid Ash Custom Woodwork",
+        "Integrated EV Fast Charger",
+        "Family Media Snug",
+        "Quiet Pedestrian Way",
+      ],
+      curatedAmenities: [
+        { title: "Sunken Garden Oasis", desc: "Lush private green boundary with stone terrace and plunge pool." },
+        { title: "Rooftop Stargazing Deck", desc: "Equipped with built-in BBQ and lounge overlooking the park." },
+      ],
+      availability: "available",
+      description:
+        "A low-density architectural townhouse prioritizing privacy, natural greenery, and thoughtful craftsmanship. Featuring warm clay plaster walls, handmade ash joinery, and two private outdoor levels.",
     },
   ];
 }
 
-function priceLabelFor(seed: ListingSeed, status: PropertyStatus): string | undefined {
-  if (!seed.price) return undefined;
+function priceLabelFor(seed: ListingSeed, status: PropertyStatus): string {
+  if (!seed.price) return "Price on Application";
   const formatted = seed.price.value.toLocaleString("en-US");
   const amount = `${seed.price.currency} ${formatted}`;
-  if (status === "rent") return seed.price.period === "monthly" ? `${amount} / month` : `${amount} / year`;
-  return `From ${amount}`;
+  if (status === "rent") return seed.price.period === "monthly" ? `${amount} / mo` : `${amount} / yr`;
+  return amount;
 }
 
 function buildListings(city: string): PropertyListing[] {
   const seeds = listingSeeds(city);
   return seeds.map((seed, i) => {
-    const id = `example-${slugify(seed.propertyType)}-${i + 1}`;
+    const id = `residence-${slugify(seed.title).slice(0, 24)}-${i + 1}`;
     return {
       id,
       slug: id,
       title: seed.title,
       status: seed.status,
       propertyType: seed.propertyType,
+      architecturalStyle: seed.architecturalStyle,
+      lifestyle: seed.lifestyle,
       priceLabel: priceLabelFor(seed, seed.status),
       currency: seed.price?.currency,
       priceValue: seed.price?.value,
@@ -438,10 +877,19 @@ function buildListings(city: string): PropertyListing[] {
       bedrooms: seed.bedrooms,
       bathrooms: seed.bathrooms,
       areaLabel: `${seed.areaSqft.toLocaleString("en-US")} sq ft`,
+      interiorSqft: seed.areaSqft,
+      exteriorSqft: seed.exteriorSqft,
+      yearBuilt: seed.yearBuilt,
+      exposure: seed.exposure,
+      parkingSpaces: seed.parkingSpaces,
+      architect: seed.architect,
       location: city,
-      description: `Illustrative ${seed.propertyType.toLowerCase()} example, prepared to show how property detail, imagery and enquiry would be presented. Replace with a verified listing before publishing.`,
+      community: `${city} Prime District`,
+      description: seed.description,
       highlights: seed.highlights,
       features: seed.features,
+      curatedAmenities: seed.curatedAmenities,
+      floorSchedule: seed.floorSchedule,
       images: seed.images,
       availability: seed.availability,
       illustrative: true,
@@ -474,129 +922,128 @@ function buildVoice(
   return {
     brand: { initial: deriveInitials(displayName), line1: displayName.toUpperCase(), line2: `Est. ${established} · ${city}` },
     nav: {
-      productsLabel: "Properties",
-      servicesAllLabel: "Our services",
-      projectsLabel: "Portfolio",
-      companyLabel: "About",
-      contactLabel: "Contact",
-      quoteLabel: "Book a viewing",
-      homeBack: "Back to overview",
+      productsLabel: "The Collection",
+      servicesAllLabel: "Private Advisory",
+      projectsLabel: "Curated Residences",
+      companyLabel: "Philosophy",
+      contactLabel: "Private Enquiries",
+      quoteLabel: "Private Viewing",
+      homeBack: "Back to Collection",
     },
     hero: {
-      primaryCta: "Book a viewing",
-      secondaryCta: "Explore properties",
-      heroImageAlt: `${displayName} — property in ${city}`,
-      ghostText: `${displayName.toUpperCase()} · ${city.toUpperCase()}`,
+      primaryCta: "Explore the Collection",
+      secondaryCta: "Speak to an Advisor",
+      heroImageAlt: `${displayName} — architectural residences in ${city}`,
+      ghostText: `${displayName.toUpperCase()} · PRIVATE COLLECTION`,
       stats,
-      contactCardLabel: "Prefer to talk? Reach the team",
-      chipsHeading: "Why buyers choose us",
-      scrollCue: "Discover the portfolio",
+      contactCardLabel: "Private advisory desk",
+      chipsHeading: "The Private Advisory Standard",
+      scrollCue: "Scroll to discover",
     },
     trustLines: [
-      ...(hasRating ? [`${rating} ★ Google rating · ${reviews} reviews`] : []),
-      `Property advisory in ${city}`,
+      ...(hasRating ? [`${rating} ★ Verified Client Appraisal · ${reviews} reviews`] : []),
+      `Boutique property advisory in ${city}`,
     ],
-    servicesKicker: "How we help",
-    servicesHomeHeading: `A considered approach to property in ${city}`,
+    servicesKicker: "Curated Representation",
+    servicesHomeHeading: `A more considered way to discover home in ${city}`,
     servicesHomeBlurb:
-      "Buy, sell, rent and manage — with honest guidance, considered presentation and qualified enquiries rather than a listings dump.",
-    servicesIndexHeading: `The complete {displayName} service`,
+      "Architecture, privacy, and provenance — pairing bespoke buyer representation, off-market acquisitions, and discreet advisory.",
+    servicesIndexHeading: `The {displayName} Collection`,
     servicesIndexBlurb:
-      "{count} ways we help with property in " + city + " — from first viewings to managed portfolios.",
-    servicesIndexMetaTitle: `${displayName} — Property services`,
+      "Curated architectural residences, private estates, and sky penthouses across " + city + ".",
+    servicesIndexMetaTitle: `${displayName} — The Collection`,
     servicesIndexMetaDescription:
-      `Buy, sell, rent and manage property with ${displayName} in ${city}. Considered presentation and qualified enquiries.`,
+      `Discover architectural residences, private estates, and luxury penthouses with ${displayName} in ${city}.`,
     capability: {
-      kicker: "How we work",
-      headline: `Property, presented the way it deserves in ${city}`,
+      kicker: "The Brokerage Philosophy",
+      headline: `Architecture, privacy, and provenance in ${city}`,
       body:
-        `${displayName} pairs considered presentation with straight talking. You see honest information, confirmed availability and qualifying questions up front — never invented figures or pressure.`,
+        `${displayName} operates as a private property advisory rather than a high-volume listings portal. We represent exceptional architecture and discreet buyers with thoughtful guidance, verified provenance, and absolute confidentiality.`,
       points: [
-        { icon: "handshake", text: "Honest guidance — no invented prices or promised returns" },
-        { icon: "shield", text: "Availability confirmed directly before viewings" },
-        { icon: "users", text: "A local team that knows the communities it serves" },
-        { icon: "award", text: `Serving ${city} since ${established}` },
+        { icon: "handshake", text: "Discreet advisory — direct access to private and off-market inventory" },
+        { icon: "shield", text: "Verified architectural provenance and physical inspection before viewings" },
+        { icon: "users", text: "Senior partner representation throughout the acquisition lifecycle" },
+        { icon: "award", text: `Private client advisory established in ${city} since ${established}` },
       ] as CapabilityPoint[],
       stats: [
         { value: `${established}`, label: `In ${city} since` },
-        { value: `${categories.length}`, label: "Property services" },
-        ...(hasRating ? [{ value: `${rating}★`, label: `${reviews} Google reviews` }] : []),
+        { value: "100%", label: "Accompanied private viewings" },
+        ...(hasRating ? [{ value: `${rating}★`, label: `${reviews} verified reviews` }] : []),
       ].slice(0, 3) as CapabilityStat[],
       showSvg: false,
       svg: "",
       mediaImageKey: "heroPoster",
-      ctaLabel: "See how we can help",
+      ctaLabel: "Discover our advisory",
       bandImageKey: "showreelPoster",
-      bandKicker: `${city}`,
-      bandHeadline: `A local team for ${city} property`,
+      bandKicker: `${city} Private Advisory`,
+      bandHeadline: `Curating exceptional architecture in ${city}`,
       bandBody:
-        "Considered presentation, honest information and a qualified enquiry flow — the way property should be discovered.",
+        "Bespoke representation, private access, and verified provenance — the way luxury real estate should be experienced.",
     },
     process: {
-      kicker: "From enquiry to viewing",
-      headline: "A clear path from first enquiry to a confirmed viewing",
-      body: "Tell us what you're looking for — the team responds with relevant detail and a viewing that suits your schedule.",
+      kicker: "Private Client Journey",
+      headline: "A discreet path from brief to private acquisition",
+      body: "Share your architectural brief and lifestyle parameters — our private advisory curates a tailored shortlist and arranges discreet viewings around your schedule.",
       steps: [
-        { step: "01", title: "Tell us your brief", body: "Share what you're looking for, where and your rough budget or requirement." },
-        { step: "02", title: "We shortlist", body: "We match your brief against available property and confirm what is genuinely available." },
-        { step: "03", title: "You view", body: "We arrange viewings around your schedule — no wasted trips to unavailable homes." },
-        { step: "04", title: "We guide", body: "Comparable evidence, honest advice and answers to the questions that matter." },
-        { step: "05", title: "We complete", body: "Support through offer, paperwork and handover with a single point of contact." },
+        { step: "01", title: "Private Consultation", body: "We align on your architectural preferences, location boundaries, and privacy requirements." },
+        { step: "02", title: "Curated Shortlist", body: "We cross-reference verified on-market residences and discreet off-market holdings." },
+        { step: "03", title: "Accompanied Viewing", body: "Private, unhurried viewings arranged with complete discretion and personal advisor guidance." },
+        { step: "04", title: "Due Diligence", body: "Architectural evaluation, comparable transaction analysis, and legal contract guidance." },
+        { step: "05", title: "Seamless Handover", body: "End-to-end conveyance management and dedicated post-acquisition concierge support." },
       ] as ProcessStep[],
     },
     regions: {
-      kicker: "Where we operate",
-      headline: `Serving ${city} and the surrounding communities`,
-      body: "We focus on the communities we know well, so the advice you get is grounded in the local market.",
+      kicker: "Prime Enclaves",
+      headline: `Districts and waterfront enclaves in ${city}`,
+      body: "Our advisory focuses exclusively on high-demand architectural enclaves, waterfront communities, and private residential sanctuaries.",
       groups: [
-        { title: `${city}`, items: [`${city} centre`, "Residential communities", "Waterfront & city districts", "Established suburbs"] },
-        { title: "Surrounding areas", items: [`${regionLabel}`, "New communities", "Commercial districts"] },
+        { title: `${city} Prime Districts`, items: [`${city} Waterfront`, "Marina Promenades", "Golf & Country Enclaves", "Private Island Estates"] },
+        { title: "Surrounding Prime Enclaves", items: [`${regionLabel} Coast`, "Hillside Sanctuaries", "Architectural Developments"] },
       ] as RegionGroup[],
     },
     projectsIntro: {
-      kicker: "Example properties",
-      headline: `A sense of how property is presented`,
-      body: "Illustrative examples showing the standard of presentation for property detail, imagery and enquiries. Replace with verified inventory before publishing.",
-      footer: "Scroll to explore — {count} example property presentations.",
+      kicker: "Curated Showcase",
+      headline: `The ${displayName} Private Collection`,
+      body: "A selection of exceptional residences, penthouses, and private estates available for discreet acquisition.",
+      footer: "Scroll to explore the collection — {count} curated residences.",
     },
     serviceDetail: {
       overviewHeadingPrefix: displayName,
-      figureCaptionSuffix: "presented by",
-      badge: "Considered presentation",
+      figureCaptionSuffix: "represented by",
+      badge: "Private Collection",
       footnote:
-        "Every property is presented with honest information and confirmed availability — no invented figures, no pressure.",
-      specsHeading: "What's included",
-      applicationsKicker: "Where it applies",
-      applicationsHeading: "Property types we work with",
+        "Every residence is physically inspected and verified for architectural integrity before presentation — accompanied viewings only.",
+      specsHeading: "Architectural Specifications",
+      applicationsKicker: "Residence Attributes",
+      applicationsHeading: "Spatial Design & Finishes",
     },
     ctaFeatures: [
-      { iconKey: "mouse", title: "A qualified enquiry, not a missed call", body: "Every viewing request and enquiry is captured and routed to the right person." },
-      { iconKey: "chart", title: "Demand you can see", body: "Understand which property types and locations attract genuine interest." },
-      { iconKey: "chat", title: "Answers before a call-back", body: "Common questions are answered instantly, so conversations start further along." },
-      { iconKey: "bell", title: "The team is notified live", body: "New enquiries land with the right agent immediately — no manual forwarding." },
+      { iconKey: "mouse", title: "Bespoke Enquiry Routing", body: "Viewing requests and acquisition briefs are assigned directly to dedicated private advisors." },
+      { iconKey: "chart", title: "Discreet Valuation Models", body: "Clear comparable transaction analysis and real-time market insights without inflated promises." },
+      { iconKey: "chat", title: "Immediate Concierge Response", body: "Direct responses to architectural and availability queries before scheduling viewings." },
+      { iconKey: "bell", title: "Confidential Communication", body: "All correspondence is held under strict professional confidentiality." },
     ],
     footer: {
-      blurb: `property advisory in ${city}, ${regionLabel} — buy, sell, rent and manage with honest guidance.`,
+      blurb: `private property advisory and luxury brokerage in ${city}, ${regionLabel} — discreet acquisitions, bespoke representation, and prime architecture.`,
     },
     assistant: {
-      name: `${displayName} assistant`,
-      greeting: `Hi — I'm the ${displayName} assistant. Ask about a property, arrange a viewing, or tell me what you're looking for in ${city}.`,
-      placeholder: `Ask about property in ${city}…`,
+      name: `${displayName} Concierge`,
+      greeting: `Welcome to ${displayName}. I am your private property concierge — how may our advisory assist your property search or private viewing in ${city}?`,
+      placeholder: `Ask about residences, private viewings, or selling in ${city}…`,
       fallbackEmail: contactEmail,
       actions: [
-        { id: "viewing", label: "Book a viewing", reply: "Happy to arrange a viewing. Tell me which property (or the type and area) and a preferred day, and the team will confirm availability and a slot." },
-        { id: "buy", label: "Buying — help me shortlist", reply: `Share your budget, preferred areas in ${city}, and how many bedrooms — the team will shortlist what is genuinely available.` },
-        { id: "rent", label: "Looking to rent", reply: "Tell me furnished or unfurnished, area and budget, and I'll have the leasing team confirm what's available this week." },
-        { id: "sell", label: "I want to sell", reply: "We can talk you through positioning and pricing with no obligation. Share the property type and area to start." },
-        { id: "agent", label: "Speak to an agent", reply: `Of course — the team can call or email. Share the best way and time to reach you at ${displayName}.` },
+        { id: "viewing", label: "Request a private viewing", reply: "I would be delighted to arrange a private viewing. Please share the residence of interest or your preferred timing, and our advisor will confirm the private appointment." },
+        { id: "shortlist", label: "Request an off-market shortlist", reply: `Share your architectural preferences, ideal neighborhoods in ${city}, and budget range — our private advisory team will prepare a confidential portfolio.` },
+        { id: "sell", label: "Discuss selling my property", reply: "Our team provides confidential, discreet property valuations and private marketing strategies with zero public exposure if desired." },
+        { id: "advisor", label: "Speak with a Senior Advisor", reply: `Certainly. A senior partner at ${displayName} will contact you via your preferred confidential channel.` },
       ] as AssistantAction[],
-      leadTitle: "Enquiry logged",
-      leadBody: `Your {label} enquiry is with the ${displayName} team. Someone will follow up shortly with relevant detail.`,
-      routed: `and routed it to the ${displayName} team.`,
-      followUp: "One of the team will come back to you shortly. Anything else I can help with?",
+      leadTitle: "Private Request Received",
+      leadBody: `Your {label} has been delivered to the ${displayName} senior advisory desk. A dedicated broker will contact you discreetly.`,
+      routed: `and assigned it to the senior advisory team.`,
+      followUp: "Your advisor will be in touch shortly. Is there any additional detail or discretion requirement we should note?",
     },
     formNote:
-      "The assistant opens automatically — see how a property enquiry is captured, qualified and routed without a single manual step.",
+      "This is a demonstration preview of the Athinem Creatives luxury digital ecosystem. In production, this initiates a private client concierge protocol.",
   };
 }
 
@@ -608,13 +1055,13 @@ function headlineFor(
 ): { top: string; accent: string; bottom: string } {
   switch (direction) {
     case "luxury":
-      return { top: "Exceptional homes,", accent: "quietly", bottom: `presented in ${city}.` };
+      return { top: "A More Considered Way", accent: "to Find", bottom: `Home in ${city}.` };
     case "development":
-      return { top: `${city}'s new`, accent: "addresses,", bottom: "in one place." };
+      return { top: "Exceptional Architecture,", accent: "Discreetly", bottom: `Curated in ${city}.` };
     case "investment":
-      return { top: "Property in", accent: city + ",", bottom: "on the fundamentals." };
+      return { top: "Private Property Advisory", accent: "for Prime", bottom: `${city} Real Estate.` };
     default:
-      return { top: "Find a place", accent: "that feels", bottom: `like yours in ${city}.` };
+      return { top: "Distinctive Architecture,", accent: "Uncompromising", bottom: `Living in ${city}.` };
   }
 }
 
@@ -631,8 +1078,8 @@ export function transformRawRealEstateProspect(raw: RawProspectData): ProspectCo
   const slug = deriveSlug(raw);
   const established = deriveEstablished(company);
   const countryKey = detectCountryKey(company, audit);
-  const isAustralia = countryKey === "AU";
-  const regionLabel = isAustralia ? "Australia" : "UAE";
+  const isGulf = countryKey === "UAE";
+  const regionLabel = countryRegionLabel(countryKey);
   const { city, state, country, fullLocation } = deriveLocation(company, audit, countryKey);
 
   const direction = detectRealEstateDirection(raw);
@@ -646,9 +1093,9 @@ export function transformRawRealEstateProspect(raw: RawProspectData): ProspectCo
   const rating = company.socialProof?.googleRating ?? null;
   const reviews = company.socialProof?.reviewCount ?? null;
 
-  const fallbackPhone = isAustralia ? "+61 1300 000 000" : "+971 50 123 4567";
-  const contactPhone = company.contact?.phone || company.contact?.rawPhone || fallbackPhone;
-  const fallbackTld = isAustralia ? ".com.au" : ".ae";
+  const contactFallback = contactFallbackFor(countryKey);
+  const contactPhone = company.contact?.phone || company.contact?.rawPhone || contactFallback.phone;
+  const fallbackTld = contactFallback.tld;
   const contactEmail = company.contact?.email || `info@${company.contact?.domain || slugify(displayName) + fallbackTld}`;
   const contactAddress = company.location?.address || `${city}, ${country}`;
 
@@ -672,7 +1119,7 @@ export function transformRawRealEstateProspect(raw: RawProspectData): ProspectCo
 
   const listings = buildListings(city);
 
-  const heroImage = reStock.skyline;
+  const heroImage = reStock.travertineTerrace || reStock.villaExterior;
 
   const voice = buildVoice(
     displayName,
@@ -730,9 +1177,9 @@ export function transformRawRealEstateProspect(raw: RawProspectData): ProspectCo
       keywords: company.socialProof?.topKeywords ?? categoryServices.map((s) => s.name),
     },
     certifications: [],
-    markets: isAustralia
-      ? [city, state, "Australia"].filter((v, i, a) => v && a.indexOf(v) === i)
-      : [city, "Dubai", "Abu Dhabi", "United Arab Emirates"],
+    markets: isGulf
+      ? [city, "Dubai", "Abu Dhabi", "United Arab Emirates"]
+      : [city, state, regionLabel].filter((v, i, a) => v && a.indexOf(v) === i),
     facilities: [
       `Advisory team — ${city}, ${regionLabel}`,
       `Buyer, seller and tenant representation`,
@@ -767,5 +1214,13 @@ export function transformRawRealEstateProspect(raw: RawProspectData): ProspectCo
     propertyCategories: categoriesKeys,
     realEstateDirection: direction,
     serviceAreas: [city],
+    demoMeta: buildDemoMeta(
+      {
+        id: company.id,
+        domain: company.contact?.domain,
+        website: company.contact?.website,
+      },
+      slug
+    ),
   };
 }

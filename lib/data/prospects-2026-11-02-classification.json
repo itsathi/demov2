@@ -1,0 +1,712 @@
+{
+  "source": "prospect-demos-99-leads-2026-11-02.json",
+  "counts": {
+    "total": 99,
+    "realEstate": 46,
+    "hvac": 24,
+    "excluded": 29
+  },
+  "excludedByReason": {
+    "legal-services": 1,
+    "editorial-blog": 10,
+    "portal-marketplace": 10,
+    "directory-forum": 4,
+    "other-vertical": 1,
+    "test-data": 3
+  },
+  "entries": [
+    {
+      "index": 0,
+      "name": "Briarlane Rental Property Management Inc",
+      "domain": "briarlane.ca",
+      "category": "real_estate",
+      "demoSlug": "briarlane"
+    },
+    {
+      "index": 1,
+      "name": "Real Estate Lawyers.ca",
+      "domain": "realestatelawyers.ca",
+      "category": "exclude",
+      "reason": "legal-services"
+    },
+    {
+      "index": 2,
+      "name": "Canada's Top Properties You Can Buy Today",
+      "domain": "news.dupontregistry.com",
+      "category": "exclude",
+      "reason": "editorial-blog"
+    },
+    {
+      "index": 3,
+      "name": "Marimar Puno - REMAX Real Estate Agent",
+      "domain": "remaxmarimar.com",
+      "category": "real_estate",
+      "demoSlug": "remaxmarimar"
+    },
+    {
+      "index": 4,
+      "name": "Toronto MLS® Listings & Real Estate for Sale",
+      "domain": "zolo.ca",
+      "category": "exclude",
+      "reason": "portal-marketplace"
+    },
+    {
+      "index": 5,
+      "name": "Barry Cohen Homes",
+      "domain": "barrycohenhomes.com",
+      "category": "real_estate",
+      "demoSlug": "barrycohenhomes"
+    },
+    {
+      "index": 6,
+      "name": "Condo Developers",
+      "domain": "condodevelopers.ca",
+      "category": "real_estate",
+      "demoSlug": "condodevelopers"
+    },
+    {
+      "index": 7,
+      "name": "Justo",
+      "domain": "justo.ca",
+      "category": "real_estate",
+      "demoSlug": "justo"
+    },
+    {
+      "index": 8,
+      "name": "DH Management",
+      "domain": "dhpm.dhmanagement.ca",
+      "category": "real_estate",
+      "demoSlug": "dhmanagement"
+    },
+    {
+      "index": 9,
+      "name": "Niro Tharmakulasingam-Remax Community Realty Inc. Brokerage",
+      "domain": "realtorniro.com",
+      "category": "real_estate",
+      "demoSlug": "realtorniro"
+    },
+    {
+      "index": 10,
+      "name": "Paul Johnston",
+      "domain": "pauljohnston.com",
+      "category": "real_estate",
+      "demoSlug": "pauljohnston"
+    },
+    {
+      "index": 11,
+      "name": "Michael Carr Realtor",
+      "domain": "bluffs.ca",
+      "category": "real_estate",
+      "demoSlug": "bluffs"
+    },
+    {
+      "index": 12,
+      "name": "Property.ca",
+      "domain": "property.ca",
+      "category": "exclude",
+      "reason": "portal-marketplace"
+    },
+    {
+      "index": 13,
+      "name": "Where to Buy Real Estate in Canada 2026: City of Toronto",
+      "domain": "moneysense.ca",
+      "category": "exclude",
+      "reason": "editorial-blog"
+    },
+    {
+      "index": 14,
+      "name": "Coldwell Banker Summit Realty, Brokerage",
+      "domain": "summitly.ca",
+      "category": "real_estate",
+      "demoSlug": "summitly"
+    },
+    {
+      "index": 15,
+      "name": "Toronto, ON Real Estate & Houses for Sale",
+      "domain": "remax.ca",
+      "category": "real_estate",
+      "demoSlug": "remax-toronto"
+    },
+    {
+      "index": 16,
+      "name": "luxury real estate for sale Metro Manila, Philippines",
+      "domain": "properties.lefigaro.com",
+      "category": "exclude",
+      "reason": "portal-marketplace"
+    },
+    {
+      "index": 17,
+      "name": "Property For Sale in Metro Manila",
+      "domain": "lamudi.com.ph",
+      "category": "exclude",
+      "reason": "portal-marketplace"
+    },
+    {
+      "index": 18,
+      "name": "Global Strategy Real estate, Inc. (GSR)",
+      "domain": "gsr-ph.com",
+      "category": "real_estate",
+      "demoSlug": "gsr-ph"
+    },
+    {
+      "index": 19,
+      "name": "Cathay Land, Inc.",
+      "domain": "cathaylandinc.com",
+      "category": "real_estate",
+      "demoSlug": "cathaylandinc"
+    },
+    {
+      "index": 20,
+      "name": "Rockwell Land Corporation",
+      "domain": "e-rockwell.com",
+      "category": "real_estate",
+      "demoSlug": "e-rockwell"
+    },
+    {
+      "index": 21,
+      "name": "Philippines Real Estate",
+      "domain": "phrealestate.com",
+      "category": "exclude",
+      "reason": "portal-marketplace"
+    },
+    {
+      "index": 22,
+      "name": "Real estate locations to invest in",
+      "domain": "metrobank.com.ph",
+      "category": "exclude",
+      "reason": "editorial-blog"
+    },
+    {
+      "index": 23,
+      "name": "THE BEST 10 REAL ESTATE SERVICES IN NCR, METRO ...",
+      "domain": "m.yelp.com",
+      "category": "exclude",
+      "reason": "directory-forum"
+    },
+    {
+      "index": 24,
+      "name": "La Theoz Real Estate Solution Services, Inc",
+      "domain": "latheoz.com",
+      "category": "real_estate",
+      "demoSlug": "latheoz"
+    },
+    {
+      "index": 25,
+      "name": "AM Properties PH (Quezon City)",
+      "domain": "amproperties.ph",
+      "category": "real_estate",
+      "demoSlug": "amproperties"
+    },
+    {
+      "index": 26,
+      "name": "Easy Property Match - Real Estate Broker Philippines",
+      "domain": "easypropertymatch.com",
+      "category": "real_estate",
+      "demoSlug": "easypropertymatch"
+    },
+    {
+      "index": 27,
+      "name": "Dream Home Real Estate PH",
+      "domain": "dreamhomerealestate.mystrikingly.com",
+      "category": "real_estate",
+      "demoSlug": "dreamhome"
+    },
+    {
+      "index": 28,
+      "name": "Philippines's Residential Property Market Analysis 2026",
+      "domain": "globalpropertyguide.com",
+      "category": "exclude",
+      "reason": "editorial-blog"
+    },
+    {
+      "index": 29,
+      "name": "Top Realty Corporation",
+      "domain": "toprealty.com.ph",
+      "category": "real_estate",
+      "demoSlug": "toprealty"
+    },
+    {
+      "index": 30,
+      "name": "Rafeli Realty & Development Corp.",
+      "domain": "rafelirealty.com",
+      "category": "real_estate",
+      "demoSlug": "rafelirealty"
+    },
+    {
+      "index": 31,
+      "name": "EVERRA Real Estate",
+      "domain": "makatibroker.com",
+      "category": "real_estate",
+      "demoSlug": "makatibroker"
+    },
+    {
+      "index": 32,
+      "name": "CitiGlobal Realty and Development, Inc.",
+      "domain": "citiglobal.com.ph",
+      "category": "real_estate",
+      "demoSlug": "citiglobal"
+    },
+    {
+      "index": 33,
+      "name": "BedandGo Real Estate フィリピン 不動産管理",
+      "domain": "bedandgoinc.com",
+      "category": "real_estate",
+      "demoSlug": "bedandgoinc"
+    },
+    {
+      "index": 34,
+      "name": "MAIN | REMAX PHILIPPINES",
+      "domain": "remax.ph",
+      "category": "real_estate",
+      "demoSlug": "remax-philippines"
+    },
+    {
+      "index": 35,
+      "name": "Properties for sale in Metro Manila",
+      "domain": "knightfrank.com",
+      "category": "exclude",
+      "reason": "portal-marketplace"
+    },
+    {
+      "index": 36,
+      "name": "The Lead Realty",
+      "domain": "theleadrealty.com",
+      "category": "real_estate",
+      "demoSlug": "theleadrealty"
+    },
+    {
+      "index": 37,
+      "name": "Property Source PH - RE/MAX Capital",
+      "domain": "propertysourceph.com",
+      "category": "real_estate",
+      "demoSlug": "propertysourceph"
+    },
+    {
+      "index": 38,
+      "name": "Forte Realty Corporation",
+      "domain": "forterealty.com",
+      "category": "real_estate",
+      "demoSlug": "forterealty"
+    },
+    {
+      "index": 39,
+      "name": "Kondo Ko",
+      "domain": "kondoko.com",
+      "category": "real_estate",
+      "demoSlug": "kondoko"
+    },
+    {
+      "index": 40,
+      "name": "RE/MAX Gold Philippines - Real Estate Brokerage",
+      "domain": "remaxgold.ph",
+      "category": "real_estate",
+      "demoSlug": "remaxgold"
+    },
+    {
+      "index": 41,
+      "name": "Houses for Sale in Manila, Metro Manila",
+      "domain": "dotproperty.com.ph",
+      "category": "exclude",
+      "reason": "portal-marketplace"
+    },
+    {
+      "index": 42,
+      "name": "Best Realtor - Philippines",
+      "domain": "bestrealtor.ph",
+      "category": "real_estate",
+      "demoSlug": "bestrealtor"
+    },
+    {
+      "index": 43,
+      "name": "Best Neighborhoods in Manila to Buy Property",
+      "domain": "investasian.com",
+      "category": "exclude",
+      "reason": "editorial-blog"
+    },
+    {
+      "index": 44,
+      "name": "Best Condo in Metro Manila: Top Districts & Neighborhood",
+      "domain": "condoarena.com",
+      "category": "exclude",
+      "reason": "editorial-blog"
+    },
+    {
+      "index": 45,
+      "name": "QLD Where to invest in Gold Coast",
+      "domain": "propertychat.com.au",
+      "category": "exclude",
+      "reason": "directory-forum"
+    },
+    {
+      "index": 46,
+      "name": "LJ Hooker Gold Coast",
+      "domain": "goldcoast.ljhooker.com.au",
+      "category": "real_estate",
+      "demoSlug": "goldcoastljhooker"
+    },
+    {
+      "index": 47,
+      "name": "Emirates.Estate",
+      "domain": "emirates.estate",
+      "category": "exclude",
+      "reason": "portal-marketplace"
+    },
+    {
+      "index": 48,
+      "name": "Driven Properties",
+      "domain": "drivenproperties.com",
+      "category": "real_estate",
+      "demoSlug": "drivenproperties"
+    },
+    {
+      "index": 49,
+      "name": "Real Choice Real Estate Brokers LLC",
+      "domain": "realchoicedubai.com",
+      "category": "real_estate",
+      "demoSlug": "realchoicedubai"
+    },
+    {
+      "index": 50,
+      "name": "Top 10 Real Estate Websites in Dubai 2026",
+      "domain": "globalmediainsight.com",
+      "category": "exclude",
+      "reason": "editorial-blog"
+    },
+    {
+      "index": 51,
+      "name": "Dubai, UAE Luxury Real Estate - Homes for Sale",
+      "domain": "sothebysrealty.com",
+      "category": "real_estate",
+      "demoSlug": "sothebysrealty"
+    },
+    {
+      "index": 52,
+      "name": "Dubai's Areas To Invest And Avoid In 2026",
+      "domain": "topluxuryproperty.com",
+      "category": "exclude",
+      "reason": "editorial-blog"
+    },
+    {
+      "index": 53,
+      "name": "Property for Sale in Dubai",
+      "domain": "realtor.com",
+      "category": "exclude",
+      "reason": "portal-marketplace"
+    },
+    {
+      "index": 54,
+      "name": "Excel Properties",
+      "domain": "excelproperties.ae",
+      "category": "real_estate",
+      "demoSlug": "excelproperties"
+    },
+    {
+      "index": 55,
+      "name": "Properties for Sale in Dubai - Buy Real Estate in Dubai",
+      "domain": "dubai.dubizzle.com",
+      "category": "exclude",
+      "reason": "portal-marketplace"
+    },
+    {
+      "index": 56,
+      "name": "Springfield Properties - #1 Real Estate Agency in Dubai",
+      "domain": "springfieldproperties.ae",
+      "category": "real_estate",
+      "demoSlug": "springfieldproperties"
+    },
+    {
+      "index": 57,
+      "name": "Vihaan Real Estate Brokerage",
+      "domain": "vrebuae.com",
+      "category": "real_estate",
+      "demoSlug": "vihaan"
+    },
+    {
+      "index": 58,
+      "name": "Aalmar Real Estate Broker",
+      "domain": "aalmargroup.com",
+      "category": "real_estate",
+      "demoSlug": "aalmargroup"
+    },
+    {
+      "index": 59,
+      "name": "Top 10 Best Real Estate Companies in Dubai",
+      "domain": "luxuryresidences.in",
+      "category": "exclude",
+      "reason": "editorial-blog"
+    },
+    {
+      "index": 60,
+      "name": "Top Real Estate Agency & Brokerage in Dubai UAE",
+      "domain": "bhomes.com",
+      "category": "real_estate",
+      "demoSlug": "bhomes"
+    },
+    {
+      "index": 61,
+      "name": "Property Junction International Real Estate Broker LLC",
+      "domain": "propjunction.ae",
+      "category": "real_estate",
+      "demoSlug": "propjunction"
+    },
+    {
+      "index": 62,
+      "name": "Auric Acres Real Estate Brokers, Dubai, UAE",
+      "domain": "auric-acres.com",
+      "category": "real_estate",
+      "demoSlug": "auric-acres"
+    },
+    {
+      "index": 63,
+      "name": "Smart Folks Real Estate Brokers",
+      "domain": "themegahub.in",
+      "category": "exclude",
+      "reason": "other-vertical"
+    },
+    {
+      "index": 64,
+      "name": "Landcom Real Estate LLC.",
+      "domain": "landcomre.com",
+      "category": "real_estate",
+      "demoSlug": "landcomre"
+    },
+    {
+      "index": 65,
+      "name": "Emirates Properties",
+      "domain": "emiratesproperties.com",
+      "category": "real_estate",
+      "demoSlug": "emiratesproperties"
+    },
+    {
+      "index": 66,
+      "name": "Best Real Estate Company in Dubai – Buy or Invest in Property",
+      "domain": "famproperties.com",
+      "category": "real_estate",
+      "demoSlug": "famproperties"
+    },
+    {
+      "index": 67,
+      "name": "Sobha Realty",
+      "domain": "sobharealty.com",
+      "category": "real_estate",
+      "demoSlug": "sobharealty"
+    },
+    {
+      "index": 68,
+      "name": "Engel & Völkers",
+      "domain": "engelvoelkers.com",
+      "category": "real_estate",
+      "demoSlug": "engelvoelkers"
+    },
+    {
+      "index": 69,
+      "name": "Asly Facilities Management",
+      "domain": "aslyfm.com",
+      "category": "hvac",
+      "demoSlug": "aslyfm"
+    },
+    {
+      "index": 70,
+      "name": "Best Areas to Invest in Dubai",
+      "domain": "propertyfinder.ae",
+      "category": "exclude",
+      "reason": "editorial-blog"
+    },
+    {
+      "index": 71,
+      "name": "Shahid pervaiz technical services llc",
+      "domain": "actechniciandubai.ae",
+      "category": "hvac",
+      "demoSlug": "actechniciandubai"
+    },
+    {
+      "index": 72,
+      "name": "Home Maintenance Experts Dubai | AC Repair | Plumbing | Handyman Service | 24/7 Repair Services in Dubai | Emergency Repair",
+      "domain": "homeexperts.ae",
+      "category": "hvac",
+      "demoSlug": "homeexperts"
+    },
+    {
+      "index": 73,
+      "name": "Elanday Technical Services L.L.C ( MEP - Contractors )",
+      "domain": "edtechnicalservices.com",
+      "category": "hvac",
+      "demoSlug": "edtechnicalservices"
+    },
+    {
+      "index": 74,
+      "name": "HVAC Solutions in Dubai | Thushhaara Divisions Services ...",
+      "domain": "thushhaara.com",
+      "category": "hvac",
+      "demoSlug": "thushhaara"
+    },
+    {
+      "index": 75,
+      "name": "HVAC contractor in UAE: Best interior designing company in ...",
+      "domain": "alsidras.com",
+      "category": "hvac",
+      "demoSlug": "alsidras"
+    },
+    {
+      "index": 76,
+      "name": "Al Naveed AC Repair & Maintenance",
+      "domain": "acmaintenancedubai.ae",
+      "category": "hvac",
+      "demoSlug": "acmaintenancedubai"
+    },
+    {
+      "index": 77,
+      "name": "Awal Experts",
+      "domain": "awalexperts.com",
+      "category": "hvac",
+      "demoSlug": "awalexperts"
+    },
+    {
+      "index": 78,
+      "name": "Climatech UAE",
+      "domain": "climatech.ae",
+      "category": "hvac",
+      "demoSlug": "climatech"
+    },
+    {
+      "index": 79,
+      "name": "Nest climate",
+      "domain": "nestclimate.ae",
+      "category": "hvac",
+      "demoSlug": "nestclimate"
+    },
+    {
+      "index": 80,
+      "name": "AL TAWAKKAL GEN TRDG",
+      "domain": "uaehvac.com",
+      "category": "hvac",
+      "demoSlug": "uaehvac"
+    },
+    {
+      "index": 81,
+      "name": "HVAC Contracting Company in Dubai, UAE",
+      "domain": "imdaad.ae",
+      "category": "hvac",
+      "demoSlug": "imdaad"
+    },
+    {
+      "index": 82,
+      "name": "Basat Anwer Technical Services L.L.C",
+      "domain": "basatanwertech.com",
+      "category": "hvac",
+      "demoSlug": "basatanwertech"
+    },
+    {
+      "index": 83,
+      "name": "Saith Technical Services - Emergency AC Service & Repair Dubai",
+      "domain": "homefixituae.com",
+      "category": "hvac",
+      "demoSlug": "homefixit"
+    },
+    {
+      "index": 84,
+      "name": "HVAC Maintenance Companies in UAE - Dubai",
+      "domain": "reachuae.com",
+      "category": "exclude",
+      "reason": "directory-forum"
+    },
+    {
+      "index": 85,
+      "name": "Abu Saeed Trading Co. Main",
+      "domain": "abusaeed.com",
+      "category": "hvac",
+      "demoSlug": "abusaeed"
+    },
+    {
+      "index": 86,
+      "name": "HVAC Contractors In Dubai | UAE | Noor Awaal",
+      "domain": "noorawaal.com",
+      "category": "hvac",
+      "demoSlug": "noorawaal"
+    },
+    {
+      "index": 87,
+      "name": "Fixation Hub| Maintainence company in Dubai",
+      "domain": "fixationhub.ae",
+      "category": "hvac",
+      "demoSlug": "fixationhub"
+    },
+    {
+      "index": 88,
+      "name": "Athinem Test Lead Gamma",
+      "domain": "athinem-test-gamma-003.com",
+      "category": "exclude",
+      "reason": "test-data"
+    },
+    {
+      "index": 89,
+      "name": "Athinem Test Lead Beta",
+      "domain": "athinem-test-beta-002.com",
+      "category": "exclude",
+      "reason": "test-data"
+    },
+    {
+      "index": 90,
+      "name": "Athinem Test Lead Alpha",
+      "domain": "athinem-test-alpha-001.com",
+      "category": "exclude",
+      "reason": "test-data"
+    },
+    {
+      "index": 91,
+      "name": "1st Choice Plumbing, Air & Insulation",
+      "domain": "1stchoicemechanicalaz.com",
+      "category": "hvac",
+      "demoSlug": "1stchoicemechanicalaz"
+    },
+    {
+      "index": 92,
+      "name": "ABC Air Conditioning, Inc.",
+      "domain": "abcairconditioning.com",
+      "category": "hvac",
+      "demoSlug": "abcairconditioning"
+    },
+    {
+      "index": 93,
+      "name": "Certify HVAC Air Conditioning, Heating and Ventilation",
+      "domain": "certifyhvac.com",
+      "category": "hvac",
+      "demoSlug": "certifyhvac"
+    },
+    {
+      "index": 94,
+      "name": "Four Seasons Home Services - Phoenix, AZ",
+      "domain": "fourseasonshs.com",
+      "category": "hvac",
+      "demoSlug": "fourseasonshs"
+    },
+    {
+      "index": 95,
+      "name": "Expert HVAC Services Inc",
+      "domain": "experthvacservices.com",
+      "category": "hvac",
+      "demoSlug": "experthvacservices"
+    },
+    {
+      "index": 96,
+      "name": "Best AC Repair in Dallas, TX",
+      "domain": "berkeys.com",
+      "category": "hvac",
+      "demoSlug": "berkeys"
+    },
+    {
+      "index": 97,
+      "name": "Map",
+      "domain": "unitedstateshomeservices.com",
+      "category": "hvac",
+      "demoSlug": "unitedstateshomeservices"
+    },
+    {
+      "index": 98,
+      "name": "Find Heating Ventilating and Air Conditioning HVAC ...",
+      "domain": "network.procore.com",
+      "category": "exclude",
+      "reason": "directory-forum"
+    }
+  ]
+}

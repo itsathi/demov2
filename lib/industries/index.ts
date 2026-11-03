@@ -44,3 +44,12 @@ export function transformRawProspectsByIndustry(list: RawProspectData[]): Prospe
 }
 
 export { prospectHaystack, countTermHits } from "./types";
+
+/** Transform a batch that has already been classified (skips re-scoring). */
+export function transformRawProspectsRealEstate(list: RawProspectData[]): ProspectConfig[] {
+  return list.map((raw) => realEstateIndustry.transform(raw));
+}
+
+export function transformRawProspectsHvac(list: RawProspectData[]): ProspectConfig[] {
+  return list.map((raw) => hvacIndustry.transform(raw));
+}

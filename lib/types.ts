@@ -104,6 +104,16 @@ export type PropertyListing = {
   /** True when this is an illustrative example, not verified agency inventory. */
   illustrative: boolean;
   sourceUrl?: string;
+  architecturalStyle?: string;
+  lifestyle?: "waterfront" | "contemporary" | "penthouse" | "estate" | "architectural";
+  interiorSqft?: number;
+  exteriorSqft?: number;
+  yearBuilt?: number;
+  exposure?: string;
+  parkingSpaces?: number;
+  architect?: string;
+  floorSchedule?: { level: string; name: string; dimensions: string; notes?: string }[];
+  curatedAmenities?: { title: string; desc: string }[];
 };
 
 export type RealEstateDesignDirection =
@@ -125,6 +135,36 @@ export type Branding = {
   secondaryColor: string;
   accentColor: string;
   tintColor: string;
+};
+
+/* ------------------------------------------------------------------ */
+/* Demo registry / bulk export metadata                                */
+/* ------------------------------------------------------------------ */
+
+export type DemoLifecycleStatus = "draft" | "published" | "archived";
+
+/**
+ * Optional registry metadata carried alongside an existing demo. These fields
+ * never replace the demo itself and are only populated from source records
+ * (or from an explicit legacy override) — nothing here is invented.
+ */
+export type DemoRegistryMeta = {
+  /** Stable demo identifier. Defaults to the existing URL slug. */
+  demoId?: string;
+  /** Source lead/company identifier, when the source record supplied one. */
+  leadId?: string;
+  /** Project identifier, when the source record supplied one. */
+  projectId?: string;
+  /** The business's own domain — never the domain of the demo host. */
+  companyDomain?: string;
+  /** Explicit demo URL override (legacy demos, external hosting, etc.). */
+  demoUrl?: string;
+  status?: DemoLifecycleStatus;
+  archived?: boolean;
+  /** Exclude a soft-deleted source record from the registry export. */
+  deleted?: boolean;
+  createdAt?: string;
+  updatedAt?: string;
 };
 
 export type DeepPartial<T> = {
@@ -307,6 +347,8 @@ export type ProspectConfig = {
   realEstateDirection?: RealEstateDesignDirection;
   /** Markets/cities the agency serves, when verified. */
   serviceAreas?: string[];
+  /** Registry/export metadata carried with this demo. */
+  demoMeta?: DemoRegistryMeta;
 };
 
 export type DesignDirection = {

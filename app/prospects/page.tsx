@@ -259,8 +259,16 @@ export default async function ProspectsReviewPage({
   return (
     <main className="min-h-screen bg-white text-ink">
       <div className="mx-auto max-w-6xl px-5 py-14 md:px-8">
-        <div className="mb-2 inline-flex items-center gap-2 rounded-full border border-amber-300 bg-amber-50 px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-amber-700">
-          Internal · not linked from public pages
+        <div className="mb-2 flex flex-wrap items-center gap-3">
+          <span className="inline-flex items-center gap-2 rounded-full border border-amber-300 bg-amber-50 px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-amber-700">
+            Internal · not linked from public pages
+          </span>
+          <Link
+            href="/admin/demos"
+            className="inline-flex items-center gap-2 rounded-full bg-ink px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-wide text-white transition-colors hover:bg-brand"
+          >
+            Export all demos (CSV) →
+          </Link>
         </div>
         <h1 className="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">
           Prospect Research & Asset Review

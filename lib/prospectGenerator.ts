@@ -10,6 +10,7 @@ import type {
   ProcessStep,
   RegionGroup,
 } from "./types";
+import { buildDemoMeta } from "./demoExport";
 
 const S = "https://images.unsplash.com/photo";
 const stock = {
@@ -52,13 +53,15 @@ export function extractCompanyName(fullName: string): string {
 }
 
 export function deriveSlug(raw: RawProspectData): string {
+  if (raw.slug) return slugify(raw.slug);
   if (raw.company.contact?.domain) {
     const domainPart = raw.company.contact.domain
       .toLowerCase()
       .replace(/^www\./, "")
       .replace(/\.(com|net|org|edu|gov)\.au$/gi, "")
       .replace(/\.au$/gi, "")
-      .replace(/\.(com|ae|org|net|io|co|uae)(\.ae)?$/gi, "")
+      .replace(/\.(co\.uk|org\.uk|com\.ph|com\.my|co\.nz)$/gi, "")
+      .replace(/\.(com|ae|org|net|io|co|uae|ca|ph|us|in)(\.ae)?$/gi, "")
       .replace(/uae$/gi, "");
     if (domainPart.length >= 3) {
       return slugify(domainPart);
@@ -83,7 +86,44 @@ export function deriveEstablished(company: RawCompany): number {
   return 2018;
 }
 
-export type CountryKey = "UAE" | "AU";
+export type CountryKey = "UAE" | "AU" | "CA" | "PH" | "US";
+
+const COUNTRY_LABELS: Record<CountryKey, string> = {
+  UAE: "United Arab Emirates",
+  AU: "Australia",
+  CA: "Canada",
+  PH: "Philippines",
+  US: "United States",
+};
+
+const REGION_DEFAULT_CITY: Record<CountryKey, string> = {
+  UAE: "Abu Dhabi",
+  AU: "Perth",
+  CA: "Toronto",
+  PH: "Manila",
+  US: "Phoenix",
+};
+
+/** Short region label used in generated copy ("UAE", "Australia", "Canada", ...). */
+export function countryRegionLabel(countryKey: CountryKey): string {
+  return countryKey === "UAE" ? "UAE" : COUNTRY_LABELS[countryKey];
+}
+
+/** Local contact fallbacks so demos never inherit a Gulf number abroad. */
+export function contactFallbackFor(countryKey: CountryKey): { phone: string; tld: string } {
+  switch (countryKey) {
+    case "AU":
+      return { phone: "+61 1300 000 000", tld: ".com.au" };
+    case "CA":
+      return { phone: "+1 416 000 0000", tld: ".ca" };
+    case "PH":
+      return { phone: "+63 2 0000 0000", tld: ".ph" };
+    case "US":
+      return { phone: "+1 480 000 0000", tld: ".com" };
+    default:
+      return { phone: "+971 50 123 4567", tld: ".ae" };
+  }
+}
 
 const AU_CITIES = [
   "Perth",
@@ -100,18 +140,32 @@ const AU_CITIES = [
 
 /**
  * Decide which country a prospect belongs to. UAE is the default so every
- * existing UAE entry keeps its exact generated copy. Anything with an
- * Australian signal (country, .au domain, state/city, or audit query) is AU.
+ * existing UAE entry keeps its exact generated copy. Country fields, domains
+ * and city/state signals are checked for Australia, Canada, the Philippines
+ * and the United States before falling back to the UAE.
  */
 export function detectCountryKey(company: RawCompany, audit?: RawAudit | null): CountryKey {
   const country = (company.location?.country || "").toLowerCase();
   if (country.includes("australia")) return "AU";
+  if (country.includes("canada")) return "CA";
+  if (country === "ph" || country.includes("philippin")) return "PH";
+  if (
+    country.includes("united states") ||
+    country === "usa" ||
+    country === "us" ||
+    country.includes("america")
+  ) {
+    return "US";
+  }
   if (country.includes("emirates") || country === "uae" || country.includes("united arab")) {
     return "UAE";
   }
 
   const domain = (company.contact?.domain || company.contact?.website || "").toLowerCase();
   if (/\.au(\/|$|\?)/.test(domain)) return "AU";
+  if (/\.ca(\/|$|\?)/.test(domain)) return "CA";
+  if (/\.ph(\/|$|\?)/.test(domain)) return "PH";
+  if (/\.us(\/|$|\?)/.test(domain)) return "US";
 
   const haystack = [
     company.location?.state,
@@ -131,6 +185,27 @@ export function detectCountryKey(company: RawCompany, audit?: RawAudit | null): 
   ) {
     return "AU";
   }
+  if (
+    /\bcanada\b|\bontario\b|\btoronto\b|\bvancouver\b|\bmontreal\b|\bcalgary\b|british columbia|\bquebec\b/.test(
+      haystack
+    )
+  ) {
+    return "CA";
+  }
+  if (
+    /\bphilippines\b|\bmanila\b|\bmakati\b|\bquezon city\b|\btaguig\b|\bmetro manila\b/.test(
+      haystack
+    )
+  ) {
+    return "PH";
+  }
+  if (
+    /\bunited states\b|\busa\b|\bphoenix\b|\bdallas\b|\barizona\b|\btexas\b|\bnew york\b/.test(
+      haystack
+    )
+  ) {
+    return "US";
+  }
 
   return "UAE";
 }
@@ -145,6 +220,21 @@ function scanCities(
     .join(" ")
     .toLowerCase();
   return cities.find((c) => haystack.includes(c.toLowerCase())) ?? null;
+}
+
+function normalizeCountryLabel(value: string, countryKey: CountryKey): string {
+  const v = value.trim().toLowerCase();
+  if (!v) return COUNTRY_LABELS[countryKey];
+  if (v === "uae" || v.includes("emirates") || v.includes("united arab")) {
+    return "United Arab Emirates";
+  }
+  if (v === "au" || v.includes("australia")) return "Australia";
+  if (v === "ca" || v.includes("canada")) return "Canada";
+  if (v === "ph" || v.includes("philippin")) return "Philippines";
+  if (v === "usa" || v === "us" || v.includes("united states") || v.includes("america")) {
+    return "United States";
+  }
+  return COUNTRY_LABELS[countryKey] || value;
 }
 
 export function deriveLocation(
@@ -173,15 +263,28 @@ export function deriveLocation(
       fullLocation: `${city}, Australia`,
     };
   }
-  const city = company.location?.city || stateRaw || "Abu Dhabi";
-  const state = stateRaw || city;
-  const country = company.location?.country || "United Arab Emirates";
-  const countryShort = country === "UAE" ? "United Arab Emirates" : country;
+
+  const country = normalizeCountryLabel(company.location?.country || "", countryKey);
+  let state = stateRaw || REGION_DEFAULT_CITY[countryKey];
+  if (countryKey === "CA" && /^on$/i.test(state)) state = "Ontario";
+
+  let city = company.location?.city || "";
+  if (!city && countryKey === "UAE") city = stateRaw;
+  if (!city && countryKey === "CA" && /^(on|ontario)$/i.test(stateRaw)) city = "Toronto";
+  if (!city && countryKey === "US") {
+    city = /^(tx|texas)$/i.test(stateRaw)
+      ? "Dallas"
+      : /^(az|arizona)$/i.test(stateRaw)
+        ? "Phoenix"
+        : REGION_DEFAULT_CITY.US;
+  }
+  if (!city) city = REGION_DEFAULT_CITY[countryKey];
+
   return {
     city,
     state,
-    country: countryShort,
-    fullLocation: `${city}, ${countryShort}`,
+    country,
+    fullLocation: `${city}, ${country}`,
   };
 }
 
@@ -327,10 +430,28 @@ const serviceKnowledgeBase: Record<string, ServiceTemplateData> = {
   },
 };
 
-const AU_STANDARD_MAP: Record<string, string> = {
-  "Abu Dhabi QCC Compliant": "AS/NZS 3000 Compliant",
-  "Municipality Approved": "Licensed & Fully Insured",
-  "Estidama Pearl Rating Ready": "NABERS Energy Rating Ready",
+const REGIONAL_STANDARD_MAP: Record<CountryKey, Record<string, string>> = {
+  UAE: {},
+  AU: {
+    "Abu Dhabi QCC Compliant": "AS/NZS 3000 Compliant",
+    "Municipality Approved": "Licensed & Fully Insured",
+    "Estidama Pearl Rating Ready": "NABERS Energy Rating Ready",
+  },
+  CA: {
+    "Abu Dhabi QCC Compliant": "Ontario Electrical Safety Code",
+    "Municipality Approved": "Licensed & Fully Insured",
+    "Estidama Pearl Rating Ready": "ENERGY STAR Ready",
+  },
+  PH: {
+    "Abu Dhabi QCC Compliant": "PEC Compliant",
+    "Municipality Approved": "Licensed & Fully Insured",
+    "Estidama Pearl Rating Ready": "Philippine Green Building Code Ready",
+  },
+  US: {
+    "Abu Dhabi QCC Compliant": "NEC Compliant",
+    "Municipality Approved": "Licensed & Fully Insured",
+    "Estidama Pearl Rating Ready": "ENERGY STAR Ready",
+  },
 };
 
 export function buildServiceConfig(
@@ -347,10 +468,8 @@ export function buildServiceConfig(
     ) || (index === 0 ? "ac-installation" : index === 1 ? "maintenance" : index === 2 ? "duct-cleaning" : "hvac-solutions");
 
   const kb = serviceKnowledgeBase[matchedKey] || serviceKnowledgeBase["hvac-solutions"];
-  const standards =
-    countryKey === "AU"
-      ? kb.standards.map((s) => AU_STANDARD_MAP[s] || s)
-      : kb.standards;
+  const standardMap = REGIONAL_STANDARD_MAP[countryKey] ?? {};
+  const standards = kb.standards.map((s) => standardMap[s] || s);
 
   const cleanName = rawKeyword
     .split(/\s+/)
@@ -388,8 +507,8 @@ export function transformRawProspect(raw: RawProspectData): ProspectConfig {
   const slug = deriveSlug(raw);
   const established = deriveEstablished(company);
   const countryKey = detectCountryKey(company, audit);
-  const isAustralia = countryKey === "AU";
-  const regionLabel = isAustralia ? "Australia" : "UAE";
+  const isGulf = countryKey === "UAE";
+  const regionLabel = countryRegionLabel(countryKey);
   const { city, state, country, fullLocation } = deriveLocation(company, audit, countryKey);
 
   // Branding
@@ -425,9 +544,9 @@ export function transformRawProspect(raw: RawProspectData): ProspectConfig {
   const featuredServiceSlug = services[0]?.slug || "ac-installation";
 
   // Contact
-  const fallbackPhone = isAustralia ? "+61 1300 000 000" : "+971 50 123 4567";
-  const contactPhone = company.contact?.phone || company.contact?.rawPhone || fallbackPhone;
-  const fallbackTld = isAustralia ? ".com.au" : ".ae";
+  const contactFallback = contactFallbackFor(countryKey);
+  const contactPhone = company.contact?.phone || company.contact?.rawPhone || contactFallback.phone;
+  const fallbackTld = contactFallback.tld;
   const contactEmail = company.contact?.email || `info@${company.contact?.domain || slugify(displayName) + fallbackTld}`;
   const contactAddress =
     company.location?.address || `${city}, ${country}`;
@@ -442,7 +561,9 @@ export function transformRawProspect(raw: RawProspectData): ProspectConfig {
   const heroSubline =
     audit?.summary ||
     audit?.websiteDetails?.description ||
-    `${displayName} delivers reliable HVAC installation, scheduled maintenance, and duct cleaning across ${city} villas, towers, and commercial properties. Prompt scheduling, transparent pricing, and warranted workmanship.`;
+    isGulf
+      ? `${displayName} delivers reliable HVAC installation, scheduled maintenance, and duct cleaning across ${city} villas, towers, and commercial properties. Prompt scheduling, transparent pricing, and warranted workmanship.`
+      : `${displayName} delivers reliable HVAC installation, scheduled maintenance, and duct cleaning across ${city} homes, apartments, and commercial properties. Prompt scheduling, transparent pricing, and warranted workmanship.`;
 
   const slogan =
     audit?.personalizationHook ||
@@ -450,7 +571,7 @@ export function transformRawProspect(raw: RawProspectData): ProspectConfig {
 
   // Projects
   const addressToken = company.location?.address?.split("-")[0]?.trim() || city;
-  const projects = isAustralia
+  const projects = !isGulf
     ? [
         {
           name: `Luxury Home AC & Duct Overhaul`,
@@ -587,19 +708,19 @@ export function transformRawProspect(raw: RawProspectData): ProspectConfig {
     },
   ];
 
-  const regionGroups: RegionGroup[] = isAustralia
+  const regionGroups: RegionGroup[] = !isGulf
     ? [
         {
-          title: `${city} & Surrounding Suburbs`,
+          title: `${city} & Surrounding Areas`,
           items: [
             company.location?.address?.split("-")[0]?.trim() || `${city} CBD`,
             `${city} Metro Area`,
-            "Northern Suburbs · Southern Suburbs",
-            "Coastal & Inner-City Locations",
+            "Northern & Southern Suburbs",
+            "Inner-City & Suburban Locations",
           ],
         },
         {
-          title: "Wider Australia & Regional Coverage",
+          title: `Wider ${regionLabel} & Regional Coverage`,
           items: [
             `${state} & Regional Areas`,
             "Commercial & Residential Developments",
@@ -654,7 +775,7 @@ export function transformRawProspect(raw: RawProspectData): ProspectConfig {
     },
     trustLines: [
       `${googleRating} ★ Rated on Google · ${reviewCount} Reviews`,
-      isAustralia ? `${city} Licensed & Fully Insured` : `${city} Municipal Approved & Compliant`,
+      isGulf ? `${city} Municipal Approved & Compliant` : `${city} Licensed & Fully Insured`,
     ],
     servicesKicker: "Our services",
     servicesHomeHeading: `High-performance cooling & maintenance for ${city}`,
@@ -734,9 +855,9 @@ export function transformRawProspect(raw: RawProspectData): ProspectConfig {
       },
     ],
     footer: {
-      blurb: isAustralia
-        ? `specialists in air conditioning, duct sanitisation, and home & commercial maintenance in ${city}, Australia.`
-        : `specialists in air conditioning, duct sanitisation, and villa maintenance in ${city}, UAE.`,
+      blurb: isGulf
+        ? `specialists in air conditioning, duct sanitisation, and villa maintenance in ${city}, UAE.`
+        : `specialists in air conditioning, duct sanitisation, and home & commercial maintenance in ${city}, ${regionLabel}.`,
     },
     assistant: {
       name: `${displayName} Assistant`,
@@ -800,20 +921,14 @@ export function transformRawProspect(raw: RawProspectData): ProspectConfig {
     },
     certifications: [
       `${googleRating} ★ Google Reviews (${reviewCount})`,
-      isAustralia ? `${city} Licensed & Fully Insured` : `${city} Municipality Approved`,
+      isGulf ? `${city} Municipality Approved` : `${city} Licensed & Fully Insured`,
       "Certified HVAC Technicians",
     ],
-    markets: isAustralia
-      ? [city, state, "Australia"].filter(
+    markets: isGulf
+      ? [city, "Abu Dhabi Emirate", "Dubai", "Sharjah", "United Arab Emirates"]
+      : [city, state, regionLabel].filter(
           (v, i, arr) => v && arr.indexOf(v) === i
-        )
-      : [
-          city,
-          "Abu Dhabi Emirate",
-          "Dubai",
-          "Sharjah",
-          "United Arab Emirates",
-        ],
+        ),
     facilities: [
       `Main Service Hub — ${city}, ${regionLabel}`,
       `Mobile Service Fleet servicing ${city} & suburbs`,
@@ -843,6 +958,14 @@ export function transformRawProspect(raw: RawProspectData): ProspectConfig {
       body: `Tell us what your property needs — an urgent AC repair, a duct deep clean, a new installation, or an annual plan — and our team will get back to you with a clear price and available slots.`,
     },
     voice,
+    demoMeta: buildDemoMeta(
+      {
+        id: company.id,
+        domain: company.contact?.domain,
+        website: company.contact?.website,
+      },
+      slug
+    ),
   };
 }
 

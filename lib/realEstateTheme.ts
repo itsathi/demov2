@@ -2,71 +2,100 @@ import type { CSSProperties } from "react";
 import type { Branding, RealEstateDesignDirection } from "./types";
 
 /**
- * Per-direction art direction for real-estate demos. Rather than a parallel
- * token system, each direction re-maps the platform's existing CSS variables
- * (`--paper`, `--ink`, `--line`, …) so every shared component — Navbar,
- * Footer, motion primitives — inherits the correct look automatically.
+ * Dedicated quiet-luxury design system for real estate.
+ *
+ * Implements the design target:
+ * Obsidian + Warm Ivory + Soft Stone + Muted Taupe + Champagne / Brass accents.
+ * Provides fine hairlines, editorial typography tokens, and restrained glassmorphic surfaces.
  */
-type Palette = {
+export type RealEstatePalette = {
   paper: string;
   card: string;
   ink: string;
   inkMuted: string;
   line: string;
   accent: string;
-  /** Serif display fonts read as "premium"; a few directions stay geometric. */
+  obsidian: string;
+  warmIvory: string;
+  stone: string;
+  taupe: string;
+  brass: string;
+  brassLight: string;
   displaySerif: boolean;
 };
 
-const PALETTES: Record<RealEstateDesignDirection, Palette> = {
+const PALETTES: Record<RealEstateDesignDirection, RealEstatePalette> = {
   luxury: {
-    paper: "#f7f4ee",
-    card: "#fffdf9",
-    ink: "#16130d",
-    inkMuted: "#6d6354",
-    line: "#e7dfcf",
-    accent: "#b0895a",
+    paper: "#F7F4EE",
+    card: "#FFFFFF",
+    ink: "#111110",
+    inkMuted: "#6B655C",
+    line: "#E6DFC8",
+    accent: "#B7A17A",
+    obsidian: "#111110",
+    warmIvory: "#F7F4EE",
+    stone: "#D8D0C4",
+    taupe: "#8C8174",
+    brass: "#B7A17A",
+    brassLight: "#D6C3A1",
     displaySerif: true,
   },
   contemporary: {
-    paper: "#f4f5f6",
-    card: "#ffffff",
-    ink: "#0b0d10",
-    inkMuted: "#5c6571",
-    line: "#e4e7ea",
-    accent: "#111827",
-    displaySerif: false,
+    paper: "#F5F3EF",
+    card: "#FFFFFF",
+    ink: "#121417",
+    inkMuted: "#635D52",
+    line: "#E5E0D6",
+    accent: "#A68A56",
+    obsidian: "#121417",
+    warmIvory: "#F5F3EF",
+    stone: "#D4CDC2",
+    taupe: "#7D7569",
+    brass: "#B09668",
+    brassLight: "#D1BF9B",
+    displaySerif: true,
   },
   development: {
-    paper: "#f4f6f9",
-    card: "#ffffff",
-    ink: "#0a1128",
-    inkMuted: "#5a6a85",
-    line: "#e2e8f0",
-    accent: "#0f766e",
-    displaySerif: false,
+    paper: "#F5F1E8",
+    card: "#FFFFFF",
+    ink: "#141413",
+    inkMuted: "#666157",
+    line: "#E4DDCF",
+    accent: "#B59663",
+    obsidian: "#141413",
+    warmIvory: "#F5F1E8",
+    stone: "#D8CEBE",
+    taupe: "#857A6C",
+    brass: "#B59663",
+    brassLight: "#D4BC90",
+    displaySerif: true,
   },
   investment: {
-    paper: "#f2f4f5",
-    card: "#ffffff",
-    ink: "#0b1220",
-    inkMuted: "#59636f",
-    line: "#e1e6ea",
-    accent: "#0f766e",
+    paper: "#F4F0E8",
+    card: "#FFFFFF",
+    ink: "#111413",
+    inkMuted: "#615C52",
+    line: "#E3DBD0",
+    accent: "#A88D58",
+    obsidian: "#111413",
+    warmIvory: "#F4F0E8",
+    stone: "#D5CCBC",
+    taupe: "#807667",
+    brass: "#A88D58",
+    brassLight: "#CAB587",
     displaySerif: true,
   },
 };
 
 export function getRealEstatePalette(
   direction: RealEstateDesignDirection
-): Palette {
-  return PALETTES[direction] ?? PALETTES.contemporary;
+): RealEstatePalette {
+  return PALETTES[direction] ?? PALETTES.luxury;
 }
 
 /**
- * Returns the CSS-variable overrides for a real-estate prospect. Layered after
- * the brand colour variables in the prospect layout so it never clobbers the
- * prospect's own primary/secondary colours.
+ * Returns the CSS-variable overrides for a real-estate prospect.
+ * Remaps `--paper`, `--card`, `--ink`, `--line`, and injects custom luxury variables.
  */
 export function realEstateThemeVars(
   direction: RealEstateDesignDirection,
@@ -80,5 +109,15 @@ export function realEstateThemeVars(
     "--ink-muted": p.inkMuted,
     "--line": p.line,
     "--accent": branding.accentColor || p.accent,
+    "--re-obsidian": p.obsidian,
+    "--re-warm-ivory": p.warmIvory,
+    "--re-stone": p.stone,
+    "--re-taupe": p.taupe,
+    "--re-brass": p.brass,
+    "--re-brass-light": p.brassLight,
+    "--re-border": "rgba(216, 208, 196, 0.4)",
+    "--re-border-dark": "rgba(255, 255, 255, 0.12)",
+    "--re-glass-surface": "rgba(255, 255, 255, 0.08)",
+    "--re-glass-border": "rgba(255, 255, 255, 0.14)",
   } as CSSProperties;
 }

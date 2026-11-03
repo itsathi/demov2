@@ -21,8 +21,8 @@ export default async function ProspectLayout({
 
   const isRealEstate = prospect.industryKey === "real_estate";
   const reTheme =
-    isRealEstate && prospect.realEstateDirection
-      ? realEstateThemeVars(prospect.realEstateDirection, prospect.branding)
+    isRealEstate
+      ? realEstateThemeVars(prospect.realEstateDirection || "luxury", prospect.branding)
       : {};
 
   return (

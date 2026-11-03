@@ -77,7 +77,7 @@ export function PropertyRail({
   }, [reduced]);
 
   return (
-    <section ref={sectionRef} id="projects" className="relative scroll-mt-24 overflow-hidden bg-ink text-white">
+    <section ref={sectionRef} id="projects" className="relative scroll-mt-24 overflow-hidden bg-[#111110] text-white">
       <div className="technical-grid-dark pointer-events-none absolute inset-0 opacity-30" aria-hidden />
 
       <div className="relative mx-auto max-w-7xl px-5 pt-16 md:px-8 lg:pt-20">

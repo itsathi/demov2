@@ -1,10 +1,28 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Search, SlidersHorizontal, X } from "lucide-react";
+import Link from "next/link";
+import {
+  ArrowUpRight,
+  Building2,
+  CheckCircle2,
+  KeyRound,
+  Search,
+  SlidersHorizontal,
+  Timer,
+  X,
+} from "lucide-react";
 import { cn } from "@/lib/utils";
 import { PropertyCard } from "./PropertyCard";
 import type { PropertyListing, PropertyStatus } from "@/lib/types";
+
+const AVAILABILITY_FILTERS = [
+  { id: "all", label: "Any status" },
+  { id: "available", label: "Available" },
+  { id: "coming-soon", label: "Coming soon" },
+  { id: "sold", label: "Sold" },
+  { id: "let", label: "Let agreed" },
+] as const;
 
 const STATUS_FILTERS: { id: PropertyStatus | "all"; label: string }[] = [
   { id: "all", label: "All properties" },
@@ -27,6 +45,7 @@ export function PropertyDiscovery({
   const [status, setStatus] = useState<PropertyStatus | "all">("all");
   const [type, setType] = useState("all");
   const [beds, setBeds] = useState("all");
+  const [availability, setAvailability] = useState("all");
   const [sort, setSort] = useState("featured");
 
   const types = useMemo(
@@ -40,6 +59,7 @@ export function PropertyDiscovery({
       if (status !== "all" && l.status !== status) return false;
       if (type !== "all" && l.propertyType !== type) return false;
       if (beds !== "all" && (l.bedrooms ?? 0) < Number(beds)) return false;
+      if (availability !== "all" && l.availability !== availability) return false;
       if (!q) return true;
       return [l.title, l.location, l.community, l.propertyType, l.description]
         .filter(Boolean)
@@ -52,13 +72,60 @@ export function PropertyDiscovery({
     if (sort === "price-desc")
       out = [...out].sort((a, b) => (b.priceValue ?? -Infinity) - (a.priceValue ?? -Infinity));
     return out;
-  }, [listings, query, status, type, beds, sort]);
+  }, [listings, query, status, type, beds, availability, sort]);
 
-  const activeFilters = (status !== "all" ? 1 : 0) + (type !== "all" ? 1 : 0) + (beds !== "all" ? 1 : 0);
+  const activeFilters =
+    (status !== "all" ? 1 : 0) +
+    (type !== "all" ? 1 : 0) +
+    (beds !== "all" ? 1 : 0) +
+    (availability !== "all" ? 1 : 0);
+
+  const availableCount = listings.filter((l) => l.availability === "available").length;
+  const comingSoonCount = listings.filter((l) => l.availability === "coming-soon").length;
+  const soldLetCount = listings.filter(
+    (l) => l.availability === "sold" || l.availability === "let"
+  ).length;
 
   return (
     <div>
-      <div className="rounded-2xl border border-line bg-card p-5 sm:p-6">
+      <div className="mb-4 flex flex-col gap-3 border border-[#D8D0C4]/60 bg-white p-4 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex items-center gap-3">
+          <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-[#111110] text-white">
+            <Building2 className="h-4 w-4" />
+          </span>
+          <div>
+            <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#B7A17A]">
+              Agency workspace
+            </p>
+            <p className="text-[12px] text-ink-muted">
+              Inventory is linked to the live sales command centre.
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-wrap items-center gap-2">
+          <WorkspaceStat icon={KeyRound} label="Available" value={availableCount} />
+          <WorkspaceStat icon={Timer} label="Coming soon" value={comingSoonCount} />
+          <WorkspaceStat icon={CheckCircle2} label="Sold / let" value={soldLetCount} />
+          <div className="flex items-center gap-1.5 pl-1">
+            {[
+              { label: "Overview", href: `${base}/overview` },
+              { label: "Leads", href: `${base}/leads` },
+              { label: "Pipeline", href: `${base}/pipeline` },
+            ].map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="inline-flex items-center gap-0.5 border border-[#D8D0C4] px-2.5 py-1.5 text-[10.5px] font-semibold text-ink-muted transition-colors hover:border-[#B7A17A] hover:text-[#8a7444]"
+              >
+                {link.label}
+                <ArrowUpRight className="h-2.5 w-2.5" />
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="border border-[#D8D0C4]/60 bg-white p-6 sm:p-8">
         <div className="relative">
           <Search className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-ink-muted" />
           <input
@@ -98,7 +165,7 @@ export function PropertyDiscovery({
           ))}
         </div>
 
-        <div className="mt-4 grid gap-3 border-t border-line pt-4 sm:grid-cols-3">
+        <div className="mt-4 grid gap-3 border-t border-line pt-4 sm:grid-cols-2 lg:grid-cols-4">
           <Select label="Property type" value={type} onChange={setType}>
             <option value="all">Any type</option>
             {types.map((t) => (
@@ -112,6 +179,13 @@ export function PropertyDiscovery({
             {[1, 2, 3, 4, 5].map((n) => (
               <option key={n} value={String(n)}>
                 {n}+ bed
+              </option>
+            ))}
+          </Select>
+          <Select label="Availability" value={availability} onChange={setAvailability}>
+            {AVAILABILITY_FILTERS.map((f) => (
+              <option key={f.id} value={f.id}>
+                {f.label}
               </option>
             ))}
           </Select>
@@ -136,6 +210,7 @@ export function PropertyDiscovery({
               setStatus("all");
               setType("all");
               setBeds("all");
+              setAvailability("all");
             }}
             className="inline-flex items-center gap-1.5 text-sm font-semibold text-ink-muted transition-colors hover:text-ink"
           >
@@ -159,6 +234,24 @@ export function PropertyDiscovery({
         </div>
       )}
     </div>
+  );
+}
+
+function WorkspaceStat({
+  icon: Icon,
+  label,
+  value,
+}: {
+  icon: React.ComponentType<{ className?: string }>;
+  label: string;
+  value: number;
+}) {
+  return (
+    <span className="inline-flex items-center gap-1.5 border border-[#D8D0C4]/60 bg-[#F7F4EE]/60 px-2.5 py-1.5">
+      <Icon className="h-3 w-3 text-[#B7A17A]" />
+      <span className="text-[10.5px] text-ink-muted">{label}</span>
+      <span className="text-[11px] font-semibold tabular-nums text-ink">{value}</span>
+    </span>
   );
 }
 

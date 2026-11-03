@@ -65,3 +65,17 @@ You can simply paste your raw JSON (or batch of JSONs) in the chat. The generato
 - **Hub Page**: [http://localhost:3000/](http://localhost:3000/) (Lists all available client concepts)
 - **Direct Prospect Demo**: [http://localhost:3000/geo-group-global](http://localhost:3000/geo-group-global)
 - **Services Index**: [http://localhost:3000/geo-group-global/services](http://localhost:3000/geo-group-global/services)
+
+## Demo Registry CSV Export
+
+Admins can review and export every demo from `/admin/demos`; the CSV download lives at `/api/admin/demos/export`. Both paths require HTTP Basic authentication, and the API re-checks credentials independently of the proxy.
+
+Environment variables:
+
+- `DEMO_EXPORT_USERNAME` - optional, defaults to `admin`.
+- `DEMO_EXPORT_PASSWORD` - required; the export returns `503` when it is not set.
+- `DEMO_BASE_URL` - optional public origin used to build absolute `demo_url` values, e.g. `https://demos.example.com`. Falls back to `NEXT_PUBLIC_DEMO_BASE_URL`, then to the incoming request host/protocol.
+
+The CSV uses the fixed columns `demo_id,lead_id,company_name,company_domain,demo_name,demo_url,demo_status,created_at,updated_at,project_id`. Archived and draft demos are included; records marked `demoMeta.deleted` are excluded. Missing domains, IDs and URLs are listed on the admin page for review.
+
+Run the export tests with `npm run test:demo-export` (requires a Node version with native TypeScript type stripping, e.g. Node 22.18+ or 24+).

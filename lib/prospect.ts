@@ -20,7 +20,12 @@ import { rawProspectsList } from "./rawProspects";
 import { rawProspectsAustraliaList } from "./rawProspectsAustralia";
 import { rawProspectsInboundList } from "./rawProspectsInbound";
 import { rawProspectsInboundBatch2List } from "./rawProspectsInboundBatch2";
-import { transformRawProspectsByIndustry } from "./industries";
+import { realEstateBatch3List, hvacBatch3List } from "./prospectBatch20261102";
+import {
+  transformRawProspectsByIndustry,
+  transformRawProspectsRealEstate,
+  transformRawProspectsHvac,
+} from "./industries";
 import { applyResearch } from "./research/merge";
 
 const BASE = "https://www.skmaircon.com";
@@ -1163,6 +1168,8 @@ export const prospects: ProspectConfig[] = [
   ...transformRawProspectsByIndustry(rawProspectsAustraliaList),
   ...transformRawProspectsByIndustry(rawProspectsInboundList),
   ...transformRawProspectsByIndustry(rawProspectsInboundBatch2List),
+  ...transformRawProspectsRealEstate(realEstateBatch3List),
+  ...transformRawProspectsHvac(hvacBatch3List),
 ];
 
 // Curated prospects keep their hand-written service catalogues; only imagery,

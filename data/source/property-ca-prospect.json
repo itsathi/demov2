@@ -1,0 +1,92 @@
+{
+  "company": {
+    "id": "5d2381f1-b1b1-40fe-abe0-2860902461f9",
+    "name": "Property.ca",
+    "industry": "Real Estate",
+    "category": null,
+    "businessSize": "Unknown",
+    "businessMaturity": "Established",
+    "location": {
+      "address": null,
+      "city": null,
+      "state": null,
+      "country": "canada",
+      "coordinates": {
+        "latitude": null,
+        "longitude": null
+      }
+    },
+    "branding": {
+      "primaryColor": "#0052FF",
+      "secondaryColor": "#003DCC",
+      "logoUrl": null
+    },
+    "contact": {
+      "phone": null,
+      "rawPhone": null,
+      "email": null,
+      "website": "https://property.ca/",
+      "domain": "property.ca"
+    },
+    "socialProof": {
+      "googleRating": null,
+      "reviewCount": null,
+      "topKeywords": [
+        "Property listing search (for sale & rent",
+        "Local agent directory & connections"
+      ],
+      "socialLinks": {}
+    },
+    "decisionMakers": []
+  },
+  "audit": {
+    "sourceQuery": "best real estate in Toronto Canada",
+    "provider": "google_search",
+    "crawlStatus": "COMPLETED",
+    "researchStatus": "COMPLETED",
+    "websiteDetails": {
+      "title": "Buy, Sell & Rent Homes in Toronto & Across Canada | Property.ca",
+      "description": "Buy, Sell & Rent Homes in Toronto & Across Canada. Search for sale, rent & sold properties, get live listings, sold prices, market data, and connect with expert local agents on Property.ca.",
+      "type": "Marketplace",
+      "technologies": []
+    },
+    "summary": "Property.ca is a Canadian real‑estate marketplace offering buy, sell, and rent listings across Toronto and Canada. It provides live MLS data, sold‑price histories, market reports, and connects users with local agents. The platform aims to simplify home searches with up‑to‑date listings and analytics.",
+    "personalizationHook": "Property.ca provides live Toronto listings and market data at a glance.",
+    "analysis": {
+      "painPoints": [
+        "Slow page load times affecting user experience",
+        "Gated price history reduces trust",
+        "Need for modern UI/UX to improve engagement",
+        "Limited lead generation beyond basic sign‑up",
+        "Desire for more detailed analytics and market insights"
+      ],
+      "websiteProblems": [
+        "Excessive loading spinners indicate slow performance",
+        "Price history access requires login, limiting transparency",
+        "Limited featured listings displayed on the homepage",
+        "Generic CTA and lack of clear contact/about pages",
+        "Outdated UI design with minimal branding"
+      ],
+      "thinemOpportunities": [
+        "UI/UX Design",
+        "AI Automation",
+        "SEO",
+        "Website Redesign",
+        "CRM Systems"
+      ],
+      "growthOpportunities": [
+        "Expand coverage beyond Toronto to other Canadian markets",
+        "Implement AI‑driven property recommendation engine",
+        "Offer premium analytics dashboards for real‑estate agents",
+        "Add virtual tour & interactive map features",
+        "Develop a mobile app for on‑the‑go search"
+      ]
+    },
+    "scoring": {
+      "leadQuality": "HIGH",
+      "fit": "Medium",
+      "estimatedDealSize": "₹50,000–₹1,00,000",
+      "estimatedTimeline": "2–4 Weeks"
+    }
+  }
+}

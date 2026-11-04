@@ -1,0 +1,548 @@
+{
+  "source": "data/source/prospect-demos-207-leads-2026-11-04.json",
+  "batchId": "batch-2026-11-04",
+  "registryVersion": "2.0.0",
+  "generatedAt": "2026-11-04T02:57:14.983Z",
+  "totals": {
+    "records": 207,
+    "uniqueCompanies": 206,
+    "eligible": 164,
+    "excluded": 43,
+    "needsReview": 2,
+    "withResearch": 74
+  },
+  "eligibleByFamily": {
+    "real_estate": 41,
+    "facilities": 33,
+    "hvac": 68,
+    "construction": 8,
+    "manufacturing": 9,
+    "professional": 2,
+    "education": 1,
+    "interior": 2
+  },
+  "eligibleByTemplate": {
+    "hvac": 68,
+    "real-estate": 41,
+    "facilities": 33,
+    "manufacturing": 9,
+    "construction": 8,
+    "professional-services": 2,
+    "interior-design": 2,
+    "education": 1
+  },
+  "exclusionReasons": {
+    "editorial_content": 11,
+    "portal_marketplace": 23,
+    "legal_services": 1,
+    "directory_aggregator": 10,
+    "social_or_messaging": 4,
+    "ecommerce_storefront": 1,
+    "unsupported_vertical": 1,
+    "test_data": 3
+  },
+  "duplicateNameGroups": [
+    {
+      "legalName": "BMS Air Conditioning",
+      "companyIds": [
+        "co_f7ee4b0d",
+        "co_68296084"
+      ],
+      "domains": [
+        "bmsair.com.au",
+        "tritechairconditioning.com.au"
+      ],
+      "action": "manual_review",
+      "note": "Same name, different domains — kept as distinct companies until verified."
+    }
+  ],
+  "pilotShortlist": [
+    {
+      "companyId": "co_61f8e7d8",
+      "crmCompanyId": "be5b3f42-32d3-4be4-a801-cfff7a78ea2e",
+      "family": "real_estate",
+      "templateId": "real-estate",
+      "slug": "aalmargroup",
+      "demoId": "demo_aalmargroup_61f8e7d8",
+      "displayName": "Aalmar Real Estate Broker",
+      "domain": "aalmargroup.com",
+      "location": "United Arab Emirates",
+      "researchAvailable": true,
+      "completenessScore": 16,
+      "dataGaps": [
+        "city",
+        "logo"
+      ]
+    },
+    {
+      "companyId": "co_0c80e388",
+      "crmCompanyId": "fb1bd2c6-afd3-4dc3-b658-eeb5f53aca0f",
+      "family": "hvac",
+      "templateId": "hvac",
+      "slug": "perthcityair",
+      "demoId": "demo_perthcityair_0c80e388",
+      "displayName": "Perth City Air",
+      "domain": "perthcityair.com.au",
+      "location": "West Perth, Australia",
+      "researchAvailable": true,
+      "completenessScore": 18,
+      "dataGaps": [
+        "email",
+        "logo"
+      ]
+    },
+    {
+      "companyId": "co_ca880a26",
+      "crmCompanyId": "07f2b1eb-62ec-4377-8060-e84b9e34f276",
+      "family": "facilities",
+      "templateId": "facilities",
+      "slug": "climacoolair",
+      "demoId": "demo_climacoolair_ca880a26",
+      "displayName": "Climacool",
+      "domain": "climacoolair.com.au",
+      "location": "Morningside, Australia",
+      "researchAvailable": true,
+      "completenessScore": 16,
+      "dataGaps": [
+        "phone",
+        "email",
+        "logo"
+      ]
+    },
+    {
+      "companyId": "co_1d2c63e3",
+      "crmCompanyId": "bc89bd04-38e5-4ce7-8fda-d04a79cf9b58",
+      "family": "construction",
+      "templateId": "construction",
+      "slug": "electricalcontractor",
+      "demoId": "demo_electricalcontractor_1d2c63e3",
+      "displayName": "Steven Murphy Electrical",
+      "domain": "electricalcontractor.com.au",
+      "location": "Jolimont, Australia",
+      "researchAvailable": true,
+      "completenessScore": 17,
+      "dataGaps": [
+        "email",
+        "logo"
+      ]
+    },
+    {
+      "companyId": "co_c569fdf6",
+      "crmCompanyId": "b766e16f-b5e8-411f-8941-ea65ce5f56be",
+      "family": "interior",
+      "templateId": "interior-design",
+      "slug": "levelgroup",
+      "demoId": "demo_levelgroup_c569fdf6",
+      "displayName": "Level Interiors ليفيل للديكور والتصميم الداخلي",
+      "domain": "levelgroup.ae",
+      "location": "United Arab Emirates",
+      "researchAvailable": true,
+      "completenessScore": 15,
+      "dataGaps": [
+        "city",
+        "phone",
+        "logo"
+      ]
+    }
+  ],
+  "excludedCompanies": [
+    {
+      "companyId": "co_7c99843b",
+      "legalName": "Canada's Top Properties You Can Buy Today",
+      "domain": "news.dupontregistry.com",
+      "industryFamily": "real_estate",
+      "reasons": [
+        "editorial_content"
+      ]
+    },
+    {
+      "companyId": "co_cc43b670",
+      "legalName": "Property.ca",
+      "domain": "property.ca",
+      "industryFamily": "real_estate",
+      "reasons": [
+        "portal_marketplace"
+      ]
+    },
+    {
+      "companyId": "co_d6328999",
+      "legalName": "Where to Buy Real Estate in Canada 2026: City of Toronto",
+      "domain": "moneysense.ca",
+      "industryFamily": "real_estate",
+      "reasons": [
+        "editorial_content"
+      ]
+    },
+    {
+      "companyId": "co_43661f25",
+      "legalName": "Toronto MLS® Listings & Real Estate for Sale",
+      "domain": "zolo.ca",
+      "industryFamily": "real_estate",
+      "reasons": [
+        "portal_marketplace"
+      ]
+    },
+    {
+      "companyId": "co_473bb679",
+      "legalName": "Toronto, ON Real Estate & Houses for Sale",
+      "domain": "remax.ca",
+      "industryFamily": "real_estate",
+      "reasons": [
+        "portal_marketplace"
+      ]
+    },
+    {
+      "companyId": "co_d694cbe1",
+      "legalName": "Real Estate Lawyers.ca",
+      "domain": "realestatelawyers.ca",
+      "industryFamily": "real_estate",
+      "reasons": [
+        "legal_services"
+      ]
+    },
+    {
+      "companyId": "co_cefb2a1b",
+      "legalName": "Condo Developers",
+      "domain": "condodevelopers.ca",
+      "industryFamily": "real_estate",
+      "reasons": [
+        "directory_aggregator"
+      ]
+    },
+    {
+      "companyId": "co_4fe34a08",
+      "legalName": "MAIN | REMAX PHILIPPINES",
+      "domain": "remax.ph",
+      "industryFamily": "real_estate",
+      "reasons": [
+        "portal_marketplace"
+      ]
+    },
+    {
+      "companyId": "co_cb97b37f",
+      "legalName": "Best Neighborhoods in Manila to Buy Property",
+      "domain": "investasian.com",
+      "industryFamily": "real_estate",
+      "reasons": [
+        "editorial_content"
+      ]
+    },
+    {
+      "companyId": "co_6c40f852",
+      "legalName": "Property For Sale in Metro Manila",
+      "domain": "lamudi.com.ph",
+      "industryFamily": "real_estate",
+      "reasons": [
+        "portal_marketplace"
+      ]
+    },
+    {
+      "companyId": "co_7d9ab93f",
+      "legalName": "THE BEST 10 REAL ESTATE SERVICES IN NCR, METRO ...",
+      "domain": "yelp.com",
+      "industryFamily": "real_estate",
+      "reasons": [
+        "social_or_messaging",
+        "directory_aggregator"
+      ]
+    },
+    {
+      "companyId": "co_55e5d80b",
+      "legalName": "Properties for sale in Metro Manila",
+      "domain": "knightfrank.com",
+      "industryFamily": "real_estate",
+      "reasons": [
+        "portal_marketplace"
+      ]
+    },
+    {
+      "companyId": "co_680a6991",
+      "legalName": "Real estate locations to invest in",
+      "domain": "metrobank.com.ph",
+      "industryFamily": "real_estate",
+      "reasons": [
+        "editorial_content"
+      ]
+    },
+    {
+      "companyId": "co_7a7ec903",
+      "legalName": "luxury real estate for sale Metro Manila, Philippines",
+      "domain": "properties.lefigaro.com",
+      "industryFamily": "real_estate",
+      "reasons": [
+        "portal_marketplace"
+      ]
+    },
+    {
+      "companyId": "co_f8122932",
+      "legalName": "Houses for Sale in Manila, Metro Manila",
+      "domain": "dotproperty.com.ph",
+      "industryFamily": "real_estate",
+      "reasons": [
+        "portal_marketplace"
+      ]
+    },
+    {
+      "companyId": "co_5dc297a6",
+      "legalName": "Best Condo in Metro Manila: Top Districts & Neighborhood",
+      "domain": "condoarena.com",
+      "industryFamily": "real_estate",
+      "reasons": [
+        "editorial_content"
+      ]
+    },
+    {
+      "companyId": "co_10828805",
+      "legalName": "Philippines Real Estate",
+      "domain": "phrealestate.com",
+      "industryFamily": "real_estate",
+      "reasons": [
+        "portal_marketplace"
+      ]
+    },
+    {
+      "companyId": "co_9536d878",
+      "legalName": "Philippines's Residential Property Market Analysis 2026",
+      "domain": "globalpropertyguide.com",
+      "industryFamily": "real_estate",
+      "reasons": [
+        "directory_aggregator",
+        "editorial_content"
+      ]
+    },
+    {
+      "companyId": "co_9932e7fe",
+      "legalName": "Best Realtor - Philippines",
+      "domain": "bestrealtor.ph",
+      "industryFamily": "real_estate",
+      "reasons": [
+        "directory_aggregator"
+      ]
+    },
+    {
+      "companyId": "co_a3112113",
+      "legalName": "QLD Where to invest in Gold Coast",
+      "domain": "propertychat.com.au",
+      "industryFamily": "real_estate",
+      "reasons": [
+        "editorial_content",
+        "directory_aggregator"
+      ]
+    },
+    {
+      "companyId": "co_18966294",
+      "legalName": "Property for Sale in Dubai",
+      "domain": "realtor.com",
+      "industryFamily": "real_estate",
+      "reasons": [
+        "portal_marketplace"
+      ]
+    },
+    {
+      "companyId": "co_ace04e2c",
+      "legalName": "Top 10 Best Real Estate Companies in Dubai",
+      "domain": "luxuryresidences.in",
+      "industryFamily": "real_estate",
+      "reasons": [
+        "editorial_content"
+      ]
+    },
+    {
+      "companyId": "co_c969127c",
+      "legalName": "Emirates.Estate",
+      "domain": "emirates.estate",
+      "industryFamily": "real_estate",
+      "reasons": [
+        "portal_marketplace"
+      ]
+    },
+    {
+      "companyId": "co_a14b1272",
+      "legalName": "Best Areas to Invest in Dubai",
+      "domain": "propertyfinder.ae",
+      "industryFamily": "real_estate",
+      "reasons": [
+        "portal_marketplace",
+        "editorial_content"
+      ]
+    },
+    {
+      "companyId": "co_16ff7824",
+      "legalName": "Top 10 Real Estate Websites in Dubai 2026",
+      "domain": "globalmediainsight.com",
+      "industryFamily": "real_estate",
+      "reasons": [
+        "editorial_content"
+      ]
+    },
+    {
+      "companyId": "co_6eaa1a02",
+      "legalName": "Properties for Sale in Dubai - Buy Real Estate in Dubai",
+      "domain": "dubai.dubizzle.com",
+      "industryFamily": "real_estate",
+      "reasons": [
+        "portal_marketplace"
+      ]
+    },
+    {
+      "companyId": "co_f924776c",
+      "legalName": "Dubai's Areas To Invest And Avoid In 2026",
+      "domain": "topluxuryproperty.com",
+      "industryFamily": "real_estate",
+      "reasons": [
+        "editorial_content"
+      ]
+    },
+    {
+      "companyId": "co_fc1fa9cd",
+      "legalName": "Smart Folks Real Estate Brokers",
+      "domain": "themegahub.in",
+      "industryFamily": "real_estate",
+      "reasons": [
+        "portal_marketplace",
+        "ecommerce_storefront",
+        "unsupported_vertical"
+      ]
+    },
+    {
+      "companyId": "co_ed43060c",
+      "legalName": "HVAC Companies in Australia",
+      "domain": "hvaclocals.com",
+      "industryFamily": "hvac",
+      "reasons": [
+        "portal_marketplace"
+      ]
+    },
+    {
+      "companyId": "co_f632a64e",
+      "legalName": "TOP A/C Repair & HVAC Contractors in Perth, WA, AU",
+      "domain": "houzz.com",
+      "industryFamily": "hvac",
+      "reasons": [
+        "social_or_messaging",
+        "directory_aggregator"
+      ]
+    },
+    {
+      "companyId": "co_ab5d6073",
+      "legalName": "Top Rated Air Conditioning Services in Brisbane City QLD",
+      "domain": "hipages.com.au",
+      "industryFamily": "hvac",
+      "reasons": [
+        "portal_marketplace"
+      ]
+    },
+    {
+      "companyId": "co_84f33061",
+      "legalName": "Find 63 Professional Heating and Cooling Services in ...",
+      "domain": "airtasker.com",
+      "industryFamily": "hvac",
+      "reasons": [
+        "portal_marketplace"
+      ]
+    },
+    {
+      "companyId": "co_7d9ab93f",
+      "legalName": "TOP 10 BEST Hvac in Brisbane Queensland, Australia",
+      "domain": "yelp.com",
+      "industryFamily": "hvac",
+      "reasons": [
+        "social_or_messaging",
+        "directory_aggregator"
+      ]
+    },
+    {
+      "companyId": "co_0f4130ac",
+      "legalName": "HVAC Maintenance Companies in UAE - Dubai",
+      "domain": "reachuae.com",
+      "industryFamily": "hvac",
+      "reasons": [
+        "portal_marketplace",
+        "directory_aggregator"
+      ]
+    },
+    {
+      "companyId": "co_1f9707d9",
+      "legalName": "Athinem Test Lead Gamma",
+      "domain": "athinem-test-gamma-003.com",
+      "industryFamily": "construction",
+      "reasons": [
+        "test_data"
+      ]
+    },
+    {
+      "companyId": "co_1f1e8c7b",
+      "legalName": "Athinem Test Lead Beta",
+      "domain": "athinem-test-beta-002.com",
+      "industryFamily": "home_services",
+      "reasons": [
+        "test_data"
+      ]
+    },
+    {
+      "companyId": "co_32ce5ea8",
+      "legalName": "Athinem Test Lead Alpha",
+      "domain": "athinem-test-alpha-001.com",
+      "industryFamily": "hvac",
+      "reasons": [
+        "test_data"
+      ]
+    },
+    {
+      "companyId": "co_55543087",
+      "legalName": "Top 37 HVAC Companies in Saudi Arabia (2026)",
+      "domain": "ensun.io",
+      "industryFamily": "hvac",
+      "reasons": [
+        "portal_marketplace"
+      ]
+    },
+    {
+      "companyId": "co_b5ae902d",
+      "legalName": "GWILL INT MULTIVENTURES (Plumbing and Electrical Engineering)",
+      "domain": "wa.me",
+      "industryFamily": "construction",
+      "reasons": [
+        "social_or_messaging",
+        "directory_aggregator"
+      ]
+    },
+    {
+      "companyId": "co_36d954c1",
+      "legalName": "Home Central Air Conditioning",
+      "domain": "daikin.com.my",
+      "industryFamily": "interior",
+      "reasons": [
+        "portal_marketplace"
+      ]
+    },
+    {
+      "companyId": "co_5639bfbc",
+      "legalName": "HVAC companies in Malaysia (925 found)",
+      "domain": "hvacinformed.com",
+      "industryFamily": "hvac",
+      "reasons": [
+        "portal_marketplace"
+      ]
+    },
+    {
+      "companyId": "co_27b8cd46",
+      "legalName": "Top 10 Best HVAC Services Companies in Dubai",
+      "domain": "gotoprated.com",
+      "industryFamily": "hvac",
+      "reasons": [
+        "portal_marketplace"
+      ]
+    },
+    {
+      "companyId": "co_259ff908",
+      "legalName": "Find Heating Ventilating and Air Conditioning HVAC ...",
+      "domain": "network.procore.com",
+      "industryFamily": "hvac",
+      "reasons": [
+        "portal_marketplace",
+        "directory_aggregator"
+      ]
+    }
+  ]
+}

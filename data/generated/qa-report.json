@@ -1,0 +1,3469 @@
+{
+  "generatedAt": "2026-11-04T06:55:38.168Z",
+  "base": "http://localhost:3210",
+  "viewports": [
+    {
+      "key": "desktop",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "key": "mobile",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "totals": {
+    "demos": 164,
+    "passed": 159,
+    "failed": 5
+  },
+  "failures": [
+    {
+      "slug": "electricalcontractor",
+      "name": "Steven Murphy Electrical",
+      "family": "construction",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5728,
+          "issues": [
+            "broken-images:2"
+          ]
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8643,
+          "issues": [
+            "broken-images:2"
+          ]
+        }
+      },
+      "issues": [
+        "desktop:broken-images:2",
+        "mobile:broken-images:2"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "iceblast",
+      "name": "Air Conditioning Brisbane | Sales Installation Repair",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5302,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8205,
+          "issues": [
+            "overflow-elements:6"
+          ]
+        }
+      },
+      "issues": [
+        "mobile:overflow-elements:6"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "bradgallelectrical",
+      "name": "BG Electrical & Air Con - Brisbane Air Conditioning",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5300,
+          "issues": [
+            "broken-images:2"
+          ]
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8307,
+          "issues": [
+            "broken-images:2"
+          ]
+        }
+      },
+      "issues": [
+        "desktop:broken-images:2",
+        "mobile:broken-images:2"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "dsfmaintenance",
+      "name": "AC Repair & Installation In Ras Al Khaimah | Free Inspection",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5243,
+          "issues": [
+            "broken-images:2"
+          ]
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8165,
+          "issues": [
+            "broken-images:2"
+          ]
+        }
+      },
+      "issues": [
+        "desktop:broken-images:2",
+        "mobile:broken-images:2"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "homeexperts",
+      "name": "Home Maintenance Experts Dubai | AC Repair | Plumbing | Handyman Service | 24/7 Repair Services in Dubai | Emergency Repair",
+      "family": "facilities",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5021,
+          "issues": [
+            "broken-images:2"
+          ]
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8042,
+          "issues": [
+            "broken-images:2"
+          ]
+        }
+      },
+      "issues": [
+        "desktop:broken-images:2",
+        "mobile:broken-images:2"
+      ],
+      "pass": false
+    }
+  ],
+  "results": [
+    {
+      "slug": "realtorniro",
+      "name": "Niro Tharmakulasingam-Remax Community Realty Inc. Brokerage",
+      "family": "real_estate",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 6053,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8558,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "briarlane",
+      "name": "Briarlane Rental Property Management Inc",
+      "family": "real_estate",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5879,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8287,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "barrycohenhomes",
+      "name": "Barry Cohen Homes",
+      "family": "real_estate",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5785,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7701,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "summitly",
+      "name": "Coldwell Banker Summit Realty, Brokerage",
+      "family": "real_estate",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5893,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8590,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "remaxmarimar",
+      "name": "Marimar Puno - REMAX Real Estate Agent",
+      "family": "real_estate",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5907,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8213,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "justo",
+      "name": "Justo",
+      "family": "real_estate",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5799,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7745,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "dhpm-dhmanagement",
+      "name": "DH Management",
+      "family": "facilities",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4923,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7754,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "bluffs",
+      "name": "Michael Carr Realtor",
+      "family": "real_estate",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5879,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8657,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "pauljohnston",
+      "name": "Paul Johnston",
+      "family": "real_estate",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5785,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8158,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "dreamhomerealestate-mystrikingly",
+      "name": "Dream Home Real Estate PH",
+      "family": "real_estate",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5879,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8321,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "latheoz",
+      "name": "La Theoz Real Estate Solution Services, Inc",
+      "family": "real_estate",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5879,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8725,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "amproperties",
+      "name": "AM Properties PH (Quezon City)",
+      "family": "real_estate",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5893,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8877,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "gsr-ph",
+      "name": "Global Strategy Real estate, Inc. (GSR)",
+      "family": "facilities",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4929,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7875,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "toprealty",
+      "name": "Top Realty Corporation",
+      "family": "real_estate",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5614,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8068,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "theleadrealty",
+      "name": "The Lead Realty",
+      "family": "real_estate",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5921,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 9013,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "remaxgold",
+      "name": "RE/MAX Gold Philippines - Real Estate Brokerage",
+      "family": "real_estate",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5893,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8442,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "propertysourceph",
+      "name": "Property Source PH - RE/MAX Capital",
+      "family": "real_estate",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5614,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8040,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "citiglobal",
+      "name": "CitiGlobal Realty and Development, Inc.",
+      "family": "real_estate",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5921,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8344,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "bedandgoinc",
+      "name": "BedandGo Real Estate フィリピン 不動産管理",
+      "family": "real_estate",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5921,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 9073,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "forterealty",
+      "name": "Forte Realty Corporation",
+      "family": "real_estate",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5967,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8409,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "easypropertymatch",
+      "name": "Easy Property Match - Real Estate Broker Philippines",
+      "family": "real_estate",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5991,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8410,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "e-rockwell",
+      "name": "Rockwell Land Corporation",
+      "family": "real_estate",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5923,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8426,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "kondoko",
+      "name": "Kondo Ko",
+      "family": "real_estate",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5879,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8919,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "makatibroker",
+      "name": "EVERRA Real Estate",
+      "family": "real_estate",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5879,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8484,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "rafelirealty",
+      "name": "Rafeli Realty & Development Corp.",
+      "family": "real_estate",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5921,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8563,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "cathaylandinc",
+      "name": "Cathay Land, Inc.",
+      "family": "real_estate",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5909,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8752,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "goldcoast-ljhooker",
+      "name": "LJ Hooker Gold Coast",
+      "family": "real_estate",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5785,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7677,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "sobharealty",
+      "name": "Sobha Realty",
+      "family": "real_estate",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5927,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8464,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "landcomre",
+      "name": "Landcom Real Estate LLC.",
+      "family": "real_estate",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 6009,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 9271,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "realchoicedubai",
+      "name": "Real Choice Real Estate Brokers LLC",
+      "family": "real_estate",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 6029,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 9357,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "excelproperties",
+      "name": "Excel Properties",
+      "family": "real_estate",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 6029,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 9309,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "aslyfm",
+      "name": "Asly Facilities Management",
+      "family": "facilities",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5001,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7985,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "drivenproperties",
+      "name": "Driven Properties",
+      "family": "real_estate",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5954,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 9144,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "aalmargroup",
+      "name": "Aalmar Real Estate Broker",
+      "family": "real_estate",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5922,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8904,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "propjunction",
+      "name": "Property Junction International Real Estate Broker LLC",
+      "family": "real_estate",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 6068,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 9368,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "famproperties",
+      "name": "Best Real Estate Company in Dubai – Buy or Invest in Property",
+      "family": "real_estate",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5929,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 9096,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "sothebysrealty",
+      "name": "Dubai, UAE Luxury Real Estate - Homes for Sale",
+      "family": "real_estate",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5841,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8095,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "emiratesproperties",
+      "name": "Emirates Properties",
+      "family": "real_estate",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 6101,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 9540,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "bhomes",
+      "name": "Top Real Estate Agency & Brokerage in Dubai UAE",
+      "family": "real_estate",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5937,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 9210,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "engelvoelkers",
+      "name": "Engel & Völkers",
+      "family": "real_estate",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5954,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 9144,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "vrebuae",
+      "name": "Vihaan Real Estate Brokerage",
+      "family": "real_estate",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5879,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8427,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "auric-acres",
+      "name": "Auric Acres Real Estate Brokers, Dubai, UAE",
+      "family": "real_estate",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 6098,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 9492,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "springfieldproperties",
+      "name": "Springfield Properties - #1 Real Estate Agency in Dubai",
+      "family": "real_estate",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5951,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8973,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "allskillsmaintenance",
+      "name": "All Skills Evaporative",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5174,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8238,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "mechps",
+      "name": "Reliable Commercial HVAC Solutions in Perth - MPS",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4790,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7624,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "gildanairelectrical",
+      "name": "Gildan Air & Electrical",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5057,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7981,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "ambienceair",
+      "name": "Air Conditioning Perth WA | Supply & Installation Company",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4747,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7548,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "leadingair",
+      "name": "AIR CONDITIONER SERVICE leading Air - Perth",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4688,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7307,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "electricalcontractor",
+      "name": "Steven Murphy Electrical",
+      "family": "construction",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5728,
+          "issues": [
+            "broken-images:2"
+          ]
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8643,
+          "issues": [
+            "broken-images:2"
+          ]
+        }
+      },
+      "issues": [
+        "desktop:broken-images:2",
+        "mobile:broken-images:2"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "cmseng",
+      "name": "CMS Engineering",
+      "family": "facilities",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5002,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8109,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "mouritz",
+      "name": "Air Conditioning Perth | Residential & Commerical | Mouritz",
+      "family": "manufacturing",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4244,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 6801,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "ndy",
+      "name": "NDY",
+      "family": "facilities",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4941,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7925,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "fordanddoonan",
+      "name": "Ford & Doonan Air Conditioning West Perth",
+      "family": "manufacturing",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4924,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8023,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "perthairandpowersolutions",
+      "name": "HVAC Services Perth | HVAC System Installation, Repairs ...",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4747,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7596,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "jafs",
+      "name": "JAF Solutions",
+      "family": "professional",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5047,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8152,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "wahvac",
+      "name": "WA HVAC - Perth HVAC Company",
+      "family": "facilities",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4441,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7092,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "nitaustralia-edu",
+      "name": "National Institute of Technology (NIT) - Perth",
+      "family": "education",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4820,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7791,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "hvacservices",
+      "name": "Australian HVAC Services",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4790,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7567,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "fmindustries",
+      "name": "FM POWER AND COMMUNICATIONS PTY LTD",
+      "family": "facilities",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4910,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7809,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "raspaustralia",
+      "name": "RASP Australia",
+      "family": "professional",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4953,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7960,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "needhamair",
+      "name": "Needham Air",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5152,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8304,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "crispair",
+      "name": "CrispAir Air Conditioning",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5022,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7806,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "bmsair",
+      "name": "BMS Air Conditioning",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5254,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8169,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "rcdelectricalperth",
+      "name": "RCD Electrical & Air Conditioning: Air Conditioning Perth",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4741,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7527,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "perthcityair",
+      "name": "Perth City Air",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5182,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8107,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "alfaair",
+      "name": "Air Conditioning Brisbane | Call Now | Air Con Service Brisbane",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4738,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7514,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "iceblast",
+      "name": "Air Conditioning Brisbane | Sales Installation Repair",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5302,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8205,
+          "issues": [
+            "overflow-elements:6"
+          ]
+        }
+      },
+      "issues": [
+        "mobile:overflow-elements:6"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "russellair",
+      "name": "Russell Air: #1 Air Conditioning Specialists in North Brisbane ...",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4805,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7624,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "homedealairconditioning",
+      "name": "Homedeal Air Conditioning",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5240,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8200,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "suncityair",
+      "name": "Sun City Air Conditioning",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5128,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8270,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "brisbaneair",
+      "name": "Brisbane Air: Air Conditioning & Installation Experts",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4663,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7411,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "getquickair",
+      "name": "Top 10 Air Conditioning Companies in Brisbane (2026)",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4779,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7597,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "tritechairconditioning",
+      "name": "BMS Air Conditioning",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5185,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8112,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "kolda",
+      "name": "Kolda Refrigeration and Air Conditioning",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5145,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8141,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "coolmacks",
+      "name": "Coolmacks Air and Electrical Pty Ltd",
+      "family": "construction",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5683,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8243,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "ariaair",
+      "name": "Aria Air",
+      "family": "real_estate",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5901,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8733,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "climacoolair",
+      "name": "Climacool",
+      "family": "facilities",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4971,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7901,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "hewitttradeservices",
+      "name": "Air Conditioning Brisbane | Experts at Installation, Repairs ...",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4741,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7502,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "northsideairconditioningservices",
+      "name": "Northside Air Conditioning Services: Air Con Service Brisbane",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4765,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7572,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "fallonsolutions",
+      "name": "Fallon Solutions",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5199,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8307,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "mfeservices",
+      "name": "#1 HVAC Repair Service & Supply Company in Brisbane",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4813,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7637,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "bradgallelectrical",
+      "name": "BG Electrical & Air Con - Brisbane Air Conditioning",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5300,
+          "issues": [
+            "broken-images:2"
+          ]
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8307,
+          "issues": [
+            "broken-images:2"
+          ]
+        }
+      },
+      "issues": [
+        "desktop:broken-images:2",
+        "mobile:broken-images:2"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "advair",
+      "name": "Advanced Air Conditioning Pty Ltd",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5134,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7633,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "luxairservices",
+      "name": "Lux Air Services",
+      "family": "facilities",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5026,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8330,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "reliabletradies",
+      "name": "Reliable Tradies",
+      "family": "construction",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5659,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8236,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "hvac",
+      "name": "HVAC Australia | Engineered For Life",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4881,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7752,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "iecuae",
+      "name": "Innovative Electromechanical Contracting.",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5234,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8131,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "teluscare",
+      "name": "Fix AC Ras Al Khaimah: Repair and Installation services",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4847,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7041,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "albaredacrepairing",
+      "name": "Ras Al Khaimah's #1: AC Repair, Service & Installation",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5236,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8092,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "powerway",
+      "name": "POWER WAY ELECTROMECHANICAL CONTRACTING",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5328,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8345,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "nestfix-uae",
+      "name": "AC Repairing Services In Ras Al Khaimah",
+      "family": "facilities",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4835,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7475,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "bluemountuae",
+      "name": "Blue Mount Building Contracting LLC",
+      "family": "construction",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5617,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7750,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "ostaservices",
+      "name": "Ras Al Khaimah – OSTA Services Guide",
+      "family": "facilities",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4970,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8165,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "cannelleholdings",
+      "name": "HVAC Suppliers & Dealer in Ras Al Khaimah",
+      "family": "manufacturing",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4707,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 6901,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "qualitycareuae",
+      "name": "#1 Best HVAC Duct Cleaning & Disinfection Services Ras ...",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5169,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7441,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "dsfmaintenance",
+      "name": "AC Repair & Installation In Ras Al Khaimah | Free Inspection",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5243,
+          "issues": [
+            "broken-images:2"
+          ]
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8165,
+          "issues": [
+            "broken-images:2"
+          ]
+        }
+      },
+      "issues": [
+        "desktop:broken-images:2",
+        "mobile:broken-images:2"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "levelgroup",
+      "name": "Level Interiors ليفيل للديكور والتصميم الداخلي",
+      "family": "interior",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4997,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7160,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "teamstalwart",
+      "name": "Reliable AC Maintenance Services in Ras Al Khaimah",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5105,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8232,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "basatanwertech",
+      "name": "Basat Anwer Technical Services L.L.C",
+      "family": "facilities",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4994,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7968,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "alsidras",
+      "name": "HVAC contractor in UAE: Best interior designing company in ...",
+      "family": "facilities",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4958,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7873,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "imdaad",
+      "name": "HVAC Contracting Company in Dubai, UAE",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5127,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8301,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "climatech",
+      "name": "Climatech UAE",
+      "family": "hvac",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5235,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8415,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "actechniciandubai",
+      "name": "Shahid pervaiz technical services llc",
+      "family": "facilities",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4923,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7518,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "homefixituae",
+      "name": "Saith Technical Services - Emergency AC Service & Repair Dubai",
+      "family": "facilities",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4923,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7864,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "acmaintenancedubai",
+      "name": "Al Naveed AC Repair & Maintenance",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5273,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8173,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "homeexperts",
+      "name": "Home Maintenance Experts Dubai | AC Repair | Plumbing | Handyman Service | 24/7 Repair Services in Dubai | Emergency Repair",
+      "family": "facilities",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5021,
+          "issues": [
+            "broken-images:2"
+          ]
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8042,
+          "issues": [
+            "broken-images:2"
+          ]
+        }
+      },
+      "issues": [
+        "desktop:broken-images:2",
+        "mobile:broken-images:2"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "nestclimate",
+      "name": "Nest climate",
+      "family": "facilities",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5034,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8024,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "uaehvac",
+      "name": "AL TAWAKKAL GEN TRDG",
+      "family": "manufacturing",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4886,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7904,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "fixationhub",
+      "name": "Fixation Hub| Maintainence company in Dubai",
+      "family": "facilities",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5137,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8476,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "awalexperts",
+      "name": "Awal Experts",
+      "family": "facilities",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4988,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7948,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "edtechnicalservices",
+      "name": "Elanday Technical Services L.L.C ( MEP - Contractors )",
+      "family": "facilities",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4923,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7671,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "noorawaal",
+      "name": "HVAC Contractors In Dubai | UAE | Noor Awaal",
+      "family": "facilities",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4835,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7701,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "abusaeed",
+      "name": "Abu Saeed Trading Co. Main",
+      "family": "manufacturing",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4846,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7873,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "thushhaara",
+      "name": "HVAC Solutions in Dubai | Thushhaara Divisions Services ...",
+      "family": "facilities",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4829,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 6934,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "skmaircon",
+      "name": "S.K.M. Air Conditioning LLC شركة اس كي ام للتكييف",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5281,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7759,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "aljunaidgroup",
+      "name": "ALJUNAID AIR CONDITIONING LLC الجنيد للتكييف",
+      "family": "manufacturing",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4796,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7646,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "bestairservices",
+      "name": "Air Conditioning Service And HVAC Contractor in UAE - BestAir",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5135,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7706,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "unitedgulf",
+      "name": "Air Conditioning Services - United Gulf",
+      "family": "facilities",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4868,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7345,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "atheeraljazirah",
+      "name": "Atheer Al Jazirah Electromechanical Works",
+      "family": "construction",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5655,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7574,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "tawoostech",
+      "name": "How to Choose the Best HVAC Contractor in Sharjah, UAE",
+      "family": "facilities",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4853,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 6986,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "geogroupglobal",
+      "name": "Geo Electrical Contracting Trading Co.",
+      "family": "manufacturing",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4797,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7500,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "johnpaulac",
+      "name": "John Paul AC",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5210,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7841,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "burjaldar",
+      "name": "Burj Al Dar - Tech Contractor - General Maintenance - AC unit Fix Contracting",
+      "family": "facilities",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4967,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7906,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "qualitylivinguae",
+      "name": "Quality Living Building Maintenance – AC & Villa Maintenance Abu Dhabi",
+      "family": "facilities",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5004,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7593,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "noqtatalnada",
+      "name": "Noqtat Al Nada MEP and FM",
+      "family": "facilities",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4927,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7632,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "lark",
+      "name": "Lark Engineering Construction",
+      "family": "interior",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4929,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 6739,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "aiofm",
+      "name": "AIO Facilities Management Services LLC",
+      "family": "facilities",
+      "researchAvailable": true,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5036,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8003,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "lemlemtechnicals",
+      "name": "Lemlem Electro Mechanical & Maintenance",
+      "family": "facilities",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5045,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8105,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "brightstargroup",
+      "name": "HVAC companies in Abu Dhabi – Bright Star Central AC works",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5166,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7860,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "airotechacgm",
+      "name": "Airotech: AC Repair & HVAC Experts in Musaffah, Shabiya ...",
+      "family": "facilities",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4835,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7186,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "emccllc",
+      "name": "EMCC Company LLC",
+      "family": "facilities",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4979,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7892,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "newwaygroupcompanies",
+      "name": "New Way Electromechanical Cont Co LLC",
+      "family": "construction",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5645,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8136,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "dhabicontracting",
+      "name": "Dhabi Contracting LLC",
+      "family": "construction",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5620,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8101,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "emra",
+      "name": "Emra General Contracting",
+      "family": "facilities",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5044,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8070,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "relianceac",
+      "name": "Reliance Heating & Air Conditioning",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5110,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8069,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "1stchoicemechanicalaz",
+      "name": "1st Choice Plumbing, Air & Insulation",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5121,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8102,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "reeis",
+      "name": "REEIS Heating & Air Conditioning Services | Phoenix, AZ ...",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5016,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7814,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "certifyhvac",
+      "name": "Certify HVAC Air Conditioning, Heating and Ventilation",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5177,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8267,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "experthvacservices",
+      "name": "Expert HVAC Services Inc",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5086,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8061,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "fourseasonshs",
+      "name": "Four Seasons Home Services - Phoenix, AZ",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5148,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8238,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "abcairconditioning",
+      "name": "ABC Air Conditioning, Inc.",
+      "family": "manufacturing",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4812,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7787,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "championair",
+      "name": "Champion Air",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5110,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8107,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "alskyline",
+      "name": "HVAC & AC Services in Saudi Arabia | Skyline KSA",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4992,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7814,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "hvacservicesksa",
+      "name": "Mezaj HVAC: Top Quality HVAC & Air Solutions in KSA",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5016,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7855,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "ssomco",
+      "name": "HVAC AC Maintenance Services in Saudi Arabia",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4814,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7222,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "jeddahacrepair",
+      "name": "Al AMRI Cooling system",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5175,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8220,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "jcarabia",
+      "name": "YORK Air Conditioner Showroom - معرض مكيفات يورك",
+      "family": "manufacturing",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4796,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7836,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "tajhvac",
+      "name": "Taj HVAC – Air Conditioning and Refrigeration",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4992,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7769,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "nigeriacontractor",
+      "name": "Akpo Oyegwa Refrigeration Company: Cold Room | Solar Cold Room | Ice Block Making Machine | Blast Freezer | Cold Storage",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5293,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8431,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "ordellxdante",
+      "name": "ORDELL & DANTE HVAC (Commercial Air-Conditioning) Limited Lagos & Abuja, Nigeria",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5097,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7900,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "kjgemilang",
+      "name": "Residential HVAC System Setup KL, Selangor, Malaysia ...",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5135,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7482,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "isotechaircond",
+      "name": "Isotech Air Cond Services KL & Selangor | AC Specialist ...",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5112,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7632,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "myaircon",
+      "name": "My Air Conditioning Services Sdn Bhd",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5312,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8311,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "aircondtech",
+      "name": "Tan Aircond Expert Services in Kuala Lumpur",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5301,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8351,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "nascoolmasterairconservices",
+      "name": "Best Aircond Service Kuala Lumpur | Repair & Chemical Wash",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5112,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7830,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "ekg",
+      "name": "Best HVAC Maintenance Company In Malaysia",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4852,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7106,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "mrfixenterprise-fix-b12sites",
+      "name": "MR FIX ENTERPRISE 24/7 Service",
+      "family": "construction",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5770,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8180,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "mastermindshvac",
+      "name": "AC Repair in Dubai & Maintenance: Fast, Trusted 24/7 Service",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5016,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7879,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "breezytechhvac",
+      "name": "Air Conditioning & HVAC Repair Expert in Dubai",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5143,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7947,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "happybrotherac",
+      "name": "Happy Brothers Air Conditioning Services",
+      "family": "facilities",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5078,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 8103,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "sethnco",
+      "name": "SETH INT'L",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5182,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7946,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "berkeys",
+      "name": "Best AC Repair in Dallas, TX",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5016,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7811,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "bakerbrothersplumbing",
+      "name": "The Best Air Conditioning Repair & Replacement in Dallas ...",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 4992,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7880,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    },
+    {
+      "slug": "unitedstateshomeservices",
+      "name": "Map",
+      "family": "hvac",
+      "researchAvailable": false,
+      "images": {
+        "desktop": {
+          "scrollWidth": 1440,
+          "scrollHeight": 5055,
+          "issues": []
+        },
+        "mobile": {
+          "scrollWidth": 390,
+          "scrollHeight": 7398,
+          "issues": []
+        }
+      },
+      "issues": [],
+      "pass": true
+    }
+  ]
+}
